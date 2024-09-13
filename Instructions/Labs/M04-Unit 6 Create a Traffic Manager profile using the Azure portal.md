@@ -76,11 +76,7 @@ In this section, you will create two instances of a web application deployed in 
 
    ![Picture 19](../media/M0406.1.png)
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-   > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   > **Congratulations** on completing the task! Now, it's time to validate it.
 
    <validation step="4d5ecc40-776d-459c-867f-50db4b49ce0c" />
 
@@ -153,6 +149,7 @@ In this section, you will add the website in the East US as the primary endpoint
 > **Congratulations** on completing the task! Now, it's time to validate it. 
          
 <validation step="ecc8a93e-6f61-41d8-99ab-214a855c04d6" />
+
       
 ## Task 4: Test the Traffic Manager profile
 
@@ -197,6 +194,7 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 > **Congratulations** on completing the task! Now, it's time to validate it. 
       
 <validation step="20dd3dc3-fd2c-4271-8cb3-6f7fb5223caf" />
+
    
 ## Review
 In this lab, you have completed:

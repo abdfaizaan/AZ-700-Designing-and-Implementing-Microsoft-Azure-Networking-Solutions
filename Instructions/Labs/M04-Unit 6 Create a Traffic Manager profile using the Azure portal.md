@@ -3,9 +3,9 @@
 ## Lab scenario 
 
 In this lab, you will create a Traffic Manager profile to deliver high availability for the fictional Contoso Ltd organization's web application.
-You will create two instances of a web application deployed in two different regions (East US and West Europe). The East US region will act as a primary endpoint for Traffic Manager, and the West Europe region will act as a failover endpoint.
+You will create two instances of a web application deployed in two different regions (**<inject key="Region" enableCopy="false"/>** and West Europe). The **<inject key="Region" enableCopy="false"/>** region will act as a primary endpoint for Traffic Manager, and the West Europe region will act as a failover endpoint.
 
-You will then create a Traffic Manager profile based on endpoint priority. This profile will direct user traffic to the primary site running the web application. Traffic Manager will continuously monitor the web application, and if the primary site in East US is unavailable, it will provide automatic failover to the backup site in West Europe.
+You will then create a Traffic Manager profile based on endpoint priority. This profile will direct user traffic to the primary site running the web application. Traffic Manager will continuously monitor the web application, and if the primary site in **<inject key="Region" enableCopy="false"/>** is unavailable, it will provide automatic failover to the backup site in West Europe.
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20a%20Traffic%20Manager%20profile%20using%20the%20Azure%20portal)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
@@ -46,7 +46,7 @@ In this section, you will create two instances of a web application deployed in 
    | Publish          | **Code**                                                     |
    | Runtime stack    | **ASP.NET V4.8**                                             |
    | Operating system | **Windows**                                                  |
-   | Region           | **East US**                                                  |
+   | Region           | **<inject key="Region" enableCopy="false"/>**                                                  |
    | Windows Plan     | Select **Create  new**  Name: **ContosoAppServicePlanEastUS** |
    | Pricing Plan     | **Standard S1 100 total ACU, 1.75-GB  memory**               |
 
@@ -108,7 +108,7 @@ Now you will create a Traffic Manager profile that directs user traffic based on
    
 ## Task 3: Add Traffic Manager endpoints
 
-In this section, you will add the website in the East US as the primary endpoint to route all the user traffic. You will then add the website in West Europe as a failover endpoint. If the primary endpoint becomes unavailable, then traffic will automatically be routed to the failover endpoint.
+In this section, you will add the website in the **<inject key="Region" enableCopy="false"/>** as the primary endpoint to route all the user traffic. You will then add the website in West Europe as a failover endpoint. If the primary endpoint becomes unavailable, then traffic will automatically be routed to the failover endpoint.
 
 1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Traffic Manager profiles**, and then select **Traffic Manager profiles** under services.
 
@@ -125,7 +125,7 @@ In this section, you will add the website in the East US as the primary endpoint
       | Type                 | **Azure endpoint**                |
       | Name                 | **myPrimaryEndpoint**             |
       | Target resource type | **App Service**                   |
-      | Target resource      | **ContosoWebAppEastUS<inject key="DeploymentID" enableCopy="false"/> (East US)** |
+      | Target resource      | **ContosoWebAppEastUS<inject key="DeploymentID" enableCopy="false"/> (**<inject key="Region" enableCopy="false"/>**)** |
       | Priority             | **1**                             |
 
 1. Click on **Add**.

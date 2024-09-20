@@ -67,7 +67,7 @@ This exercise requires two instances of a web application that run in different 
    | Publish          | Select **Code (4)**                                             |
    | Runtime stack    | Select **.NET 6 (LTS) (5)**                                     |
    | Operating System | Select **Windows (6)**                                          |
-   | Region           | Select **East US (7)**                                          |
+   | Region           | Select **East US 2 (7)**                                          |
    | Windows Plan     | Select **Create new** and enter **myAppServicePlanEastUS (8)** in the text box. |
    | Pricing Plan     | Select **Standard S1 100 total ACU, 1.75 GB memory (9)**        |
    |||

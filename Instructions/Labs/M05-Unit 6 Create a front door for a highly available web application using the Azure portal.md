@@ -1,7 +1,7 @@
 # Module 05: Unit 6 Create a Front Door for a highly available web application using the Azure portal
 
 ## Lab scenario
-In this lab, you will set up an Azure Front Door configuration that pools two instances of a web application that runs in different Azure regions. This configuration directs traffic to the nearest site that runs the application. Azure Front Door continuously monitors the web application. You will demonstrate automatic failover to the next available site when the nearest site is unavailable. 
+In this lab, you will set up an Azure Front Door configuration that pools two instances of a web application that runs in different Azure regions. This configuration directs traffic to the nearest site that runs the application. Azure Front Door continuously monitors the web application. You will demonstrate automatic failover to the next available site when the nearest site is unavailable.
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20a%20Front%20Door%20profile%20for%20a%20highly%20available%20web%20application)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
@@ -22,14 +22,13 @@ In this lab, you will complete the following tasks:
 
 This exercise requires two instances of a web application that run in different Azure regions. Both the web application instances run in Active/Active mode, so either one can take traffic. This configuration differs from an Active/Stand-By configuration, where one acts as a failover.
 
-1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **WebApp**, and then select **App Services** under 
-   services.
+1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **WebApp**, and then select **App Services** under services.
 
    ![Web App](../media/l5u6-1.png)
 
 1. Select **+ Create (1)**  and then select **Web App (2)** to create a Web App.
 
-     ![Web App](../media/create.png)
+   ![Web App](../media/create.png)
 
 1. On the Create Web App page, on the **Basics** tab, enter or select the following information, and select **Review + create (9)**.
 
@@ -47,13 +46,12 @@ This exercise requires two instances of a web application that run in different 
    |||
 
    ![Web App](../media/l5u6-3.png)
-   
-1. Review the Summary, and then select **Create**.   
+
+1. Review the Summary, and then select **Create**.
 
    >**Note:** It might take 2 minutes for the deployment to complete.
 
-1. Create a second web app,  in **Search resources, services and docs (G+/)** box at the top of the portal, enter **WebApp**, and then select **App Services** under 
-   services.
+1. Create a second web app,  in **Search resources, services and docs (G+/)** box at the top of the portal, enter **WebApp**, and then select **App Services** under services.
 
 1. Select **+ Create**  and then select **Web App** to create a Web App.
 
@@ -73,13 +71,13 @@ This exercise requires two instances of a web application that run in different 
    |||
 
    ![Web App](../media/l5u6-4.png)
-   
-1. Review the Summary, and then select **Create**.   
+
+1. Review the Summary, and then select **Create**.
 
    **Note**: Wait for deployment to complete it might take several minutes.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
 
@@ -89,11 +87,10 @@ This exercise requires two instances of a web application that run in different 
 
 Configure Azure Front Door to direct user traffic based on lowest latency between the two web apps servers. To begin, add a frontend host for Azure Front Door.
 
-1. On any Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, Search for **Front Door and CDN profiles (1)**, and then select 
-   **Front Door and CDN profiles (2)**.
+1. On any Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, Search for **Front Door and CDN profiles (1)**, and then select **Front Door and CDN profiles (2)**.
 
    ![Web App](../media/l5u6-5.png)
-   
+
 1. On the **Front Door and CDN profiles** page, select **+ Create**.
 
 1. On the Compare offerings page, select **Quick create**. Then select **Continue to create a Front Door**.
@@ -126,7 +123,6 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 
 1. On the **Add on Origin** window, add the following information and select **Add (5)**.
 
-   
    | **Setting**             | **Value**                                    |
    | ----------------------- | -------------------------------------------- |
    | Name                    | **default-origin-group (1)**                         |
@@ -134,10 +130,9 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
    | Host name               | Select **WebAppContoso-2-<inject key="DeploymentID" enableCopy="false"/> (3)** |
    | Origin host header      | Select **WebAppContoso-2-<inject key="DeploymentID" enableCopy="false"/> (4)** |
    |||
-   
+
    ![Web App](../media/l5u6-9.png)
 
-   
 1. Select **Update**.
 
    ![Web App](../media/l5u6-(10).png)

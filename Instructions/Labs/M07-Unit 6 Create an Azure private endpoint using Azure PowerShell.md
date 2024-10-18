@@ -396,7 +396,7 @@ In this section you'll create and configure the private DNS zone using:
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
 
    <validation step="a70480ef-c326-4973-959d-2245397125ef" />
-   
+
 ## Task 6: Test connectivity to the Private Endpoint
 
 In this section, you'll use the virtual machine you created in the previous step to connect to the web app across the Private Endpoint.

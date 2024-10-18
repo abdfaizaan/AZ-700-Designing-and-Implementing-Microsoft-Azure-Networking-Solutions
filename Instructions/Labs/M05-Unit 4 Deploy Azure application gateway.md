@@ -158,7 +158,11 @@ In this lab, you will complete the following tasks:
 
     ![Azure Portal search for application gateway](../media/l5u4-3.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it.
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+
    <validation step="b6e75632-552c-426b-806e-3de77ccca05f" />
 
 ## Task 2: Create virtual machines
@@ -203,7 +207,11 @@ In this lab, you will complete the following tasks:
 
 1. Verify that both virtual machines have been created.
 
-> **Congratulations** on completing the task! Now, it's time to validate it.
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+
    <validation step="d91accdd-32fd-4212-96ac-3f721c86f133" />
 
 ## Task 3: Add backend servers to backend pool
@@ -230,9 +238,12 @@ In this lab, you will complete the following tasks:
 
     **Note**: Wait for the deployment to complete before proceeding to the next step.
 
-> **Congratulations** on completing the task! Now, it's time to validate it.
-   <validation step="2c0059d3-d02b-4c7a-9937-c06f943ec1ef" />
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
 
+   <validation step="2c0059d3-d02b-4c7a-9937-c06f943ec1ef" />
 
 ## Task 4: Test the application gateway
 

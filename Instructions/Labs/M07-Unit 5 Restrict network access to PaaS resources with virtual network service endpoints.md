@@ -88,9 +88,8 @@ Service endpoints are enabled per service, per subnet. Create a subnet and enabl
    it.
 
 1. Add a subnet to the virtual network. Under **Settings**, select **Subnets**, and then select **+ Subnet**, as shown in the following picture:
-   
-    ![](../media/L7U5-1.png)   
 
+    ![](../media/L7U5-1.png)   
 
 1. Under **Add subnet**, select or enter the following information and select **Add**.
 
@@ -104,7 +103,6 @@ Service endpoints are enabled per service, per subnet. Create a subnet and enabl
 
     ![](../media/unit55.png)
 
-  
 1. You should now have two subnets configured:
 
    ![](../media/L7U5-2.png)
@@ -305,8 +303,7 @@ In this task, your creating a file share in the storage account.
    
 1. Select **+ File share**.
 
-
-    ![](../media/unit67.png)
+   ![](../media/unit67.png)
 
 1. Enter **marketing**, under **Name**.
 

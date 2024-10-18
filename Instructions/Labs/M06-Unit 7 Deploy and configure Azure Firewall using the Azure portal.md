@@ -238,7 +238,7 @@ In this task, on the Workload-SN subnet, you will configure the outbound default
      | **Next hop type**                        | **Virtual appliance (4)**    |
      | **Next hop address**                     | Enter the private IP address for the firewall that you noted previously **(5)** (e.g., **10.0.1.4**) |
 
-      ![](../media/l6u7-8.png)
+     ![](../media/l6u7-8.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
@@ -278,7 +278,7 @@ In this task, you will add an application rule that allows outbound access to ww
     | Source                 | **10.0.2.0/24**                           |
     | Protocol               | **http,https**                            |
     | Destination type       | **FQDN**                                  |
-    | Destination            | **www.google.com (6)**                        |
+    | Destination            | **www.google.com (6)**                    |
 
     ![Add an application rule collection](../media/l6u7-(10).png)
 

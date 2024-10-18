@@ -159,7 +159,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. In a new browser tab, navigate to the Front Door endpoint FQDN. The default App Service page will be displayed.
    
-    ![Web App](../media/l5u6-12.png)
+   ![Web App](../media/l5u6-12.png)
 
 1. To test instant global failover in action, try the following steps:
 
@@ -167,7 +167,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. Select one of your web apps, then select **Stop**, and then select **Yes** to verify.
 
-    ![Web App](../media/l5u6-13.png)
+   ![Web App](../media/l5u6-13.png)
 
 1. Switch back to your browser and select Refresh. You should see the same information page.
 
@@ -177,7 +177,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. Switch back to your browser and select Refresh. This time, you should see an error message.
 
-    ![Web App](../media/l5u6-14.png)
+   ![Web App](../media/l5u6-14.png)
 
    Congratulations! You have configured and tested an Azure Front Door.
 

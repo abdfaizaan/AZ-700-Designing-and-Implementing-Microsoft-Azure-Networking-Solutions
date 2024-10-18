@@ -362,7 +362,6 @@ In this section, you will create a test VM, and then test the load balancer.
    | Password             | **Provide a secure password**                |
    | Confirm password     | **Provide a secure password**                |
 
-
 1. Select **Next : Disks >**, then select **Next : Networking**. 
 
 1. On the **Networking** tab, use the information in the table below to configure networking settings.

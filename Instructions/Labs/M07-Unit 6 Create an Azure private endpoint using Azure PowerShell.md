@@ -68,9 +68,11 @@ Private Endpoints can be created for different kinds of Azure services, such as 
    >**Note**: If you receive an error (for example while looking into the Deployment status in the Portal) like "Website with given name GEN-UNIQUE already exists." please make sure to go to the step 1 mentioned above regarding editing the template.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   
-   <validation step="291360d1-df23-4be1-8de3-fd266feccd04" />
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
 
+   <validation step="291360d1-df23-4be1-8de3-fd266feccd04" />
 
 ## Task 2: Create a virtual network and bastion host
 
@@ -150,6 +152,9 @@ Create a virtual network and bastion host with:
 
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
 
    <validation step="24473272-9692-4d60-b444-dc4952a3be04" />
 
@@ -252,7 +257,10 @@ Create the virtual machine with the following commands:
 
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+
    <validation step="b1deea5f-8396-49d6-9c3b-c0a0217677c8" />
 
 ## Task 4: Create a Private Endpoint
@@ -385,7 +393,11 @@ In this section you'll create and configure the private DNS zone using:
    New-AzPrivateDnsZoneGroup @parameters4 
    ```
 
->**Congratulations** on completing the task! Now, it's time to validate it. 
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+
   <validation step="a70480ef-c326-4973-959d-2245397125ef" />
    
 ## Task 6: Test connectivity to the Private Endpoint

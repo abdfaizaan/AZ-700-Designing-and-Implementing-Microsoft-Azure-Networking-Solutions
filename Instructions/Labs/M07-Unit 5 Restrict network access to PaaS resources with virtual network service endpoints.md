@@ -5,7 +5,6 @@ Virtual network service endpoints enable you to limit network access to some Azu
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Restrict%20network%20access%20to%20PaaS%20resources%20with%20virtual%20network%20service%20endpoints)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
-
 ## Lab Objectives
   
 In this lab, you will complete the following tasks:
@@ -74,7 +73,11 @@ In this task, you will create a virtual network and a subnet.
    
 1. Select **Review + Create**. Once the resource is validated select **Create**.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+
    <validation step="b5846aa2-f0da-4c3f-983d-c6a572536624" />
 
 ## Task 2: Enable a service endpoint
@@ -106,7 +109,11 @@ Service endpoints are enabled per service, per subnet. Create a subnet and enabl
 
    ![](../media/L7U5-2.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+
    <validation step="b38b6528-13cf-4e7f-8026-b48a4c05044f" />
 
 ## Task 3: Restrict network access for a subnet
@@ -163,7 +170,11 @@ By default, all VMs in a subnet can communicate with all resources. You can limi
 
 1. Select **Add**.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+
    <validation step="c4efff35-0afb-4294-aa9e-fdeeb9462024" />
 
 ## Task 4: Add additional outbound rules 
@@ -190,7 +201,11 @@ Create another outbound security rule that denies communication to the internet.
 
 1. Select **Add**.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+
    <validation step="8e8574e1-0474-4f42-a2a6-7ccdef62c692" />
 
 ## Task 5: Allow access for RDP connections
@@ -234,7 +249,11 @@ Create an inbound security rule that allows Remote Desktop Protocol (RDP) traffi
 
     ![](../media/unit63.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+
    <validation step="86eeda16-df94-42ca-b4e3-ff17ba6aae26" />
 
 ## Task 6: Restrict network access to a resource
@@ -262,7 +281,11 @@ The steps necessary to restrict network access to resources created through Azur
 
 1. Select **Review + create**, then select **Create**.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+
    <validation step="1e92fc4e-6f33-47d4-ad47-c22395472a07" />
 
 ## Task 7: Create a file share in the storage account
@@ -291,7 +314,11 @@ In this task, your creating a file share in the storage account.
    
 1. Select **Review + create** and **Create**.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+
    <validation step="c814f060-1d78-451a-9e4e-344c0e35e582" />
 
 ## Task 8: Restrict network access to a subnet
@@ -361,7 +388,11 @@ To test network access to a storage account, deploy a VM to each subnet.
 
 1. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines** to find the newly created virtual machines.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+
    <validation step="52806dfa-dd22-4a6f-8fb7-935bf4e6c237" />
 
 ## Task 10: Confirm access to storage account

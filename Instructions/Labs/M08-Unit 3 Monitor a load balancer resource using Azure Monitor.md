@@ -136,7 +136,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
    
 1. Select **Create**.
    >**Note**: Wait for the deployment to get successfully.
-    
+
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
@@ -191,14 +191,13 @@ The load balancer monitors the status of your app with a health probe. The healt
 1. Select **Save**.
 
    ![Show health probe created in load balancer](../media/create-healthprobe.png)
- 
+
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
 
    <validation step="2fd84d4b-1e07-4652-9970-59852fcf7237" />
-
 
 ### Task 5: Create a load balancer rule
 
@@ -450,7 +449,7 @@ In this section, you will create a test VM, and then test the load balancer.
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
 
-   <validation step="db11b2f8-63c5-4798-ab4e-a9a6b8748992" />.
+   <validation step="db11b2f8-63c5-4798-ab4e-a9a6b8748992" />
 
 ### Task 11: Use Functional Dependency View
 

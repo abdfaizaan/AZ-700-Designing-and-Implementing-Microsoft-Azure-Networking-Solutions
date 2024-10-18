@@ -78,7 +78,10 @@ In this section, you will create two instances of a web application deployed in 
 
    ![Picture 19](../media/M0406.1.png)
 
-   > **Congratulations** on completing the task! Now, it's time to validate it.
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
 
    <validation step="4d5ecc40-776d-459c-867f-50db4b49ce0c" />
 
@@ -102,10 +105,13 @@ Now you will create a Traffic Manager profile that directs user traffic based on
 
 1. Select **Create**.
 
-   > **Congratulations** on completing the task! Now, it's time to validate it.
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
 
    <validation step="333aadc8-666f-456e-888e-52ca345debb7" />
-   
+
 ## Task 3: Add Traffic Manager endpoints
 
 In this section, you will add the website in the **<inject key="Region" enableCopy="false"/>** as the primary endpoint to route all the user traffic. You will then add the website in West Europe as a failover endpoint. If the primary endpoint becomes unavailable, then traffic will automatically be routed to the failover endpoint.
@@ -148,11 +154,13 @@ In this section, you will add the website in the **<inject key="Region" enableCo
 
       ![Picture 22](../media/M04u06.4.png)
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. 
-         
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+
    <validation step="ecc8a93e-6f61-41d8-99ab-214a855c04d6" />
 
-      
 ## Task 4: Test the Traffic Manager profile
 
 In this section, you will check the DNS name of your Traffic Manager profile, and then you will configure the primary endpoint so that it is unavailable. You will then verify that the web app is still available, to test that the Traffic Manager profile is successfully sending traffic to the failover endpoint.
@@ -193,11 +201,13 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 1. The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it 
    will take a few minutes before the resource groups are actually removed.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. 
-      
-<validation step="20dd3dc3-fd2c-4271-8cb3-6f7fb5223caf" />
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
 
-   
+   <validation step="20dd3dc3-fd2c-4271-8cb3-6f7fb5223caf" />
+
 ## Review
 In this lab, you have completed:
 + Create the web apps

@@ -46,13 +46,12 @@ In this lab, you will complete the following tasks:
 
 1. Once validation passes, select **Create** to create the Virtual WAN. Wait for the deployment to get completed.
 
-   <validation step="c7427a0d-37bd-4ddd-9888-2b7c903f071a" />
-
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-      > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-      > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
-      > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-      > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+
+   <validation step="c7427a0d-37bd-4ddd-9888-2b7c903f071a" />
 
 ### Task 2: Create a hub by using Azure Portal
 
@@ -96,12 +95,11 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
 1. After 30 minutes, **Refresh** to view the hub on the Hubs page. Wait for the deployment to finish before proceeding to the next task.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-   > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-   <validation step="57e2db2a-f095-49a3-9a12-0f902763015b" />
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
 
+   <validation step="57e2db2a-f095-49a3-9a12-0f902763015b" />
 
 ### Task 3: Connect a VNet to the Virtual Hub
 

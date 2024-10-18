@@ -151,7 +151,7 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 
  ## Task 3: View Azure Front Door in action
 
-Once you create a Front Door, it takes a few minutes for the configuration to be deployed globally. Once complete, access the frontend host you created. 
+Once you create a Front Door, it takes a few minutes for the configuration to be deployed globally. Once complete, access the frontend host you created.
 
 1. Navigate back to **Front Door and CDN profiles** page, on the Front Door resource in the Overview blade, locate the endpoint hostname that is created for your endpoint. This should be fdendpoint followed by a hyphen and a random string. For example, **fdendpoint-fxa8c8hddhhgcrb9.z01.azurefd.net**. **Copy** this FQDN.
 
@@ -163,7 +163,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. To test instant global failover in action, try the following steps:
 
-1. Switch to the Azure portal, search for and select **App services**. 
+1. Switch to the Azure portal, search for and select **App services**.
 
 1. Select one of your web apps, then select **Stop**, and then select **Yes** to verify.
 
@@ -179,7 +179,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
    ![Web App](../media/l5u6-14.png)
 
-   Congratulations! You have configured and tested an Azure Front Door.
+Congratulations! You have configured and tested an Azure Front Door.
 
 ### Review
 In this lab, you have completed:
@@ -187,5 +187,5 @@ In this lab, you have completed:
 - Create two instances of a web app
 - Create a Front Door for your application
 - View Azure Front Door in action
-  
+
 ## You have successfully completed the lab.

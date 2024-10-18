@@ -144,7 +144,7 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 
    <validation step="f5cf3eee-49ad-4985-88ca-5bc0c80e8ddc" />
 
- ## Task 3: View Azure Front Door in action
+## Task 3: View Azure Front Door in action
 
 Once you create a Front Door, it takes a few minutes for the configuration to be deployed globally. Once complete, access the frontend host you created.
 

@@ -127,7 +127,6 @@ These virtual networks and subnets are structured in a way that accommodates exi
    |              | Name               | ManufacturingVnet     |
    |              | Region             | (Europe) West Europe  |
 
-
 1. **Go to Ip address tab** Delete the existing ip address in the IP adress Tab and add the below ip adress with the subnets as performed in the previous task.   
 
     | **IP/Subnet**                | **Option**           | **Value**                 |

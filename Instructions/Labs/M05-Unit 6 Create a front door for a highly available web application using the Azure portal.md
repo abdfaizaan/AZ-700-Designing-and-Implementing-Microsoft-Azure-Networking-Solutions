@@ -158,7 +158,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
    ![Web App](../media/l5u6-11.png)
 
 1. In a new browser tab, navigate to the Front Door endpoint FQDN. The default App Service page will be displayed.
-   
+
    ![Web App](../media/l5u6-12.png)
 
 1. To test instant global failover in action, try the following steps:

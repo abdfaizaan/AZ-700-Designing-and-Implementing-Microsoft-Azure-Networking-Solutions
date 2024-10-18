@@ -4,9 +4,7 @@
 
 In this lab, you will deploy a prerequisite web app to serve as the foundation for your tasks. Next, you will create a virtual network and a bastion host to securely manage your resources. You will then create a test virtual machine within this network. Following that, you will create a Private Endpoint to securely connect to your web app. You will configure the private DNS zone to ensure proper name resolution for the Private Endpoint. Finally, you will test the connectivity to the Private Endpoint to verify that everything is set up correctly. This setup ensures secure and efficient access to your web app within a private network environment.
 
-
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20an%20Azure%20private%20endpoint%20using%20Azure%20PowerShell)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
-
 
 ## Lab Objectives
 
@@ -149,7 +147,6 @@ Create a virtual network and bastion host with:
    
    New-AzBastion @parameters3
    ```
-
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -398,7 +395,7 @@ In this section you'll create and configure the private DNS zone using:
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
 
-  <validation step="a70480ef-c326-4973-959d-2245397125ef" />
+   <validation step="a70480ef-c326-4973-959d-2245397125ef" />
    
 ## Task 6: Test connectivity to the Private Endpoint
 

@@ -183,6 +183,7 @@ In this task, you will deploy the firewall into the virtual network with a firew
    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
    <validation step="bbcd151e-4daf-4277-a102-9c908ccce3a7" />
 
 ## Task 4: Create a default route
@@ -243,9 +244,9 @@ In this task, on the Workload-SN subnet, you will configure the outbound default
    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
    <validation step="6f72e424-9c22-483a-b2ff-d23e76f16156" />
 
- 
 ## Task 5: Configure an application rule
 
 In this task, you will add an application rule that allows outbound access to www.google.com.
@@ -286,6 +287,7 @@ In this task, you will add an application rule that allows outbound access to ww
    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
    <validation step="9888c186-d2ae-48de-8856-e29a597e6fab" />
 
 ## Task 6: Configure a network rule
@@ -322,8 +324,9 @@ In this task, you will add a network rule that allows outbound access to two IP 
    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
    <validation step="9879c295-9be5-4eec-b280-5597936582ba" />
-   
+
 ## Task 7: Configure a Destination NAT (DNAT) rule
 
 In this task, you will add a DNAT rule that allows you to connect a remote desktop to the Srv-Work virtual machine through the firewall.
@@ -360,6 +363,7 @@ In this task, you will add a DNAT rule that allows you to connect a remote deskt
    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
    <validation step="b427e7bd-b2fb-46ce-93e9-8d17c0499133" />
 
  ## Task 8: Change the primary and secondary DNS address for the server's network interface
@@ -393,6 +397,7 @@ For testing purposes in this exercise, in this task, you will configure the Srv-
    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
     <validation step="d9ca7dd9-969d-43af-a063-949cf3294bf8" />
 
 ## Task 9: Test the firewall
@@ -427,7 +432,6 @@ In this final task, you will test the firewall to verify that the rules are conf
 1. You should be blocked by the firewall.
 
      ![RDP session on Srv-work server - browser blocked on microsoft.com](../media/L6U7-3.png)
-
 
 ## Review
 

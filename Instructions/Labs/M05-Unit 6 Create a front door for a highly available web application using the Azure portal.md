@@ -189,4 +189,3 @@ In this lab, you have completed:
 - View Azure Front Door in action
   
 ## You have successfully completed the lab.
-

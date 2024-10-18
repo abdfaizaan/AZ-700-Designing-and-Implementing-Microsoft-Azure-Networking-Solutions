@@ -109,12 +109,12 @@ These virtual networks and subnets are structured in a way that accommodates exi
  
 1. Repeat steps 1 -8 for each VNet based on the tables below mentioned in **Task 2** and **Task3**.
 
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-     > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
-     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-     <validation step="d51cb8e1-a452-4f19-86d3-a6bb63c41bb1" />
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+
+   <validation step="d51cb8e1-a452-4f19-86d3-a6bb63c41bb1" />
 
 ### Task 2: Create the ManufacturingVnet virtual network and subnets
 
@@ -150,12 +150,12 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
 1. Verify your configuration passed validation, Go back to virtual network and then again select **+ Create**.
 
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-     > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
-     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-     <validation step="78f4c13b-e110-4236-9f30-a8bcbbf5d2a5" />
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+
+   <validation step="78f4c13b-e110-4236-9f30-a8bcbbf5d2a5" />
 
 ### Task 3: Create the ResearchVnet virtual network and subnets
 
@@ -179,12 +179,12 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
 1. To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**, and select **Create**.
  
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-     > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
-     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-     <validation step="69271e47-83aa-448c-896f-5d5a42ba4ee0" /> 
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+
+   <validation step="69271e47-83aa-448c-896f-5d5a42ba4ee0" /> 
 
 ### Task 4: Verify the creation of VNets and Subnets
 

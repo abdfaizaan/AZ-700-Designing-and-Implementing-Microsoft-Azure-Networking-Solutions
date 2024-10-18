@@ -237,7 +237,7 @@ In this task, on the Workload-SN subnet, you will configure the outbound default
      | **Destination IP addresses/CIDR ranges** |  **0.0.0.0/0 (3)**           |
      | **Next hop type**                        | **Virtual appliance (4)**    |
      | **Next hop address**                     | Enter the private IP address for the firewall that you noted previously **(5)** (e.g., **10.0.1.4**) |
-     
+
       ![](../media/l6u7-8.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
@@ -279,8 +279,7 @@ In this task, you will add an application rule that allows outbound access to ww
     | Protocol               | **http,https**                            |
     | Destination type       | **FQDN**                                  |
     | Destination            | **www.google.com (6)**                        |
-    |||
-    
+
     ![Add an application rule collection](../media/l6u7-(10).png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
@@ -353,8 +352,7 @@ In this task, you will add a DNAT rule that allows you to connect a remote deskt
       | Translated type       | **IP Address**                                                     |
       | Translated address or    | Enter the private IP address from **Srv-Work** that you noted earlier.<br />**e.g. - 10.0.2.4** |
       | Translated port       | **3389 (6)**                                                     |
-      |||
-  
+
       ![Add a DNAT rule collection](../media/add-a-dnat-rule1.png)
 
 1. Select **Add**.

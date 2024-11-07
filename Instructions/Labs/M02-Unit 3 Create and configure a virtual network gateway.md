@@ -217,6 +217,25 @@ In this lab, you will complete the following tasks:
 
 ## Task 7: Create ManufacturingVnet Gateway
 
+1. In order to create a virtual network gateway, we will need a Gateway Subnet. The template created the GatewaySubnet for the CoreServicesVnet. Here you create the subnet manually. 
+
+1. Go the Virtual networks and open the **ManufacturingVnet**.
+
+1. In the **Settings** blade, select **Subnets (1)**, and then **+ Subnet (2)**.
+
+    ![](../media/create-gatewaysubnet1.png)
+
+1. Select the following configurations in the Add a Subnet page. 
+
+    | Parameter | Value |
+    | --------------- | ----------------- | 
+    | Subnet purpose | **Virtual Network Gateway (1)** |
+    | Size | **/27 (32 addresses) (2)** |
+
+    ![](../media/create-gatewaysubnet2.png)
+
+1. Select **Add**. 
+
 1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateways**, and then select **Virtual network gateways** from the results.
 
 1. In Virtual network gateways, select **+ Create**.

@@ -175,6 +175,26 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 Congratulations! You have configured and tested an Azure Front Door.
 
+## Extend your learning with Copilot
+
+Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
++ What are the differences between Azure Application Gateway and Azure Front Door? Provide examples where I would use each product.
++ Provide a checklist of things to do when configuring Azure Front Door.
++ What is an origin in Azure Front Door and how is it different from an endpoint?
+
+
+## Learn more with self-paced training
+
++ [Introduction to Azure Front Door](https://learn.microsoft.com/training/modules/intro-to-azure-front-door/). In this module, you learn how Azure Front Door can protect your applications.
++ [Load balance your web service traffic with Front Door](https://learn.microsoft.com/training/modules/create-first-azure-front-door/). In this module, you learn to create and configure Azure Front Door. 
+
+## Key takeaways
+
+Congratulations on completing the lab. Here are the main takeaways for this lab. 
++ Azure Front Door is a cloud-based service that delivers your applications anywhere across the globe. 
++ Azure Front Door uses layer 7 load balancing to distribute traffic across multiple regions and endpoints.
++ Azure Front Door supports different traffic routing methods to determine how your HTTP/HTTPS traffic is distributed. The routing methods are: latency, priority, weighted, and session affinity. 
+
 ### Review
 In this lab, you have completed:
 

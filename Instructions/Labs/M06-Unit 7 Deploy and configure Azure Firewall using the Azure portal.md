@@ -431,6 +431,26 @@ In this final task, you will test the firewall to verify that the rules are conf
 
      ![RDP session on Srv-work server - browser blocked on microsoft.com](../media/L6U7-3.png)
 
+## Extend your learning with Copilot
+
+Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
++ Provide three common usage scenarios for firewalls. 
++ Provide a table comparing the features of the Azure Firewall SKUs.
++ Describe the three types of rules you can create for an Azure Firewall.
+
+## Learn more with self-paced training
+
++ [Introduction to Azure Firewall](https://learn.microsoft.com/training/modules/introduction-azure-firewall/). In this module, you learn how Azure Firewall protects Azure virtual network resources including features, rules, and deployment options.
++ [Introduction to Azure Firewall Manager](https://learn.microsoft.com/training/modules/intro-to-azure-firewall-manager/). In this module, you learn how Azure Firewall Manager provides central security policy and route management for cloud-based security perimeters.
+
+## Key takeaways
+
+Congratulations on completing the lab. Here are the main takeaways for this lab. 
++ A firewall is a network security feature that sits between a trusted network and an untrusted network, such as the internet. The firewall's job is to analyze and then allow or deny network traffic.
++ Azure Firewall is a cloud-based firewall service. In most configurations, Azure Firewall is provisioned inside a hub virtual network. Traffic to and from the spoke virtual networks and the on-premises network is directed to the firewall.
++ Firewall rules evaulate the network traffic. Azure Firewall has three types of rules: Application, Network, and NAT. 
++ Azure Firewall is offered in three SKUs: Standard, Premium, and Basic.
+
 ## Review
 
 In this lab, you have completed:

@@ -486,6 +486,23 @@ under **Native RDP** click on **Select** and on **Native RDP** box select **Down
 
    **Warning**: Prior to continuing you should remove all resources used for this lab. To do this On the Azure portal select Resource groups. Select any resources groups you have created. On the resource group blade select Delete Resource group, enter the Resource Group Name and select Delete. Repeat the process for any additional Resource Groups you may have created. Failure to do this may cause issues with other labs.
 
+## Extend your learning with Copilot
+
+Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
++ What is the difference between azure service endpoints and private endpoints?
++ Which Azure services can use service endpoints?
++ What are the steps to restricting access to Azure Storage by using service endpoints?
+
+## Learn more with self-paced training
+
++ [Secure and isolate access to Azure resources by using network security groups and service endpoints](https://learn.microsoft.com/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/). In this module, you learn how to use virtual network service endpoints to control network traffic to and from Azure services.
+
+## Key takeaways
++ Virtual network service endpoints extend your private address space in Azure by providing a direct connection to your Azure services.
++ Service endpoints let you secure your Azure resources to only your virtual network. Service traffic will remain on the Azure backbone, and doesn't go out to the internet.
++ Azure service endpoints are available for many services, such as: Azure Storage, Azure SQL Database, and Azure Cosmos DB.
++ Virtual network service endpoints are not, by default, accessible from on-premises networks. To access resources from an on-premises network, use NAT IPs.
+
 ## Review
 In this lab, you have completed:
 

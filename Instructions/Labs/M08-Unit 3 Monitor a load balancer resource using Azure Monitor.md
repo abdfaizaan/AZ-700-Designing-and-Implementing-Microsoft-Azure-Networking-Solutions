@@ -512,6 +512,27 @@ In this section, you will create a test VM, and then test the load balancer.
 
 1. Select **Save**.
 
+## Extend your learning with Copilot
+
+Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
++ Summarize the Azure tools that are available for monitoring virtual networks.
++ What Azure Network Watcher monitoring tools are available?
+
+## Learn more with self-paced training
+
++ [Introduction to Azure Monitor](https://learn.microsoft.com/training/modules/intro-to-azure-monitor/). In this module, you learn how to use Azure Monitor to provide insights into your Azure resource performance and operations.
++ [Monitor and troubleshoot your end-to-end Azure network infrastructure by using network monitoring tools](https://learn.microsoft.com/training/modules/troubleshoot-azure-network-infrastructure/). In this module, you learn to use Azure Network Watcher tools, diagnostics, and logs to help find and fix networking issues in your Azure infrastructure.
+
+## Key takeaways
+
+Congratulations on completing the lab. Here are the main takeaways for this lab. 
+
++ Azure Monitor provides features and tools for collecting, managing, and analyzing IT data from all of your Azure, other cloud, and on-premises resources.
++ Metrics are quantitative measurements that show snapshots of application or resource performance. Metrics are typically numeric values that you can measure over time.
++ Logs are textual records of events, actions, and messages that occur in a resource or application. 
++ Azure Monitor Insights, visualizations, and dashboards can consume and transmit monitoring information about your applications.
++ Alerts notify you of critical conditions and can take corrective action. Alert rules can be based on metric or log data.
+
 ### Review
 In this lab, you have completed:
 - Created the virtual network

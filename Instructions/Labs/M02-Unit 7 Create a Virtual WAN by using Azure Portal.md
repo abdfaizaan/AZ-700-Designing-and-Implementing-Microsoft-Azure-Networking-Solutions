@@ -133,6 +133,28 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
 
      ![](../media/m2-U7-1.png)
 
+
+## Extend your learning with Copilot
+
+Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
++ What type of network architecture does Azure VWAN use?
++ What are the differences between Azure VWAN basic and standard? Provide examples.
++ Can an Azure VWAN be created with scripting tools?
+
+## Learn more with self-paced training
+
++ [Introduction to Azure Virtual WAN](https://learn.microsoft.com/training/modules/introduction-azure-virtual-wan/). In this module, you learn about Azure Virtual WAN functionality and features. 
++ [Design and implement hybrid networking](https://learn.microsoft.com/training/modules/design-implement-hybrid-networking/). In this module, you learn how to design and implement Azure Virtual WAN.
+
+## Key takeaways
+
+Congratulations on completing the lab. Here are the main takeaways for this lab. 
+
++ Azure Virtual WAN is a networking service that brings many networking, security, and routing functionalities together to provide a single operational interface
++ The Virtual WAN architecture is a hub and spoke architecture with scale and performance built in for branches, users, ExpressRoute circuits, and virtual networks.
++ There are three main usage cases for virtual WAN: Site to site, Point to site, and ExpressRoute. 
++ There are two types of virtual WANs: Basic (Site-to-site VPN only) and Standard.
+
 ## Review
 
 In this lab, you have completed:

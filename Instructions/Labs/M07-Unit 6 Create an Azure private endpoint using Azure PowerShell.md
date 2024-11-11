@@ -443,6 +443,22 @@ In this section, you'll use the virtual machine you created in the previous step
 
 1. Close the connection to **myVM**.
 
+## Extend your learning with Copilot
+
+Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
++ Provide an example of when to use a private endpoint instead of a service endpoint.
++ How can I troubleshoot private endpoint connectivity issues?
+
+## Learn more with self-paced training
+
++ [Introduction to Azure Private Link](https://learn.microsoft.com/training/modules/introduction-azure-private-link/). In this module, you learn how Azure Private Link enables private connectivity to Azure services, including its features, how it works, and its use cases.
++ [Design and implement private access to Azure Services](https://learn.microsoft.com/en-us/training/modules/design-implement-private-access-to-azure-services/). In this module, you learn to design and implement private access to Azure Services with Azure Private Link, and virtual network service endpoints.
+
+## Key takeaways
+
++ Azure Private Link enables you to access Azure PaaS Services (for example, Azure Storage and SQL Database) and Azure hosted customer-owned/partner services over a private endpoint in your virtual network.
++ A private endpoint is a network interface that uses a private IP address from your virtual network. This network interface connects you privately and securely to a service that's powered by Azure Private Link. 
+
 ## Review
 
 In this lab, you have completed:

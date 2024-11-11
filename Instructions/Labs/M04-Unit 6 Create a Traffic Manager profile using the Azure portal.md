@@ -208,6 +208,25 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 
    <validation step="20dd3dc3-fd2c-4271-8cb3-6f7fb5223caf" />
 
+## Extend your learning with Copilot
+
+Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
++ What are the high level steps for configuring Azure Traffic Manager?
++ Compare and contrast when to use Azure Load Balancer and Azure Traffic Manager.
++ Explain the Traffic Manager routing profiles and when they should be used.
+
+## Learn more with self-paced training
+
++ [Enhance your service availability and data locality by using Azure Traffic Manager](https://learn.microsoft.com/training/modules/distribute-load-with-traffic-manager/). In this module, you learn how to use Traffic Manager to dynamically distribute network traffic.
++ [Load balance non-HTTP(S) traffic in Azure](https://learn.microsoft.com/training/modules/load-balancing-non-https-traffic-azure/). In this module, you learn about Azure Traffic Manager and implementing routing methods. 
+
+## Key takeaways
+
+Congratulations on completing the lab. Here are the main takeaways for this lab. 
++ Azure Traffic Manager is a DNS-based traffic load balancer. This service allows you to distribute traffic to your public facing applications across the global Azure regions.
++ Traffic Manager has six traffic-routing methods that allow you to control how Traffic Manager chooses which endpoint should receive traffic from each end user. How many can you name?
++ You can nest Traffic Manager profiles to combine the benefits of more than one traffic-routing method. Nested profiles allow you to override the default Traffic Manager behavior to support larger and more complex application deployments.
+
 ## Review
 In this lab, you have completed:
 + Create the web apps

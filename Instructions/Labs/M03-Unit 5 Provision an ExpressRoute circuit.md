@@ -27,23 +27,17 @@ In this lab, you will complete the following tasks:
 
    ![Azure portal - create ExpressRoute circuit menu](../media/express1.png)
 
-1. On the **Create ExpressRoute** blade, specify the following settings and select **Next: Configuration**:
+1. On the **Create ExpressRoute** blade, specify the following settings and  on **Configuration** tab then click **Review + create**:
 
    |Setting|Value|
    |---|---|
    |Resource group|**ExpressRouteResourceGroup-<inject key="DeploymentID" enableCopy="false"/>**|
+   |Resiliency | 	Standard Resiliency: Physical link redundancy within one edge location only |
    |Region|**<inject key="Region" enableCopy="false"/>**|
    |Name|**TestERCircuit**|
-
-   ![Azure portal - create ExpressRoute circuit menu](../media/task2.png)
-
-1. On the **Configuration** tab of the **Create ExpressRoute** blade, specify the following settings and select **Review + create**:
-
-   |Setting|Value|
-   |---|---|
    |Port Type|**Provider**|
-   |Provider|**Equinix**|
    |Peering location|**Seattle**|
+   |Provider|**Equinix**|
    |Bandwidth|**50Mbps**|
    |SKU|**Standard**|
    |Billing model|**Metered**|

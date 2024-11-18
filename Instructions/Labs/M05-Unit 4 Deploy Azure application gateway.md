@@ -41,9 +41,8 @@ In this lab, you will complete the following tasks:
    | Resource group      | Select **ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/> (2)**       |
    | Application gateway name | **ContosoAppGateway (3)**                            |
    | Region              | **<inject key="Region" enableCopy="false"/> (4)**                           |
+   | Availability zone   | Zones 1 |
    | Virtual Network     | Select **Create new (5)**                        |
-   
-   ![Azure Portal search for application gateway](../media/l5u4-2.png)
 
 1. On Create virtual network, configure the following and then click on **OK (5)** to return to the Create application gateway Basics tab:
 

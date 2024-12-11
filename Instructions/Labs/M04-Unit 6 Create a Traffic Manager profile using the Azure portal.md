@@ -42,7 +42,7 @@ In this section, you will create two instances of a web application deployed in 
    | Subscription     | Select your subscription                                     |
    | Resource group   | Select **Contoso-RG-TM1-<inject key="DeploymentID" enableCopy="false"/>**             |
    | Name             | **ContosoWebAppEastUS<inject key="DeploymentID" enableCopy="false"/>**  |
-   | Try a unique default hostname (preview) | Ture off the toggle                   |
+   | Try a secure unique default hostname | Ture off the toggle                   |
    | Publish          | **Code**                                                     |
    | Runtime stack    | **ASP.NET V4.8**                                             |
    | Operating system | **Windows**                                                  |

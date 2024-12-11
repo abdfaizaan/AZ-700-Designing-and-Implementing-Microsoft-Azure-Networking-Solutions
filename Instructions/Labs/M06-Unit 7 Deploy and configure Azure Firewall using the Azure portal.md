@@ -408,8 +408,7 @@ In this final task, you will test the firewall to verify that the rules are conf
 
      ![Add a network rule collection](../media/l6u7-12.png)
  
-1. On the **Enter your credentials** dialog box, log into the **Srv-Work** server virtual machine, on the **Username** box, enter **TestUser** and Password  
-   **Pa55w.rd!!**.
+1. On the **Enter your credentials** dialog box, log into the **Srv-Work** server virtual machine, on the **Username** box, enter **TestUser** and Password **Pa55w.rd!!**.
 
 1. Select **OK**.
 

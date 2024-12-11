@@ -162,6 +162,7 @@ In this task, you will deploy the firewall into the virtual network with a firew
     | Choose a virtual network | **Use existing (8)**                                             |
     | Virtual network          | **Test-FW-VN (9)**                                               |
     | Public IP address        | Select **Add new**<br /> Name: **fw-pip (10)**                    |
+    | **Enable Firewall Management NIC**              | **Unselected**                                                    |
     |||
  
     ![](../media/l6u7-4.png)

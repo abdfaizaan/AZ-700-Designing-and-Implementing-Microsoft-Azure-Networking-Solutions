@@ -57,8 +57,8 @@ In this task, you will create a single virtual network with two subnets.
 
      |  **Setting**     | **Value**            |
      | ---------------- | ------------------   | 
-     | Subnet purpose  | Select **Azure Firewall (1)**|
-     | Name             | (Pre-populated) **AzureFirewallSubnet (2)**|
+     | Subnet purpose  | Select **Firewall Management (forced tunneling) (1)**|
+     | Name             | (Pre-populated) **AzureFirewallManagementSubnet (2)**|
      | IPv4 address range | Select **10.0.0.0/16 (3)** |
      | Starting address | **10.0.1.0 (4)** |
      | Size      | **/26 (5)** |

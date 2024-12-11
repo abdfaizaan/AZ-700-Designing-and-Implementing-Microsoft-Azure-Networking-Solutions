@@ -57,13 +57,13 @@ In this task, you will create a single virtual network with two subnets.
 
      |  **Setting**     | **Value**            |
      | ---------------- | ------------------   | 
-     | Subnet purpose  | Select **Firewall Management (forced tunneling) (1)**|
-     | Name             | (Pre-populated) **AzureFirewallManagementSubnet (2)**|
+     | Subnet purpose  | Select **Azure Firewall (1)**|
+     | Name             | (Pre-populated) **AzureFirewallSubnet (2)**|
      | IPv4 address range | Select **10.0.0.0/16 (3)** |
      | Starting address | **10.0.1.0 (4)** |
      | Size      | **/26 (5)** |
  
-     ![](../media/m6-u7-t1-s6-1.png)
+     ![](../media/m6-u7-t1-s6.png)
 
 1. Select **+ Add a subnet**, to create another subnet, which will host the workload server that you will create shortly.
     
@@ -74,7 +74,7 @@ In this task, you will create a single virtual network with two subnets.
      | Subnet purpose  | Select **Default (1)**|
      | Name             | **Workload-SN (2)**|
      | IPv4 address range | Select **10.0.0.0/16 (3)** |
-     | Starting address | **10.0.2.0 (4)** |
+     | Starting address | **10.0.3.0 (4)** |
      | Size      | **/24 (5)** |
  
     ![](../media/m6-u7-t1-s8.png)

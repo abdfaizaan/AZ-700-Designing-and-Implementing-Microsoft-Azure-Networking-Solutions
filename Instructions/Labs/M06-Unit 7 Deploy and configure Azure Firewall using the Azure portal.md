@@ -63,7 +63,7 @@ In this task, you will create a single virtual network with two subnets.
      | Starting address | **10.0.1.0 (4)** |
      | Size      | **/26 (5)** |
  
-     ![](../media/m6-u7-t1-s6.png)
+     ![](../media/m6-u7-t1-s6-1.png)
 
 1. Select **+ Add a subnet**, to create another subnet, which will host the workload server that you will create shortly.
     

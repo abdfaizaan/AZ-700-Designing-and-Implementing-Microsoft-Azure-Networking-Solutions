@@ -74,7 +74,7 @@ In this task, you will create a single virtual network with two subnets.
      | Subnet purpose  | Select **Default (1)**|
      | Name             | **Workload-SN (2)**|
      | IPv4 address range | Select **10.0.0.0/16 (3)** |
-     | Starting address | **10.0.2.0 (4)** |
+     | Starting address | **10.0.3.0 (4)** |
      | Size      | **/24 (5)** |
  
     ![](../media/m6-u7-t1-s8.png)
@@ -111,8 +111,7 @@ In this task, you will create the workload virtual machine and place it in the W
 1. Please make sure you have selected your resource group **Test-FW-RG-<inject key="DeploymentID" enableCopy="false"/>** and then select **Region** **<inject key="Region" enableCopy="false"/>** and enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/>** for the  **File share** , then click on **Create**.
 
 1. On the toolbar of the Cloud Shell pane, select the Select **Manage files** icon, in the drop-down menu, select **Upload** and upload the following files 
-   **firewall.json** and **firewall.parameters.json** into the Cloud Shell home directory one by one from the source folder **C:\AllFiles\AZ-700-Designing-and- 
-   Implementing-Microsoft-Azure-Networking-Solutions-prod\Allfiles\Exercises\M06**.
+   **firewall.json** and **firewall.parameters.json** into the Cloud Shell home directory one by one from the source folder **C:\AllFiles\AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions-prod\Allfiles\Exercises\M06**.
 
       ![](../media/pwershell2.png)
 
@@ -163,6 +162,7 @@ In this task, you will deploy the firewall into the virtual network with a firew
     | Choose a virtual network | **Use existing (8)**                                             |
     | Virtual network          | **Test-FW-VN (9)**                                               |
     | Public IP address        | Select **Add new**<br /> Name: **fw-pip (10)**                    |
+    | **Enable Firewall Management NIC**              | **Unselected**                                                    |
     |||
  
     ![](../media/l6u7-4.png)
@@ -408,8 +408,7 @@ In this final task, you will test the firewall to verify that the rules are conf
 
      ![Add a network rule collection](../media/l6u7-12.png)
  
-1. On the **Enter your credentials** dialog box, log into the **Srv-Work** server virtual machine, on the **Username** box, enter **TestUser** and Password  
-   **Pa55w.rd!!**.
+1. On the **Enter your credentials** dialog box, log into the **Srv-Work** server virtual machine, on the **Username** box, enter **TestUser** and Password **Pa55w.rd!!**.
 
 1. Select **OK**.
 

@@ -30,22 +30,23 @@ This task requires two instances of a web application that run in different Azur
 
    ![Web App](../media/create.png)
 
-1. On the Create Web App page, on the **Basics** tab, enter or select the following information, and select **Review + create (9)**.
+1. On the Create Web App page, on the **Basics** tab, enter or select the following information, and select **Review + create (10)**.
 
    | **Setting**      | **Value**                                                    |
    | ---------------- | ------------------------------------------------------------ |
-   | Subscription     | Select your subscription (1).                                    |
-   | Resource group   | Select **ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/> (2)**                |
-   | Name             | **WebAppContoso-1-<inject key="DeploymentID" enableCopy="false"/> (3)** |
+   | Subscription     | Select your subscription .                                    |
+   | Resource group   | Select **ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/> (1)**                |
+   | Name             | **WebAppContoso-1-<inject key="DeploymentID" enableCopy="false"/> (2)** |
+   | Try a secure unique default hostname  | **Disable (3)** the toggle      |
    | Publish          | Select **Code (4)**                                             |
-   | Runtime stack    | Select **.NET 6 (LTS) (5)**                                     |
-   | Operating System | Select **Windows**                                          |
-   | Region           | Select **Central US (6)**                                       |
-   | Windows Plan     | Select **Create new** and enter **myAppServicePlanCentralUS (7)** in the text box |
-   | Princing Plan    | Select **Standard S1 100 total ACU, 1.75 GB memory (8)**        |
-   |||
+   | Runtime stack    | Select **.NET 8 (LTS) (5)**                                     |
+   | Operating System | Select **Windows (6)**                                          |
+   | Region           | Select **Central US (7)**                                       |
+   | Windows Plan     | Select **Create new** and enter **myAppServicePlanCentralUS (8)** in the text box |
+   | Princing Plan    | Select **Standard S1 100 total ACU, 1.75 GB memory (9)**        |
 
-   ![Web App](../media/l5u6-3.png)
+
+   ![Web App](../media/mod6y6.png)
 
 1. Review the Summary, and then select **Create**.
 
@@ -59,18 +60,19 @@ This task requires two instances of a web application that run in different Azur
 
    | **Setting**      | **Value**                                                    |
    | ---------------- | ------------------------------------------------------------ |
-   | Subscription     | Select your subscription (1).                                    |
-   | Resource group   | Select **ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/> (2)**               |
-   | Name             | **WebAppContoso-2-<inject key="DeploymentID" enableCopy="false"/> (3)** |
+   | Subscription     | Select your subscription.                                    |
+   | Resource group   | Select **ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/> (1)**               |
+   | Name             | **WebAppContoso-2-<inject key="DeploymentID" enableCopy="false"/> (2)** |
+   | Try a secure unique default hostname  | **Disable (3)** the toggle      |
    | Publish          | Select **Code (4)**                                             |
-   | Runtime stack    | Select **.NET 6 (LTS) (5)**                                     |
+   | Runtime stack    | Select **.NET 8 (LTS) (5)**                                     |
    | Operating System | Select **Windows (6)**                                          |
    | Region           | Select **East US 2 (7)**                                          |
    | Windows Plan     | Select **Create new** and enter **myAppServicePlanEastUS (8)** in the text box. |
    | Pricing Plan     | Select **Standard S1 100 total ACU, 1.75 GB memory (9)**        |
    |||
 
-   ![Web App](../media/l5u6-4.png)
+   ![Web App](../media/mod6y7.png)
 
 1. Review the Summary, and then select **Create**.
 

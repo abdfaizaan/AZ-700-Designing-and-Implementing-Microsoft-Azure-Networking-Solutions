@@ -45,12 +45,11 @@ This task requires two instances of a web application that run in different Azur
    | Windows Plan     | Select **Create new** and enter **myAppServicePlanCentralUS (8)** in the text box |
    | Princing Plan    | Select **Standard S1 100 total ACU, 1.75 GB memory (9)**        |
 
-
    ![Web App](../media/mod6y6.png)
 
 1. Review the Summary, and then select **Create**.
 
-   >**Note:** It might take 2 minutes for the deployment to complete.
+    >**Note:** It might take 2 minutes for the deployment to complete.
 
 1. Create a second web app,  in **Search resources, services and docs (G+/)** box at the top of the portal, enter **WebApp**, and then select **App Services** under services.
 

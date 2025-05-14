@@ -160,8 +160,16 @@ In this task, you'll be creating VNet peering between CoreServicesVnet and Manuf
    |                                      | I know my resource ID                         | Not selected                          |
    |                                      | Subscription                                  | Select the Subscription provided      |
    |                                      | Virtual network                               | ManufacturingVnet                     |
+   | Remote virtual network peering settings         |                                               |                                       |
+      |                                      | Allow 'ManufacturingVnet' to access 'CoreServicesVnet'                             | Enabled |   
+      |                                      | Allow ''ManufacturingVnet' to receive forwarded traffic from 'CoreServicesVnet'                             | Enabled |      
    | Local virtual network summary        |                                               |                                       |
    |                                      | Peering link name                             | CoreServicesVnet-to-ManufacturingVnet |
+   | Remote virtual network peering settings        |                                               |                                       |
+   |                                      | Allow 'CoreServicesVnet' to access 'ManufacturingVnet'                             | Enabled |   
+   |                                      | Allow 'CoreServicesVnet' to receive forwarded traffic from 'ManufacturingVnet'                             | Enabled |     
+   
+   
    
 1. Review your settings and select **Add**. 
 

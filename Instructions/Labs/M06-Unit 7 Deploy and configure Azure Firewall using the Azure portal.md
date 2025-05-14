@@ -255,11 +255,11 @@ In this task, you will add an application rule that allows outbound access to ww
 
 1. In the list of resources, select your firewall policy, **fw-test-pol**.
 
-1. From the left navigation menu, under **Settings** section, select **Application Rules**.
+1. From the left navigation menu, under **Rules** section, select **Application Rules**.
 
 1. Select **+ Add a rule collection**.
 
-     ![](../media/unit78.png)
+     ![](../media/az700-1.png)
 
 1. On the **Add a rule collection** page, create a new application rule using the information in the table below, and select **Add (7)**.
 
@@ -278,7 +278,7 @@ In this task, you will add an application rule that allows outbound access to ww
     | Destination type       | **FQDN**                                  |
     | Destination            | **www.google.com (6)**                    |
 
-    ![Add an application rule collection](../media/add-app-rule-2101.png)
+    ![Add an application rule collection](../media/az700-2.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
@@ -291,7 +291,7 @@ In this task, you will add an application rule that allows outbound access to ww
 
 In this task, you will add a network rule that allows outbound access to two IP addresses at port 53 (DNS).
 
-1. On the **fw-test-pol** page, from the left navigation menu, under **Settings** section, select **Network Rules**.
+1. On the **fw-test-pol** page, from the left navigation menu, under **Rules** section, select **Network Rules**.
 
 1. Select **+ Add a rule collection**.
 
@@ -328,7 +328,7 @@ In this task, you will add a network rule that allows outbound access to two IP 
 
 In this task, you will add a DNAT rule that allows you to connect a remote desktop to the Srv-Work virtual machine through the firewall.
 
-1. On the **fw-test-pol** page, from the left navigation menu, under **Settings** section, select **DNAT Rules**.
+1. On the **fw-test-pol** page, from the left navigation menu, under **Rules** section, select **DNAT Rules**.
 
 1. Select **+ Add a rule collection**.
 

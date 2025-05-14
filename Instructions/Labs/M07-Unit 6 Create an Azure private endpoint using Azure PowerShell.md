@@ -217,7 +217,7 @@ Create the virtual machine with the following commands:
    
     Offer = 'WindowsServer'
    
-    Skus = '2019-Datacenter'
+    Skus = '2019-datacenter-gensecond'
    
     Version = 'latest'
    

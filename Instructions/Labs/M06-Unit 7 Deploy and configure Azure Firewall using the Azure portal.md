@@ -158,9 +158,9 @@ In this task, you will deploy the firewall into the virtual network with a firew
     | Firewall management      | **Use a Firewall Policy to manage this firewall (6)**            |
     | Firewall policy          | Select **Add new**<br /> Name: **fw-test-pol (7)**<br />         |
     | Choose a virtual network | **Use existing (8)**                                             |
-    | Virtual network          | **Test-FW-VN (9)**                                               |
+    | Virtual network          | **Test-FW-VN** (Please ignore the error it will disappear once you disable the Firewall Mangagement NIC) **(9)**                                               |
     | Public IP address        | Select **Add new**<br /> Name: **fw-pip (10)**                    |
-    | **Enable Firewall Management NIC**              | **Unselected**                                                    |
+    | **Enable Firewall Management NIC**              | **Unselected** (Once you disable, please add the Public Ip again that is mentioned in the above step)                                                   |
     |||
  
     ![](../media/l6u7-4.png)
@@ -346,9 +346,9 @@ In this task, you will add a DNAT rule that allows you to connect a remote deskt
       | Source                | *                                                            |
       | Protocol              | **TCP**                                                      |
       | Destination Ports     | **3389**                                                     |
-      | Destination           | Enter the firewall public IP address from **fw-pip** that you noted earlier.<br />**e.g. - 20.90.136.51** |
+      | Destination           | Enter the firewall public IP address from **fw-pip** that you noted earlier.<br />(For e.g. - 20.90.136.51) |
       | Translated type       | **IP Address**                                                     |
-      | Translated address or    | Enter the private IP address from **Srv-Work** that you noted earlier.<br />**e.g. - 10.0.2.4** |
+      | Translated address or    | Enter the private IP address from **Srv-Work** that you noted earlier.<br />For e.g. - 10.0.2.4 |
       | Translated port       | **3389 (6)**                                                     |
 
       ![Add a DNAT rule collection](../media/add-a-dnat-rule1.png)

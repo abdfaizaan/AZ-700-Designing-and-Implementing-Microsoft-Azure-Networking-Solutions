@@ -70,16 +70,18 @@ In this section, you will create a virtual network and a subnet.
   
       ![](../media/lab8-image4.png)
 
-1. Delete the existing subnets and select **+ Add a subnet**.
+1. Delete the existing subnets 
+
+1. In the error that appears click on **Add Azure Bastion Subnet** hyperlink.
+
+   ![](../media/bastionerror.png)
+
+1. Click on **+ Add a Subnet**
 
 1. On the **Add a subnet** pane, provide a subnet name of **myBackendSubnet** **(1)**, and a **Starting address** of **10.1.0.0** **(2)** then **Size** of **/24** **(3)** and then 
    select **Add (4)**.
 
    ![](../media/lab8-image2.png)
-
-1. In the error that appears click on **Add Azure Bastion Subnet** hyperlink.
-
-   ![](../media/bastionerror.png)
 
 1. Select **Review + create**.
 

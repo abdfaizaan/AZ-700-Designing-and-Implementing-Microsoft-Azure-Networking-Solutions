@@ -74,7 +74,7 @@ In this section, you will create a virtual network and a subnet.
 
 1. In the error that appears click on **Add Azure Bastion Subnet** hyperlink.
 
-   ![](../media/bastionerror.png)
+   ![](../media/bastionerror1.png)
 
 1. Click on **+ Add a Subnet**
 
@@ -260,7 +260,7 @@ In this task, you will create three VMs for the backend pool of the load balance
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm3.json
    ```
   
-1. You will be prompted to provide an Admin password. Provide Admin password: **Pa55w.rd!!**.
+1. You will be prompted to provide an Admin password. Provide Admin password: **Pa55w.rd1234567**.
      
    > **Note:** This will take several minutes to deploy and and you will be prompted to provide password for three times for 
     each VM deployment. When deployment completed, close the powershell.
@@ -286,7 +286,7 @@ In this task, you will add the virtual machines (VMs) to the backend pool of the
 
 1. Under **IP Configuration**, click **+ Add**.
   
-1. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then select **Add**.
+1. From the dropdown list, select the **IP addresses** corresponding to myVM1, myVM2, and myVM3 to associate them with their respective virtual machines.
 
 1. On the **myBackendPool** page, select **Save**.
  

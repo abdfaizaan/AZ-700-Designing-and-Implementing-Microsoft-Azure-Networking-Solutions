@@ -78,7 +78,7 @@ In this task, you will create a test VM on the Manufacturing VNet to test if you
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
 
    <validation step="53f858e3-8ea3-46e1-9e46-27d87801bd28" />
 
@@ -168,9 +168,7 @@ In this task, you'll be creating VNet peering between CoreServicesVnet and Manuf
    | Remote virtual network peering settings        |                                               |                                       |
    |                                      | Allow 'CoreServicesVnet' to access 'ManufacturingVnet'                             | Enabled |   
    |                                      | Allow 'CoreServicesVnet' to receive forwarded traffic from 'ManufacturingVnet'                             | Enabled |     
-   
-   
-   
+        
 1. Review your settings and select **Add**. 
 
 1. In CoreServicesVnet | Peerings, verify that the **CoreServicesVnet-to-ManufacturingVnet** peering is listed.
@@ -184,7 +182,7 @@ In this task, you'll be creating VNet peering between CoreServicesVnet and Manuf
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
 
    <validation step="430adf7c-4c27-47f2-b079-292ae528c898" />
 

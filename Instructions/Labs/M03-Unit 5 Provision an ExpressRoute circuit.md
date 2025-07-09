@@ -67,7 +67,7 @@ In this task, you will create and provision an ExpressRoute circuit, you're sett
 
 In this task, you will retrieve your Service Key, the main objective is to retrieve the unique Service Key associated with your ExpressRoute circuit. This key is an essential piece of information that your service provider will require in order to complete the provisioning process and finalize the connection between your on-premises network and Azure. 
 
-1. You can view all the circuits that you created by selecting **Hamberger (1)** from the top left ***(1)** and the **All services (2)**.
+1. You can view all the circuits that you created by selecting **Hamberger (1)** from the top left **(1)** and the **All services (2)**.
 
    ![Azure portal - Create ExpressRoute resource menu](../media/azn44.png)
 

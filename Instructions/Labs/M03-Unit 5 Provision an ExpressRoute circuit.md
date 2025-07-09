@@ -47,7 +47,6 @@ In this task, you will create and provision an ExpressRoute circuit, you're sett
 
 1. Confirm that the ExpressRoute configuration passes validation and then select **Create**.
 
-
    - Port type determines if you are connecting to a service provider or directly into Microsoft's global network at a peering location.
    - Create new or import from classic determines if a new circuit is being created or if you are migrating a classic circuit to Azure Resource Manager.
    - Provider is the internet service provider who you will be requesting your service from.

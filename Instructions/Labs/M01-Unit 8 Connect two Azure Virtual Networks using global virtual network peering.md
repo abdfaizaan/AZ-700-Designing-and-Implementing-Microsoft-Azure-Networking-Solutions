@@ -57,7 +57,9 @@ In this task, you will create a test VM on the Manufacturing VNet to test if you
 
      ![](../media/pwershell2.png)
    
-1. Upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **C:\AllFiles\AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions-prod\Allfiles\Exercises\M01**.
+1. Navigate to `C:\AllFiles\AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions-prod\Allfiles\Exercises\M01` **(1)**, upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** files **(2)** and then **Open (2)**.
+
+     ![](../media/azn13.png)
 
 1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
@@ -68,12 +70,14 @@ In this task, you will create a test VM on the Manufacturing VNet to test if you
    ```
 
 1. You will be prompted to provide an Admin password. Provide Admin password Password: **Pa$$w0rd1234**.   
+
+    ![](../media/azn14.png)  
    
-1. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
+1. When the deployment is complete, go to the **Azure portal** home page, and then select **Virtual Machines**.
 
 1. Verify that the virtual machine has been created.
 
-   ![](../media/virtualmachine.png)
+   ![](../media/azn15.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -90,6 +94,8 @@ In this task, your connecting to the Test VM using RDP.
 
 1. Select **ManufacturingVM**.
 
+   ![](../media/azn15.png)
+
 1. On ManufacturingVM, select **Connect (1)** from the drop-down click on **Connect (2)**.
 
    ![](../media/connect1.png)
@@ -98,35 +104,77 @@ In this task, your connecting to the Test VM using RDP.
 
    ![](../media/download1.png)
 
-1. Save the RDP file to your desktop. If any warning pops-up in "edge downloads" select **Keep**.
+1. If any warning pops-up in "edge downloads" select **Keep**.
 
-1. Connect to ManufacturingVM using the RDP file, and the username **TestUser** and the password **Pa$$w0rd1234** you provided during deployment.
+1. Click on **Open file**.
 
-1. On the Azure Portal home page, select **Virtual Machines**.
+   ![](../media/azn16.png)
+
+1. Select **Connect**.
+
+   ![](../media/azn17.png)
+
+1. Click on **More choices**.
+
+1. Select **Use a differetnt account**.
+
+1. Connect to ManufacturingVM using the RDP file, and the username `.\TestUser` **(1)** and the password `Pa$$w0rd1234` **(2)** you provided during deployment and then **OK (3)**.
+
+   ![](../media/azn18.png)
+
+1. Once connected, click On **Yes**.   
+
+1. Navigate back to the LabVM Azure Portal home page, select **Virtual Machines**.
 
 1. Select **testvm1**.
 
-1. On testvm1, select **Connect** then from the drop-down click **Connect**. 
+   ![](../media/azn19.png)
 
-1. On **testvm1 | Connect** page, under **Native RDP** click on **Select** and on **Native RDP** window select and **Download RDP file**. 
+1. On testvm1, select **Connect (1)** then from the drop-down click **Connect (2)**.
 
-1. Save the RDP file to your desktop.
+   ![](../media/azn20.png)
 
-1. Connect to testvm1 using the RDP file, and the username **TestUser** and the password **Pa$$w0rd1234**.
+1. On **testvm1 | Connect** page, under **Native RDP**, select **Download RDP file**. 
+
+   ![](../media/azn21.png)
+
+1. If any warning pops-up in "edge downloads" select **Keep**.
+
+1. Click on **Open file**.
+
+   ![](../media/azn16.png)
+
+1. Select **Connect**.
+
+   ![](../media/azn17.png)
+
+1. Click on **More choices**.
+
+1. Select **Use a differetnt account**.
+
+1. Connect to testvm1 using the RDP file, and the username **.\TestUser** and the password **Pa$$w0rd1234**.
 
 1. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
 
 1. On both VMs, in **Networks**, select **Yes**.
 
-1. On testvm1, Right click on start and select windows PowerShell, and run the following command: **ipconfig**
+1. On **testvm1**, Right click on **start (1)** and select **windows PowerShell (Admin) (2)**.
+
+   ![](../media/azn22.png)
+
+1. Run the following command: **ipconfig**
 
 1. Note the IPv4 address. 
+
+   ![](../media/azn23.png)
 
 ## Task 3: Test the connection between the VMs
 
 In this task, you'll be testing the connection between the ManufacturingVM (in the ManufacturingVnet) and testvm1 (in the CoreServicesVnet). The goal is to verify that there's no connection to testvm1 using the Test-NetConnection cmdlet. 
 
-1. On the ManufacturingVM, Right click on start and select windows PowerShell.
+1. On the **ManufacturingVM**, Right click on **start (1)** and select **windows PowerShell (Admin) (2)**.
+
+   ![](../media/azn22.png)
 
 1. Use the following command to verify that there is no connection to testvm1 on CoreServicesVnet. Be sure to use the IPv4 address for testvm1.
 
@@ -142,7 +190,13 @@ In this task, you'll be testing the connection between the ManufacturingVM (in t
 
 In this task, you'll be creating VNet peering between CoreServicesVnet and ManufacturingVnet.
 
-1. On the Azure home page, select **Virtual Networks**, and then select **CoreServicesVnet**.
+1. Navigate back to the LabVM's Azure home page, search for **Virtual Networks (1)** and then select **Virtual Networks (2)**.
+
+   ![](../media/azn24.png)
+
+1. Then select **CoreServicesVnet**.
+
+   ![](../media/azn25.png)
 
 1. In CoreServicesVnet, under **Settings**, select **Peerings**.
 
@@ -155,29 +209,34 @@ In this task, you'll be creating VNet peering between CoreServicesVnet and Manuf
    | **Section**                          | **Option**                                    | **Value**                             |
    | ------------------------------------ | --------------------------------------------- | ------------------------------------- |
    | Remote virtual network summary       |                                               |                                       |
-   |                                      | Peering link name                             | ManufacturingVnet-to-CoreServicesVnet |
-   |                                      | Virtual network deployment model              | Resource manager                      |
+   |                                      | Peering link name                             | **ManufacturingVnet-to-CoreServicesVnet (1)** |
+   |                                      | Virtual network deployment model              | **Resource manager (2)**                      |
    |                                      | I know my resource ID                         | Not selected                          |
-   |                                      | Subscription                                  | Select the Subscription provided      |
-   |                                      | Virtual network                               | ManufacturingVnet                     |
+   |                                      | Subscription                                  | **Select the Subscription provided (3)**      |
+   |                                      | Virtual network                               | Select **ManufacturingVnet (4)**                     |
    | Remote virtual network peering settings         |                                               |                                       |
-      |                                      | Allow 'ManufacturingVnet' to access 'CoreServicesVnet'                             | Enabled |   
-      |                                      | Allow ''ManufacturingVnet' to receive forwarded traffic from 'CoreServicesVnet'                             | Enabled |      
+      |                                      | Allow 'ManufacturingVnet' to access 'CoreServicesVnet'                             | **Enabled (5)** |   
+      |                                      | Allow ''ManufacturingVnet' to receive forwarded traffic from 'CoreServicesVnet'                             | **Enabled (6)** |      
    | Local virtual network summary        |                                               |                                       |
-   |                                      | Peering link name                             | CoreServicesVnet-to-ManufacturingVnet |
-   | Remote virtual network peering settings        |                                               |                                       |
-   |                                      | Allow 'CoreServicesVnet' to access 'ManufacturingVnet'                             | Enabled |   
-   |                                      | Allow 'CoreServicesVnet' to receive forwarded traffic from 'ManufacturingVnet'                             | Enabled |     
+   |                                      | Peering link name                             | **CoreServicesVnet-to-ManufacturingVnet (7)** |
+   | Local virtual network peering settings        |                                               |                                       |
+   |                                      | Allow 'CoreServicesVnet' to access 'ManufacturingVnet'                             | **Enabled (8)** |   
+   |                                      | Allow 'CoreServicesVnet' to receive forwarded traffic from 'ManufacturingVnet'                             | **Enabled (9)** |     
         
-1. Review your settings and select **Add**. 
+1. Review your settings and select **Add (10)**. 
+
+   ![](../media/azn26.png)
+   ![](../media/azn30.png)
 
 1. In CoreServicesVnet | Peerings, verify that the **CoreServicesVnet-to-ManufacturingVnet** peering is listed.
 
 1. Navigate back to the **Virtual networks** page.
 
-1. In **ManufacturingVnet**, under **Settings**, select **Peerings**.
+1. In **ManufacturingVnet**, under **Settings**, select **Peerings (1)**.
 
-1. Verify the **ManufacturingVnet-to-CoreServicesVnet** peering is listed.
+1. Verify the **ManufacturingVnet-to-CoreServicesVnet (2)** peering is listed.
+
+   ![](../media/azn28.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -190,7 +249,7 @@ In this task, you'll be creating VNet peering between CoreServicesVnet and Manuf
 
 In this task, you'll be testing the connectivity between the ManufacturingVM and TestVM1 after setting up the VNet peering between CoreServicesVnet and ManufacturingVnet. 
 
-1. On the ManufacturingVM, open a PowerShell prompt.
+1. On the **ManufacturingVM,** open a PowerShell prompt.
 
 1. Use the following command to verify that there is now a connection to TestVM1 on CoreServicesVnet. 
 
@@ -200,7 +259,7 @@ In this task, you'll be testing the connectivity between the ManufacturingVM and
 
 1. The test connection should succeed, and you will see a result similar to the following:
 
-   ![Powershell window with Test-NetConnection 10.20.20.4 -port 3389 showing TCP test succeeded: true](../media/test-connection-succeeded.png)
+   ![Powershell window with Test-NetConnection 10.20.20.4 -port 3389 showing TCP test succeeded: true](../media/azn29.png)
 
 ## Task 6: Clean up resources
 

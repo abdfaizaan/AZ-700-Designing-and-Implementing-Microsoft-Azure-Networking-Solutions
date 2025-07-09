@@ -283,7 +283,13 @@ In this task, you'll create ManufacturingVnet Gateway, you will create a Manufac
 
 1. In order to create a virtual network gateway, we will need a Gateway Subnet. The template created the GatewaySubnet for the CoreServicesVnet. Here you create the subnet manually. 
 
-1. Go the Virtual networks and open the **ManufacturingVnet**.
+1. In **Search resources, services, and docs (G+/)** box at the top of the portal, enter **Virtual networks (1)**, and then select **Virtual networks (2)** from the results.
+
+    ![](../media/lab02-az700-ima10.png)
+
+1. Open the **ManufacturingVnet**.
+
+    ![](../media/lab02-az700-ima11.png)
 
 1. In the **Settings** blade, select **Subnets (1)**, and then **+ Subnet (2)**.
 

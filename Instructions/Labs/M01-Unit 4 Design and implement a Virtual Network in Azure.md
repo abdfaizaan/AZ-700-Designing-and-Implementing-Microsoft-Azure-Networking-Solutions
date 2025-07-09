@@ -49,15 +49,16 @@ In this task, you'll be setting up a virtual network (VNet) called CoreServicesV
 
 1. Select **+ Create** on the Virtual networks page. 
    
-1. On **Basic** tab of **Create virtual network** use the information in the following table to create the **CoreServicesVnet** virtual network and select **IP Address** tab.
+1. On **Basic** tab of **Create virtual network** use the information in the following table to create the **CoreServicesVnet** virtual network and select **IP Address (5)** tab.
  
    | **Tab**      | **Option**         | **Value**            |
    | ------------ | ------------------ | -------------------- |
-   | Basics       | Subscription       | Leave default        |
-   |              | Resource Group     | ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/> |
-   |              | Name               | CoreServicesVNet     |
-   |              | Region             | (US) East US         |
- 
+   | Basics       | Subscription       | Leave default **(1)**       |
+   |              | Resource Group     | **ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/> (2)** |
+   |              | Name               | **CoreServicesVNet (3)**     |
+   |              | Region             | **(US) East US (4)**         |
+
+   ![](../media/azn1.png) 
 
 1. On the **IP Address** tab of **Create virtual network** use the information:
 
@@ -71,12 +72,16 @@ In this task, you'll be setting up a virtual network (VNet) called CoreServicesV
 
       |    **Tab**      | **Option**         | **Value**            |
       | --------------  | -------------------- | -------------------|
-      | IP Addresses    | IPv4 address space | 10.20.0.0   (1)         |
-      |                 | IPv4 address Size  | /16         (2)         |
+      | IP Addresses    | IPv4 address space | **10.20.0.0   (1)**         |
+      |                 | IPv4 address Size  | **/16         (2)**         |
 
       ![](../media/unit4-image4.png)
 
-1. Use the information in the following table to create the CoreServicesVnet subnets, to begin creating each subnet on the **Create virtual network** page, select **+ Add a subnet**. To finish creating each subnet, select **Add**.
+1. Use the information in the following table to create the CoreServicesVnet subnets, to begin creating each subnet on the **Create virtual network** page, select **+ Add a subnet**.
+
+    ![](../media/azn2.png)
+
+1. To finish creating each subnet, select **Add**.
 
     | **Subnet**             | **Option**           | **Value**              |
     | ---------------------- | -------------------- | ---------------------- |
@@ -94,11 +99,15 @@ In this task, you'll be setting up a virtual network (VNet) called CoreServicesV
     |                        | Starting address     | 10.20.30.0             |
     |                        | Size                 | /24                    |
 
-1. To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**, and select **Create**.
+1. To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**. 
 
-      ![](../media/m0d1-u4-1.png)
+      ![](../media/azn3.png)
+
+1. Select **Create**.      
 
 1. Once, the creation of the **CoreServicesVnet** is completed, select **Go to resource**.
+
+      ![](../media/azn4.png)
 
 1. Verify your configuration passed validation, Go back to virtual network and then again select **+ Create (1)**.
 
@@ -109,7 +118,7 @@ In this task, you'll be setting up a virtual network (VNet) called CoreServicesV
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
 
    <validation step="d51cb8e1-a452-4f19-86d3-a6bb63c41bb1" />
 
@@ -118,15 +127,20 @@ In this task, you'll be setting up a virtual network (VNet) called CoreServicesV
 In this task, you'll be setting up the ManufacturingVnet virtual network and its associated subnets, similar to what you did in previous task. 
 
 1. On **Basic** tab of **Create virtual network** use the information in the following table to create the **ManufacturingVnet** virtual network and select **IP 
-   Address** tab.
+   Address (5)** tab.
 
    | **Tab**      | **Option**         | **Value**             |
    | ------------ | ------------------ | --------------------- |
-   | Basics       | Resource Group     | ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/>  |
-   |              | Name               | ManufacturingVnet     |
-   |              | Region             | (Europe) West Europe  |
+   | Basics       | Subscription     | Leave the default one **(1)**  |   
+   |        | Resource Group     | **ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/> (2)**  |
+   |              | Name               | **ManufacturingVnet (3)**     |
+   |              | Region             | **(Europe) West Europe (4)**  |
 
-1. **Go to Ip address tab** Delete the existing ip address in the IP adress Tab and add the below ip adress with the subnets as performed in the previous task.   
+   ![](../media/azn5.png)   
+
+1. Delete the existing ip address in the IP adress Tab.
+
+1. Add the below ip adress with the subnets as performed in the previous task.   
 
     | **IP/Subnet**                | **Option**           | **Value**                 |
     | ------------------------- | -------------------- | ------------------------- |
@@ -144,9 +158,15 @@ In this task, you'll be setting up the ManufacturingVnet virtual network and its
     |                           | Starting address     | 10.30.22.0                |
     |                           | Size                 | /24                       |
 
-1. To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**, and select **Create**.
+1. To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**.
 
-1. Verify your configuration passed validation, Go back to virtual network and then again select **+ Create**.
+    ![](../media/azn6.png)
+
+1. Select **Create**.
+
+1. Verify your configuration passed validation.
+
+1. Go back to **virtual network** and then again select **+ Create**.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -160,15 +180,20 @@ In this task, you'll be setting up the ManufacturingVnet virtual network and its
 In this task, you'll create the ResearchVnet virtual network and its subnet.
 
 1. On **Basic** tab of **Create virtual network** use the information in the following table to create the **ResearchVnet** virtual network and select **IP 
-   Address** tab.
+   Address (5)** tab.
 
    | **Tab**      | **Option**         | **Value**            |
    | ------------ | ------------------ | -------------------- |
-   | Basics       | Resource Group     | ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/> |
-   |              | Name               | ResearchVnet         |
-   |              | Region             | Southeast Asia       |
+   | Basics       | Subscription     | Leave the default one **(1)** |   
+   |       | Resource Group     | **ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/> (2)** |
+   |              | Name               | **ResearchVnet (3)**         |
+   |              | Region             | **Southeast Asia (4)**       |
 
-1. **Go to Ip address tab** Delete the existing ip address in the IP adress Tab and add the below ip adress with the subnets as performed in the previous task.    
+   ![](../media/azn7.png)   
+
+1. Delete the existing ip address in the IP adress Tab.
+
+1. Add the below ip adress with the subnets as performed in the previous task.    
 
    | **IP/Subnet**        | **Option**           | **Value**            |
    | -------------------- | -------------------- | -------------------- |
@@ -177,7 +202,12 @@ In this task, you'll create the ResearchVnet virtual network and its subnet.
    |                      | Starting address     | 10.40.0.0            |
    |                      | Size                 | /24                  |
 
-1. To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**, and select **Create**.
+1. To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**.
+
+    ![](../media/azn8.png)
+
+
+1. Select **Create**.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -190,19 +220,23 @@ In this task, you'll create the ResearchVnet virtual network and its subnet.
 
 In this task, you'll be verifying the creation of the virtual networks (VNets) and subnets. 
 
-1. On the Azure portal home page, from top left corner of page click **Show portal** menu and select **All resources**.
+1. On the Azure portal home page, from top left corner of page click **Show portal (1)** menu and select **All resources (2)**.
 
-      ![](../media/unit4-image5.png)
+      ![](../media/azn9.png)
 
-1. Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed.
+1. Verify that the **CoreServicesVnet, ManufacturingVnet, and ResearchVnet** are listed.
+
+      ![](../media/azn10.png)
 
 1. Select **CoreServicesVnet**. 
 
-1. In CoreServicesVnet, from the left navigation pane, under **Settings**, select **Subnets**.
+      ![](../media/azn11.png)
 
-1. In CoreServicesVnet | Subnets, verify that the subnets you created are listed, and that the IP address ranges are correct.
+1. In CoreServicesVnet, from the left navigation pane, under **Settings**, select **Subnets (1)**.
 
-      ![](../media/unit4-image6.png)
+1. In CoreServicesVnet | Subnets, verify that the subnets you created are listed, and that the IP address ranges are correct **(2)**.
+
+      ![](../media/azn12.png)
 
 1. Repeat steps 3 - 5 and select **ManufacturingVnet**, and **ResearchVnet** Virtual Network to verify the subnets.
 

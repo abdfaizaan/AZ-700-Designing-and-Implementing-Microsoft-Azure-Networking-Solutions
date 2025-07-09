@@ -47,7 +47,6 @@ In this task, you'll create CoreServicesVnet and ManufacturingVnet, you set up t
 
     ![](../media/pwershell-n1.png)
 
-
 1. On the toolbar of the Cloud Shell pane, select the Select **Manage files (1)** icon, in the drop-down menu, select **Upload (2)**
 
     ![](../media/pwershell2.png)

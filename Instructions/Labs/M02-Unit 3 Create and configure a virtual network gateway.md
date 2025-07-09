@@ -305,7 +305,6 @@ In this task, you'll create ManufacturingVnet Gateway, you will create a Manufac
 
 1. In Virtual network gateways, select **+ Create**.
 
-
 1. Use the information in the following table to create the virtual network gateway:
 
    >**Important**: First select **Region** on the basics tab and specify the following.

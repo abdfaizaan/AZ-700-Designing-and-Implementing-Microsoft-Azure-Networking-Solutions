@@ -117,6 +117,8 @@ In this task, you will connect a VNet to the Virtual Hub, you will connect a Vir
 
 1. From the left navigation menu under **Connectivity**, select **Virtual network connections (1)** and then select **+ Add connection (2)**.
 
+   ![](../media/azn37.png)
+
 1. In Add connection, use the following information to create the connection.
 
    - Connection name : **ContosoVirtualWAN-to-ResearchVNet (1)**
@@ -135,7 +137,7 @@ In this task, you will connect a VNet to the Virtual Hub, you will connect a Vir
 
    - Select **Create (8)**.
 
-     ![](../media/m2-U7-1.png)
+     ![](../media/azn38.png)
 
 ## Key takeaways
 

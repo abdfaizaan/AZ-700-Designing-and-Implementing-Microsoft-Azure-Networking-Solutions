@@ -153,7 +153,7 @@ In this task, you'll connect to the Test VMs using RDP, you'll connect to both M
 
 1. On the Azure Portal home page, search **Virtual Machines (1)** and select **Virtual Machines (2)**.
 
-    ![](../media/pwershelloo4.png)
+    ![](../media/lab02-az700-ima21.png)
 
 1. Select **ManufacturingVM**.
 

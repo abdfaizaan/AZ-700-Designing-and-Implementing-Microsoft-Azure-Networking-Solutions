@@ -24,32 +24,36 @@ In this task you will create a Virtual WAN (Wide Area Network) in Azure, which i
 
 1. On Azure Portal page, in **Search resources, services and docs (G+/)**, enter **Virtual WANs (1)**, and then select **Virtual WANs (2)** under services.
 
-   ![](../media/lab2-unit7-image1.png)
+   ![](../media/azn32.png)
 
 1. On the Virtual WAN page, select + **Create**. 
 
 1. On the Create WAN page, on the **Basics** tab, fill in the following fields:
 
-   - **Subscription:** Use the existing subscription.
+   - **Subscription:** Use the existing subscription **(1)**
 
-   - **Resource group:** **ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/>**.
+   - **Resource group:** **ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/> (2)**
 
-   - **Region:** Choose a resource location from the dropdown. A WAN is a global resource and does not live in a particular region. However, you must select a region to manage and locate the WAN resource that you create (1).
+   - **Region:** Select **<inject key="Region" enableCopy="false"/> (3)**
 
-   - **Name:** ContosoVirtualWAN (2)
+   - **Name:** **ContosoVirtualWAN (4)**
 
-   - **Type:** Standard (3)
+   - **Type:** **Standard (5)**
 
-1. When you have finished filling out the fields, select **Review + create**.
+   - When you have finished filling out the fields, select **Review + create (6)**.
 
-     ![](../media/lab2-unit7-image2.png)
+     ![](../media/azn33.png)
 
 1. Once validation passes, select **Create** to create the Virtual WAN. Wait for the deployment to get completed.
+
+1. Click on **Go to resource**.
+
+   ![](../media/azn34.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
 
    <validation step="c7427a0d-37bd-4ddd-9888-2b7c903f071a" />
 
@@ -59,47 +63,49 @@ In this task, you will create a hub by using Azure Portal, you'll create a Virtu
 
 A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functionality. It takes 30 minutes to create the site-to-site VPN gateway in the virtual hub. You must create a Virtual WAN before you can create a hub.
 
-1. Locate the Virtual WAN that you created. 
-1. On the Virtual WAN page, from the left navigation menu, under **Connectivity**, select **Hubs**.
+1. On the Virtual WAN page, from the left navigation menu, under **Connectivity**, select **Hubs (1)**.
 
-1. On the Hubs page, select **+ New Hub** to open the Create virtual hub page.
+   - On the Hubs page, select **+ New Hub (2)** to open the Create virtual hub page.
+
+     ![](../media/azn35.png)   
   
 1. On the Create virtual hub page **Basics** tab, complete the following fields:
-   - **Region:** West US (1)
-   
-   - **Name:** ContosoVirtualWANHub-WestUS (2)
-   
-   - **Hub private address space:** 10.60.0.0/24 (3)
-   - **Virtual hub capacity:** 2 Routing (4)
-   Infrastructure Units
-   
-   - **Hub routing preference:** ExpressRoute (5)
 
-      ![](../media/lab2-unit7-image3.png)
+   - Region: **West US (1)**
+   
+   - Name: **ContosoVirtualWANHub-WestUS (2)**
+   
+   - Hub private address space: **10.60.0.0/24 (3)**
+   - Virtual hub capacity: **2 Routing 
+   Infrastructure Units (4)**
+   
+   - Hub routing preference: **ExpressRoute (5)**
 
-1. Select **Next: Site-to-site**.
+   - Select **Next: Site-to-site (6)**   
+
+     ![](../media/azn36.png)
 
 1. On the **Site-to-site** tab, complete the following fields:
-   - **Do you want to create a Site to site (VPN gateway)?:** Yes (1)
+   - **Do you want to create a Site to site (VPN gateway)?:** `Yes (1)`
    
-   - The **AS Number** field cannot be edited (2)
+   - The **AS Number** `field cannot be edited (2)`
    
-   - **Gateway scale units:** 1 scale unit - 500 Mbps x 2 (3)
+   - **Gateway scale units:** `1 scale unit - 500 Mbps x 2 (3)`
    
    - **Routing preference:** leave the default 
    
-   - **Review + create** to validate (4)
+   - **Review + create** to validate **(4)**
 
       ![](../media/lab2-unit7-image(4).png)
 
 1. Select **Create** to create the hub. 
 
-1. After 30 minutes, **Refresh** to view the hub on the Hubs page. Wait for the deployment to finish before proceeding to the next task.
+1. After `30 minutes`, **Refresh** to view the hub on the Hubs page. Wait for the deployment to finish before proceeding to the next task.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
 
    <validation step="57e2db2a-f095-49a3-9a12-0f902763015b" />
 
@@ -107,31 +113,25 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
 
 In this task, you will connect a VNet to the Virtual Hub, you will connect a Virtual Network (VNet) to the Virtual Hub within your Virtual WAN. 
 
-1. Locate the Virtual WAN that you created. 
+1. Navigate back to the **ContosoVirtualWAN**  Virtual WAN that you created. 
 
-1. In ContosoVirtualWAN, follow the below step:
-
-   - From the left navigation menu under **Connectivity**, select **Virtual network connections**.
-
-     ![Virtual WAN configuration page with Virtual network connections highlighted.](../media/connect-vnet-to-virtual-hub1.png)
-
-1. On ContosoVirtualWAN | Virtual network connections, select **+ Add connection**.
+1. From the left navigation menu under **Connectivity**, select **Virtual network connections (1)** and then select **+ Add connection (2)**.
 
 1. In Add connection, use the following information to create the connection.
 
-   - **Connection name (1):** ContosoVirtualWAN-to-ResearchVNet
+   - Connection name : **ContosoVirtualWAN-to-ResearchVNet (1)**
 
-   - **Hubs (2):** ContosoVirtualWANHub-WestUS
+   - Hubs: **ContosoVirtualWANHub-WestUS (2)**
 
-   - **Subscription (3):** Leave it as default
+   - Subscription : **Leave it as default (3)**
 
-   - **Resource Group (4):** ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/>
+   - Resource Group : **ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/> (4)**
 
-   - **Virtual network (5):** ResearchVNet
+   - Virtual network: **ResearchVNet (5)**
 
-   - **Propagate to none (6):** Yes
+   - Propagate to none: **Yes (6)**
 
-   - **Associate Route Table (7):** Default
+   - Associate Route Table: **Default (7)**
 
    - Select **Create (8)**.
 

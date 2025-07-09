@@ -43,15 +43,20 @@ In this task, you will create a test VM on the Manufacturing VNet to test if you
 
      ![](../media/pwershell4.png)
 
-1. Please make sure you have selected your resource group **ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/>**.
+1. On the **Create storage account** page, provide the following details:
 
-1. Select the Region **<inject key="Region" enableCopy="false"/>**.
+   - Subscription: Leave the default one **(1)**
+   - Please make sure you have selected your resource group **ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/> (2)**
+
+   - Select the Region **<inject key="Region" enableCopy="false"/> (3)**
    
-1. Enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name**.
+   - Enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name (4)**
 
-1. Enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/>** for the  **File share** , then click on **Create**.
+   - Enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/> (5)** for the  **File share**
+   
+   - Then click on **Create (6)**
 
-    ![](../media/pwershell5.png)
+     ![](../media/azn31.png)
 
 1. On the toolbar of the Cloud Shell pane, select the Select **Manage files (1)** icon, in the drop-down menu, select **Upload (2)**.
 

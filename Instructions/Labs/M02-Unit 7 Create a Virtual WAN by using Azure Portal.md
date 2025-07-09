@@ -42,7 +42,7 @@ In this task you will create a Virtual WAN (Wide Area Network) in Azure, which i
 
    - When you have finished filling out the fields, select **Review + create (6)**.
 
-     ![](../media/azn33.png)
+     ![](../media/azn-33.png)
 
 1. Once validation passes, select **Create** to create the Virtual WAN. Wait for the deployment to get completed.
 

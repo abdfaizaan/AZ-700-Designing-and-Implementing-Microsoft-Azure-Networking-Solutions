@@ -157,7 +157,7 @@ In this task, you'll connect to the Test VMs using RDP, you'll connect to both M
 
 1. Select **ManufacturingVM**.
 
-    ![](../media/lab02-az700-ima4.png)
+    ![](../media/lab02-az700-ima5.png)
 
 1. On **ManufacturingVM**, click on the **Connect (1)** dropdown and then select **Connect (2)**.
 
@@ -412,7 +412,7 @@ In this task, you'll connect ManufacturingVnet to CoreServicesVnet, you'll estab
 
 1. Select **Next: Settings > (6)**
 
-    ![](../media/lab02-az700-ima17.png)
+    ![](../media/lab02-az700-ima15.png)
    
 1. On **Create connection** page of **Settings** tab, use the information in the following table to create the connection then select **Review + create**. 
 
@@ -425,11 +425,9 @@ In this task, you'll connect ManufacturingVnet to CoreServicesVnet, you'll estab
       | Use Azure Private IP Address   | **Not selected (5)**                    |
       | Enable BGP                     | **Not selected (6)**                     |
 
-      ![](../media/lab02-az700-ima15.png)
+      ![](../media/lab02-az700-ima16.png)
       
-1. To create the connection click on **Create**.
-
-    ![](../media/lab02-az700-ima16.png)
+1. To create the connection, click on **Create**.
 
 ## Task 10: Verify that the connections connect 
 

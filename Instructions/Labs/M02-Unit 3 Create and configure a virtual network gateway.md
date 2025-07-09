@@ -77,7 +77,7 @@ In this task, you'll create CoreServicesVM, you will create the CoreServicesVM v
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-   ![](../media/unit6-image1.png)
+    ![](../media/unit6-image1.png)
 
 1. On the toolbar of the Cloud Shell pane, select the Select **Manage files (1)** icon, in the drop-down menu, select **Upload (2)**
 

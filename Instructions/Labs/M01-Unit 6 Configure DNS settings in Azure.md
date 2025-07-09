@@ -33,7 +33,7 @@ In this task, you'll create a Private DNS Zone in Azure. This involves setting u
    | **Tab**         | **Option**                             | **Value**            |
    | --------------- | -------------------------------------- | -------------------- |
    | Basics          | Resource group                         | **ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/>** |
-   |                 | Name                                   | **Contoso.com**          | 
+   |                 | Name                                   | **Contoso.com**      | 
 
 1. Select **Review create** and **create**
 
@@ -45,7 +45,7 @@ In this task, you'll create a Private DNS Zone in Azure. This involves setting u
 
 In this task, you're linking multiple virtual networks (VNets) to the Contoso.com Private DNS Zone. This allows the virtual networks to use the DNS zone for name resolution.
 
-1. In Contoso.com, under **DNS Management** section, select **Virtual network links (1)** and on **Contoso.com | Virtual network links** page, select **+ Add (2)**.
+1. On **Contoso.com** Private DNS zone page, under **DNS Management** section, select **Virtual network links (1)** and on **Contoso.com | Virtual network links** page, select **+ Add (2)**.
 
    ![](../media/unit6-links-1.png)
 

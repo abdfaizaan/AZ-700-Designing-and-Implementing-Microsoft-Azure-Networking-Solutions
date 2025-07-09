@@ -121,13 +121,13 @@ In this task, your connecting to the Test VM using RDP.
 
 1. Click on **More choices**.
 
-1. Select **Use a differetnt account**.
+1. Select **Use a different account**.
 
 1. Connect to ManufacturingVM using the RDP file, and the username `.\TestUser` **(1)** and the password `Pa$$w0rd1234` **(2)** you provided during deployment and then **OK (3)**.
 
    ![](../media/azn18.png)
 
-1. Once connected, click On **Yes**.   
+1. Click on **Yes** to access the VM. 
 
 1. Navigate back to the LabVM Azure Portal home page, select **Virtual Machines**.
 
@@ -155,9 +155,11 @@ In this task, your connecting to the Test VM using RDP.
 
 1. Click on **More choices**.
 
-1. Select **Use a differetnt account**.
+1. Select **Use a different account**.
 
 1. Connect to testvm1 using the RDP file, and the username **.\TestUser** and the password **Pa$$w0rd1234**.
+
+1. Click on **Yes** to access the VM.
 
 1. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
 

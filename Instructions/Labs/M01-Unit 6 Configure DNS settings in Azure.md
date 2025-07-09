@@ -22,11 +22,11 @@ In this lab, you will complete the following tasks:
 
 In this task, you'll create a Private DNS Zone in Azure. This involves setting up a DNS zone that will be used to manage and resolve DNS records for resources within a private virtual network.
 
-1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Private DNS zones (1)**, and then select **Private DNS zones (2)** under services.
+1. On **Azure Portal** page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Private DNS zones (1)**, and then select **Private DNS zones (2)** under services.
 
     ‎![](../media/unit6-image(1).png)
 
-1. In Private DNS zones, select **+ Create**.
+1. In **Private DNS zones** page, select **+ Create**.
 
 1. On **Basics** tab, use the information in the following table to create the private DNS zone.
 

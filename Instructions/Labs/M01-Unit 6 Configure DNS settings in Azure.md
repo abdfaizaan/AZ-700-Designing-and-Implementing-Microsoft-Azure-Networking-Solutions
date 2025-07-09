@@ -66,40 +66,6 @@ In this task, you're linking multiple virtual networks (VNets) to the Contoso.co
 
 1. Verify that the CoreServicesVnetLink has been created, and that auto-registration is enabled.
 
-1. Repeat steps 1 - 5 for the ManufacturingVnet, using the information in the following table: 
-
-   | **Option**                          | **Value**                                |
-   | ----------------------------------- | ---------------------------------------- |
-   | Link name                           | **ManufacturingVnetLink**                |
-   | Subscription                        | **No changes required**                  |
-   | Virtual Network                     | Select **ManufacturingVnet (ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/>)** |
-   | Enable auto registration            | **Selected**                             |
-
-1. Review your settings and select **Create**.
-
-   >**Note**: Please Wait for 2 mins to successfully create virtual network link.
-
-1. Select **Refresh**.
-
-1. Verify that the **ManufacturingVnetLink** has been created, and that auto-registration is enabled.
-
-1. Repeat steps 1 - 5 for the ResearchVnet, using the information in the following table: 
-
-   | **Option**                          | **Value**                           |
-   | ----------------------------------- | ----------------------------------- |
-   | Link name                           | **ResearchVnetLink**                |
-   | Subscription                        | **No changes required**             |
-   | Virtual Network                     | Select **ResearchVnet (ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/>)** |
-   | Enable auto registration            | **Selected**                        |
-
-1. Review your settings and select **Create**.
-  
-   >**Note**: Please Wait for 2 mins to successfully create virtual network link.
-
-1. Select **Refresh**.
-
-1. Verify that the **ResearchVnetLink** has been created, and that auto-registration is enabled.
-
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.

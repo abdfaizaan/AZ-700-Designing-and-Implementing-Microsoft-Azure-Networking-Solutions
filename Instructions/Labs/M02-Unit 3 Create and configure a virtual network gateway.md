@@ -157,12 +157,11 @@ In this task, you'll connect to the Test VMs using RDP, you'll connect to both M
 
 1. Select **ManufacturingVM**.
 
-    ![](../media/pwershelloo6.png)
-
+    ![](../media/lab02-az700-ima4.png)
 
 1. On **ManufacturingVM**, click on the **Connect (1)** dropdown and then select **Connect (2)**.
 
-   ![](../media/m2-u3-t4-s3.png)
+   ![](../media/lab02-az700-ima8.png)
 
 1. On **ManufacturingVM | Connect** page, click on **Download RDP file**. 
 
@@ -186,11 +185,11 @@ In this task, you'll connect to the Test VMs using RDP, you'll connect to both M
 
 1. Select **CoreServicesVM**.
 
-    ![](../media/pwershelloo51.png)
+    ![](../media/lab02-az700-ima6.png)
 
 1. On **CoreServicesVM**, click on the **Connect (1)** dropdown and then select **Connect (2)**.
 
-   ![](../media/m2-u3-t4-s3.png)
+   ![](../media/lab02-az700-ima7.png)
 
 1. On **CoreServicesVM | Connect** page, click on **Download RDP file**.
 
@@ -206,15 +205,13 @@ In this task, you'll connect to the Test VMs using RDP, you'll connect to both M
 
    ![](../media/m2-u3-t4-s6-b.png)
 
-
 1. Connect to CoreServicesTestVM using the RDP file, and the username **TestUser** and Admin password, enter **Pa55w.rd!!**
 
     ![](../media/pwershelloo7.png)
 
-
 1. On both VMs, in **Networks**, select **Yes**.
 
-    ![](../media/pwershelloo10.png)
+    ![](../media/lab02-az700-ima9.png)
 
 1. On CoreServicesVM, open PowerShell, and run the following command: **ipconfig**
 
@@ -344,7 +341,9 @@ In this task, you'll connect CoreServicesVnet to ManufacturingVnet, you will set
 
 1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
 
-1. In Virtual network gateways, select **CoreServicesVnetGateway**.
+1. On the **Hybrid Connectivity** page, expand **VPN Gateway**, then select **VPN Gateways**, and choose **CoreServicesVnetGateway**.
+
+    ![](../media/lab02-az700-ima12.png)
 
 1. On CoreServicesVnetGateway, from the left navigation menu, under **Settings** section select **Connections**, and then select **+ Add**.
 
@@ -364,9 +363,9 @@ In this task, you'll connect CoreServicesVnet to ManufacturingVnet, you will set
 
 1. Select **Next: Settings >**
 
-     ![](../media/5.png)
+     ![](../media/lab02-az700-ima13.png)
    
-1. On **Create connection** page of **Settings** tab, use the information in the following table to create the connection:
+1. On **Create connection** page of **Settings** tab, use the information in the following table to create the connection then select **Review + create**.
 
       | **Option**                     | **Value**                         |
       | ------------------------------ | --------------------------------- |
@@ -377,9 +376,9 @@ In this task, you'll connect CoreServicesVnet to ManufacturingVnet, you will set
       | Use Azure Private IP Address   | **Not selected (5)**                      |
       | Enable BGP                     | **Not selected (6)**                      |
 
-      ![](../media/1.png)
+      ![](../media/lab02-az700-ima14.png)
       
-1. To create the connection, select **Review + create** and **Create**.
+1. To create the connection, click on **Create**.
    
 ## Task 9: Connect ManufacturingVnet to CoreServicesVnet
 
@@ -387,11 +386,13 @@ In this task, you'll connect ManufacturingVnet to CoreServicesVnet, you'll estab
 
 1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
 
-1. In Virtual network gateways, select **ManufacturingVnetGateway**.
+1. On the **Hybrid Connectivity** page, expand **VPN Gateway**, then select **VPN Gateways**, and choose **ManufacturingVnetGateway**.
 
-1. on ManufacturingVnetGateway, from the left navigation menu, under **Settings** section select **Connections**, and then select **+ Add**.
+    ![](../media/lab02-az700-ima17.png)
 
-    ![](../media/6.png)
+1. On **ManufacturingVnetGateway**, from the left navigation menu, under **Settings** section select **Connections**, and then select **+ Add**.
+
+    ![](../media/lab02-az700-ima18.png)
 
 1. Use the information in the following table to create the connection:
 
@@ -405,9 +406,9 @@ In this task, you'll connect ManufacturingVnet to CoreServicesVnet, you'll estab
 
 1. Select **Next: Settings > (6)**
 
-   ![](../media/4.png)
+    ![](../media/lab02-az700-ima17.png)
    
-1. On **Create connection** page of **Settings** tab, use the information in the following table to create the connection:
+1. On **Create connection** page of **Settings** tab, use the information in the following table to create the connection then select **Review + create**. 
 
       | **Option**                     | **Value**                         |
       | ------------------------------ | --------------------------------- |
@@ -418,19 +419,21 @@ In this task, you'll connect ManufacturingVnet to CoreServicesVnet, you'll estab
       | Use Azure Private IP Address   | **Not selected (5)**                    |
       | Enable BGP                     | **Not selected (6)**                     |
 
-      ![](../media/2.png)
+      ![](../media/lab02-az700-ima15.png)
       
-1. To create the connection, select **Review + create** and **Create**.
+1. To create the connection click on **Create**.
 
-    ![](../media/3.png)
+    ![](../media/lab02-az700-ima16.png)
 
 ## Task 10: Verify that the connections connect 
 
 In this task, you'll verify that the connections connect and you'll confirm the status of the connections between CoreServicesVnet and ManufacturingVnet. 
 
-1. In **Search resources, services, and docs (G+/)**, enter **connections**, and then select **connections** from the results.
+1. In **Search resources, services, and docs (G+/)**, enter **Connections**, and then select **Connections** from the results.
 
-1. Select each connection and check the status. 
+     ![](../media/lab02-az700-ima20.png)
+
+1. On the **Hybrid Connectivity** page, expand **VPN Gateway**, then select **VPN connections** then choose each connection and check the status. 
 
 1. Wait until the status of both connections is **Connected**. You may need to refresh your screen. 
 

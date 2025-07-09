@@ -33,7 +33,7 @@ In this task, you will create the VNet and gateway subnet, you are setting up a 
 1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Virtual networks (1)**, and then select **Virtual 
    networks (2)** under services.
 
-    ![](../media/VN.png)
+    ![](../media/lab02-az700-ima10.png)
    
 1. On the Virtual networks page, select **+ Create**.
 
@@ -52,7 +52,7 @@ In this task, you will create the VNet and gateway subnet, you are setting up a 
       - Enter **/16 (3)** in size filed.
       - Then click on the **+ Add a subnet (4)** button.
 
-         ![Azure portal - add gateway subnet](../media/image-01.png)
+         ![Azure portal - add gateway subnet](../media/lab02-az700-ima22.png)
 
 1. In the **Add a subnet** pane, use the information in the following table to create the subnet and then click on **Add (6)**.
 
@@ -64,7 +64,7 @@ In this task, you will create the VNet and gateway subnet, you are setting up a 
    | Starting address             | **10.20.0.0 (4)**     |
    | Size                         | **/27 (5)**           |
 
-    ![](../media/m3-u4-t1-s5.png)
+    ![](../media/lab02-az700-ima23.png)
 
 1. On the Create virtual network page, select **Review + create**.
 
@@ -84,6 +84,8 @@ In this task, you will create the VNet and gateway subnet, you are setting up a 
 In this task, you will create the virtual network gateway, you're setting up an Azure Virtual Network Gateway to enable connectivity for your virtual network. 
 
 1. On any Azure Portal page, in **Search resources, services and docs (G+/)**, enter **Virtual network gateways**, and then select **Virtual network gateways** from the results.
+
+    ![](../media/lab02-az700-ima24.png)
 
 1. On the Virtual network gateways page, select **+ Create**.
 
@@ -105,10 +107,12 @@ In this task, you will create the virtual network gateway, you're setting up an 
    | Public IP address         | Create new                 |
    | Public IP address name    | CoreServicesVnetGateway-IP |
    | Public IP address SKU     | Standard                   |
-   | Assignment                | Not configurable           |
-
+   | Assignment                | Not configurable (Keep default)           |
+    
 1. Select **Review + create**.
 
+     ![](../media/lab02-az700-ima25.png)
+   
 1. Confirm that the Gateway configuration passes validation and then select **Create**.
 
 1. When the deployment is complete, select **Go to Resource**.

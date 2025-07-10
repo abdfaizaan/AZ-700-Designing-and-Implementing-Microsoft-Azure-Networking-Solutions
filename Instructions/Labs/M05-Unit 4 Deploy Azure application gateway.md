@@ -31,8 +31,10 @@ In this task, you'll create an Application Gateway in Azure, which is a fully ma
 
     ![Azure Portal search for application gateway](../media/l5u4-1.png)    
 
-1. On the **Load balancing and content delivery | Application gateways** page, select **+ Create**.
+1. On the **Load balancing and content delivery | Application gateways** page, select **+ Create (1)** then from drop down choose **Application gateways (2)** .
 
+      ![Azure Portal search for application gateway](../media/lab02-az700-ima26.png)
+   
 1. On the Create application gateway **Basics** tab, enter, or select the following information:
 
    | **Setting**         | **Value**                                    |
@@ -249,7 +251,7 @@ Although IIS isn't required to create the application gateway, you installed it 
 
 1. On the application gateway navigate to **Overview** page and find the public IP address. 
 
-    ![Azure Portal search for application gateway](../media/l5u4-4.png)  
+    ![Azure Portal search for application gateway](../media/lab02-az700-ima33.png)  
 
 1. Copy the public IP address, and then paste it into the address bar of your browser to browse that IP address.
 

@@ -47,15 +47,15 @@ In this task, you will create the two spoke virtual networks each containing a s
 
 1. In **IPv4 address space**, replace the existing IPv4 address space with this **10.0.0.0/16**.
 
-    ![virtual network](../media/AZ-700-virtualnet.png)
+    ![virtual network](../media/lab02-az700-ima35.png)   
 
     >**Note:** Delete any other address spaces listed here, such as 10.1.0.0/16.
 
-1. Under Subnets name, select the word **default**. In the **Edit subnet** dialog box, change the name to **Workload-01-SN**. Change the **Starting address** to 
-   **10.0.1.0**. Select Subnet size : **/24(256 addresses)**.
+1. Under Subnets name, click on **Edit (1)** icon. In the **Edit subnet** dialog box, change the name to **Workload-01-SN (2)**. Change the **Starting address** to 
+   **10.0.1.0 (3)**. Select Subnet size : **/24(256 addresses) (4)**. Then click on  **Save**.
 
-1. Select **Save**.
-
+     ![virtual network](../media/lab02-az700-ima36.png)
+    
 1. Select **Review + create**.
 
 1. Select **Create**.
@@ -84,13 +84,13 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
     ![All services](../media/AZ-700-allservices.png)
 
-1. In the search box, type **firewall manager** and select **Firewall Manager** when it appears.
+1. In the search box, type **firewall manager** and select **Firewal** when it appears.
 
-1. On the **Firewall Manager** page, click **Virtual Hubs** on left pane in **Deployments** section.
+     ![virtual network](../media/lab02-az700-ima38.png)   
 
-1. On the **Virtual Hubs (1)** page, select **+ Create new secured virtual hub (2)**.
+1. On **Network security** page, expand **Secure your resources (1)** and choose **Virtual Hubs (2)** then click on  **+ Create new secured virtual hub (3)**.
 
-    ![virtual hub](../media/AZ-700-virtualhubs.png)
+     ![virtual hub](../media/lab02-az700-ima39.png)
 
 1. For **Resource group**, select **fw-manager-rg-<inject key="DeploymentID" enableCopy="false"/> (1)**.
 
@@ -106,7 +106,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 1. Select **Next : Azure Firewall > (7)**.
     
-    ![Create new secured virtual hub - Basics tab](../media/AZ-700-firewall.png)
+    ![Create new secured virtual hub - Basics tab](../media/lab02-az700-ima40.png)
 
 1. On **Azure Firewall** tab enter **2** for **Specify number of the Public IP addresses**.
 
@@ -120,9 +120,11 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 1. When the deployment completes, from the Azure portal home page, select **All services**.
 
-1. In the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
+1. In the search box, enter **firewall manager** and select **Firewall** when it appears.
 
-1. On the **Firewall Manager** page, select **Virtual hubs** under Deployments.
+1. On **Network security** page, expand **Secure your resources** and choose **Virtual Hubs**.
+
+     ![virtual hub](../media/lab02-az700-ima39.png)
 
 1. Select **Hub-01**.
 

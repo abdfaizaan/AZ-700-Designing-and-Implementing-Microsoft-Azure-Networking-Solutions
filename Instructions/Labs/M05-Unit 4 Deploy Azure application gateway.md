@@ -189,7 +189,7 @@ In this task, you'll use Azure Cloud Shell to deploy two virtual machines (VMs) 
    
 
    ```powershell
-   $RGName = "ContosoResourceGroup-DID"
+   $RGName = "ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/>"
    
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile backend.json -TemplateParameterFile backend.parameters.json
    ```

@@ -163,11 +163,11 @@ In this task, you will create an internal Standard SKU load balancer. The reason
 
 1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Load Balancer (1)**, and then select **Load Balancer (2)** under services.
 
-   ![](../media/azn85.png)
+    ![](../media/azn85.png)
 
 1. Select **+ Create (1)** and then choose **Standard Load balancer (2)** on **Load balancing | Load Balancer** page.
 
-   ![](../media/azn86.png)
+    ![](../media/azn86.png)
 
 1. On the **Basics** tab, use the information in the table below to create the load balancer and then select **Next: Frontend IP configuration> (7)**:
 

@@ -220,6 +220,8 @@ In this task, you will add two virtual machines to the backend pool of your Appl
 
 1. Select **BackendPool**.
 
+    ![Azure Portal search for application gateway](../media/lab02-az700-ima32.png)
+   
 1. On the **Edit backend pool** page, under **Backend targets**, in **Target type**, select **Virtual machine**.
 
 1. Under **Target**, select **BackendVM1-nic.** 

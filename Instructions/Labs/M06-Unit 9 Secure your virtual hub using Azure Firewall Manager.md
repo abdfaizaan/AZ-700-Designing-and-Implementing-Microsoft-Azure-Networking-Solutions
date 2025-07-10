@@ -130,7 +130,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
    
 1. Select **Public IP configuration** under **Azure Firewall**, from the left-hand navigation pane.
 
-1. Note down the public IP address (e.g., **51.143.226.18**), which you will use later.
+1. Note down the public IP address (e.g., **172.191.79.203**), which you will use later.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 

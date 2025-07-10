@@ -31,7 +31,7 @@ In this task, you'll create an Application Gateway in Azure, which is a fully ma
 
     ![Azure Portal search for application gateway](../media/l5u4-1.png)    
 
-1. On the **Load balancing | Application Gateway** page, select **+ Create**.
+1. On the **Load balancing and content delivery | Application gateways** page, select **+ Create**.
 
 1. On the Create application gateway **Basics** tab, enter, or select the following information:
 
@@ -41,9 +41,10 @@ In this task, you'll create an Application Gateway in Azure, which is a fully ma
    | Resource group      | Select **ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/> (2)**       |
    | Application gateway name | **ContosoAppGateway (3)**                            |
    | Region              | **<inject key="Region" enableCopy="false"/> (4)**                           |
-   | Availability zone   | Zones 1 |
    | Virtual Network     | Select **Create new (5)**                        |
 
+    ![Azure Portal search for application gateway](../media/lab02-az700-ima27.png)    
+    
 1. On Create virtual network, configure the following and then click on **OK (5)** to return to the Create application gateway Basics tab:
 
    | **Setting**       | **Value**                          |
@@ -55,15 +56,15 @@ In this task, you'll create an Application Gateway in Azure, which is a fully ma
    | Subnet name       | Change **default** to **AGSubnet (3)** |
    | Address range     | **10.0.0.0/24 (4)**                        |
 
-   ![Azure Portal search for application gateway](../media/l5u4-2-1.png)
+   ![Azure Portal search for application gateway](../media/lab02-az700-ima28.png)
 
-1. Accept the default values for the other settings and then select **Next: Frontends**.
+1. Accept the default values for the other settings and then select **Next: Frontends>**.
 
-1. On the **Frontends** tab, verify **Frontend IP address type** is set to **Public (1)**. Select **Add new (2)** for the **Public IP address** and enter **AGPublicIPAddress (3)** for the public IP address name, and then select **OK (4)**.
+1. On the **Frontends (1)** tab, verify **Frontend IP address type** is set to **Public (2)**. Select **Add new (3)** for the **Public IP address** and enter **AGPublicIPAddress (4)** for the public IP address name, and then select **OK (5)**.
 
-   ![Azure Portal search for application gateway](../media/l5u4-2-2.png)
+   ![Azure Portal search for application gateway](../media/lab02-az700-ima29.png)
 
-1. Select **Next: Backends**.
+1. Select **Next: Backends>**.
 
 1. On the **Backends** tab, select **Add a backend pool (1)**. Then on the **Add a backend pool** window that opens, enter the following values to create an empty backend pool:
 
@@ -74,9 +75,9 @@ In this task, you'll create an Application Gateway in Azure, which is a fully ma
     
 1. On the **Add a backend pool** window, select **Add** to save the backend pool configuration and return to the **Backends** tab.
 
-      ![Azure Portal search for application gateway](../media/l5u4-2-3.png)
+      ![Azure Portal search for application gateway](../media/lab02-az700-ima30.png.png)
 
-1. On the **Backends** tab, select **Next: Configuration**.
+1. On the **Backends** tab, select **Next: Configuration>**.
 
 1. On the **Configuration** tab, you'll connect the frontend and backend pool you created using a routing rule.
 
@@ -137,16 +138,16 @@ In this task, you'll create an Application Gateway in Azure, which is a fully ma
 
 1. On the Virtual networks page select **ContosoVNet**. 
  
-1. On the ContosoVNet page from left side menu under the Settings section, click on **Subnets**.
-
-1. On the **ContosoVNet | Subnets** page select **+ Subnet (2)**. On Add subnet page fill the follwing details(leave other field as default) and click on **Save (5)**.
+1. On the ContosoVNet page from left side menu under the Settings section, click on **Subnets (1)**. select **+ Subnet (2)**. On Add subnet page fill the follwing details(leave other field as default) and click on **Add (6)**.
 
     | **Setting**           | **Value**   |
     | --------------------- | ----------- |
     | Name                  | **BackendSubnet (3)** |
-    | Subnet address range  | **10.0.1.0/24  (4)**|
+    | Starting address      | **10.0.1.0/24  (4)**|
+    | Size |   **/24 (5)**  |              
+     
 
-    ![Azure Portal search for application gateway](../media/l5u4-3.png)
+    ![Azure Portal search for application gateway](../media/lab02-az700-ima31.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 

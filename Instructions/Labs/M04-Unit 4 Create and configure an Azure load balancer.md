@@ -26,61 +26,70 @@ In this task, you will create a virtual network (VNet) in Azure with two subnets
 
 1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Virtual networks(1)**, and then select **Virtual networks(2)** under services.
 
-    ![](../media/VN.png)
+    ![](../media/azn84.png)
 
 1. Select **+ Create** on the Virtual networks page.  
 
-1. On the **Basics** tab, use the information in the table below to create the virtual network.
+1. On the **Basics** tab, use the information in the table below to create the virtual network and then **Next (5)**:
 
    | **Setting**    | **Value**                                  |
    | -------------- | ------------------------------------------ |
-   | Subscription   | Select your subscription                   |
-   | Resource group | Select **IntLB-RG-<inject key="DeploymentID" enableCopy="false"/>** |
-   | Name           | **IntLB-VNet**                                                      |
-   | Region         | **<inject key="Region" enableCopy="false"/>**                   |
+   | Subscription   | Select your subscription **(1)**                  |
+   | Resource group | Select **IntLB-RG-<inject key="DeploymentID" enableCopy="false"/> (2)** |
+   | Name           | **IntLB-VNet (3)**                                                      |
+   | Region         | **<inject key="Region" enableCopy="false"/> (4)**                   |
 
-1. Select **Next** on the **Security** tab, under **Azure Bastion** select **Enable Azure Bastion**, then enter the information from the table below.
+   ![](../media/azn75.png)
 
-    | **Setting**                       | **Value**                                     |
-    | --------------------------------- | --------------------------------------------- |
-    | Azure Bastion host name           | **myBastionHost**                             |
-    | Azure Bastion public IP address   | Select **Create a public IP address**  Name: **myBastionIP** |
+1. On the **Security** tab, under **Azure Bastion** select **Enable Azure Bastion (1)**, then enter the information from the table below.
 
-1. Select **OK**.
+   | **Setting**                       | **Value**                                     |
+   | --------------------------------- | --------------------------------------------- |
+   | Azure Bastion host name           | **myBastionHost (2)**                             |
+   | Azure Bastion public IP address   | Select **Create a public IP address**  Name: **myBastionIP (3)** and then **OK** |
 
-1. Select **Next**.
+   - Select **Next (4)**.
+
+     ![](../media/azn76.png)
    
-1. On the **IP Addresses** tab, in the **IPv4 address space** box, don't remove the default, click on **Add IPV4 address space (1)**, in new **IPV4 address space**, enter **10.1.0.0 (2)** in address space and **/16 (3)** in size field and select **+ Add a subnet (4)** in the new IPv4 address space.
+1. On the **IP Addresses** tab, in the **IPv4 address space** box, don't remove the default, click on **Add IPV4 address space**.
 
-   ![](../media/L4U4-1.png)
+   ![](../media/azn77.png)
 
-1. On **Add a subnet** blade, specify the following and select **Add**.
+1. In new **IPV4 address space**, enter **10.1.0.0 (1)** in address space and **/16 (2)** in size field and select **+ Add a subnet (3)** in the new IPv4 address space.
+
+   ![](../media/azn78.png)
+
+1. On **Add a subnet** blade, specify the following and select **Add (5)**.
 
    | **Setting**                  | **Value**     |
    | ---------------------------- | ------------- |
-   | Name                         | **myBackendSubnet** |
-   | Starting address             | **10.1.0.0**        |
-   | Size                         | **/24**             |
+   | Name                         | **myBackendSubnet (1)** |
+   | IPv4 address range                         | Select **10.1.0.0/16 (2)** |   
+   | Starting address             | **10.1.0.0 (3)**        |
+   | Size                         | **/24 (4)**             |
    |||
 
-    ![](../media/mod4-u4-2.png)
+   ![](../media/azn79.png)
    
-1. On the Create virtual network of **IP address** tab select **+ Add a subnet** in the new IPv4 address space. On **Add a subnet** blade specify the following and select **Add**.
+1. On the Create virtual network of **IP address** tab select **+ Add a subnet** in the new IPv4 address space. On **Add a subnet** blade specify the following and select **Add (5)**.
 
    | **Setting**                  | **Value**     |
    | ---------------------------- | ------------- |
    | Name                         | **myFrontEndSubnet** |
-   | Starting address             | **10.1.2.0**        |
-   | Size                         | **/24**             |
-   |||
+   | IPv4 address range                         | Select **10.1.0.0/16 (2)** |    
+   | Starting address             | **10.1.2.0 (3)**        |
+   | Size                         | **/24 (4)**             |
 
-   ![](../media/mod4-u4-3.png)
+   ![](../media/azn80.png)
    
 1. Select **Review + create**.
 
+   ![](../media/azn81.png)
+
 1. Select **Create**.
 
-1. It will take 10-15 minutes to complete the deployment.
+1. It will take `10-15 minutes` to complete the deployment.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -103,17 +112,29 @@ In this task, you will create three VMs, that will be in the same availability s
 
 1. On **Getting started** window choose **Mount storage account (1)** then under **Storage account subscription (2)** select your available subscription from the dropdown and click on **Apply (3)**.
    
-     ![](../media/pwershell3.png)
+   ![](../media/pwershell3.png)
 
 1. Within the Mount storage account pane, select **I want to create a storage account (1)** and click **Next (2)**.
 
-     ![](../media/pwershell4.png)
+   ![](../media/pwershell4.png)
        
-1. Please make sure you have selected your resource group **IntLB-RG-<inject key="DeploymentID" enableCopy="false"/>** then select **Region** **<inject key="Region" enableCopy="false"/>** and enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/>** for the  **File share** , then click on **Create**.
-    
-1. On the toolbar of the Cloud Shell pane, select the Select **Manage files (1)** icon, in the drop-down menu, select **Upload (2)** and upload the following files **azuredeploy.json**, **azuredeploy.parameters.vm1.json**, **azuredeploy.parameters.vm2.json** and **azuredeploy.parameters.vm3.json** from **C:\AllFiles\AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions-prod\Allfiles\Exercises\M04** folder into the Cloud Shell home directory one by one.
+1. On the **Create a storage account** page, provide the following details and then click on **Create (6)**:
 
-     ![](../media/pwershell2.png)
+   - Subscription: Leave the deafult one **(1)**
+   - Resource group: Select **IntLB-RG-<inject key="DeploymentID" enableCopy="false"/> (2)**
+   - Region: Select **Region** **<inject key="Region" enableCopy="false"/> (3)**
+   - Storage account name: Enter **blob<inject key="DeploymentID" enableCopy="false"/> (4)**
+   - File share: Enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/> (5)** 
+
+     ![](../media/azn82.png)   
+
+1. On the toolbar of the Cloud Shell pane, select the Select **Manage files (1)** icon, in the drop-down menu, select **Upload (2)**. 
+
+   ![](../media/pwershell2.png)
+
+1. Navigate to `C:\AllFiles\AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions-prod\Allfiles\Exercises\M04` **(1)** then select all 4 files **azuredeploy.json**, **azuredeploy.parameters.vm1.json**, **azuredeploy.parameters.vm2.json** and **azuredeploy.parameters.vm3.json** **(2)** and then **Open (3)**.
+
+   ![](../media/azn83.png)
 
 1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
@@ -125,9 +146,9 @@ In this task, you will create three VMs, that will be in the same availability s
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm3.json
    ```
 
- 1. You will be prompted to provide an admin password, provide adminPassword: **Pa55w.rd!!**.
+ 1. Each VM will be deployed sequentially. During the process, you will be prompted to enter the administrator password every time.  So please provide adminPassword: **Pa55w.rd!!**.
 
- 1. It may take 20-25 mins to create these three VMs. Please wait until this job completes, and you will be prompted to provide password three times for each VM deployment.
+ 1. It may take `20-25 mins` to create these three VMs. Please wait until this job completes, and you will be prompted to provide password three times for each VM deployment.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -140,34 +161,46 @@ In this task, you will create three VMs, that will be in the same availability s
 
 In this task, you will create an internal Standard SKU load balancer. The reason we are creating a Standard SKU load balancer here in the exercise, instead of a Basic SKU load balance, is for later exercises that require a Standard SKU version of the load balancer.
 
-1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Load Balancer**, and then select **Load Balancer** under services.
+1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Load Balancer (1)**, and then select **Load Balancer (2)** under services.
 
-1. Select **+ Create** on **Load balancing | Load Balancer** page.
+   ![](../media/azn85.png)
 
-1. On the **Basics** tab, use the information in the table below to create the load balancer.
+1. Select **+ Create (1)** and then choose **Standard Load balancer (2)** on **Load balancing | Load Balancer** page.
 
-     | **Setting**           | **Value**                |
-     | --------------------- | ------------------------ |
-     | Subscription          | Select your subscription |
-     | Resource group        | **IntLB-RG-<inject key="DeploymentID" enableCopy="false"/>**             |
-     | Name                  | **myIntLoadBalancer**    |
-     | Region                | **<inject key="Region" enableCopy="false"/>**         |
-     | SKU                   | **Standard**             |
-     | Type                  | **Internal**             |
+   ![](../media/azn86.png)
 
-1. Select **Next: Frontend IP configuration>** and click on  **+ Add a frontend IP configuration**.
+1. On the **Basics** tab, use the information in the table below to create the load balancer and then select **Next: Frontend IP configuration> (7)**:
 
-1. On the **Add frontend IP configuration** blade, enter the information from the table below and select **Save**.
+   | **Setting**           | **Value**                |
+   | --------------------- | ------------------------ |
+   | Subscription          | Select your subscription **(1)** |
+   | Resource group        | **IntLB-RG-<inject key="DeploymentID" enableCopy="false"/> (2)**             |
+   | Name                  | **myIntLoadBalancer (3)**    |
+   | Region                | **<inject key="Region" enableCopy="false"/> (4)**         |
+   | SKU                   | **Standard (5)**             |
+   | Type                  | **Internal (6)**             |
+
+   ![](../media/azn87.png)     
+
+1. Click on  **+ Add a frontend IP configuration**.
+
+1. On the **Add frontend IP configuration** blade, enter the information from the table below and select **Save (6)**.
  
-     | **Setting**     | **Value**                |
-     | --------------- | ------------------------ |
-     | Name            | **LoadBalancerFrontEnd** |
-     | IP version      | **IPv4**                 |
-     | Virtual network | **IntLB-VNet**           |
-     | Subnet          | **myFrontEndSubnet**     |
-     | Assignment      | **Dynamic**              |
+   | **Setting**     | **Value**                |
+   | --------------- | ------------------------ |
+   | Name            | **LoadBalancerFrontEnd (1)** |
+   | IP version      | **IPv4 (2)**                 |
+   | Virtual network | **IntLB-VNet (3)**           |
+   | Subnet          | **myFrontEndSubnet (4)**     |
+   | Assignment      | **Dynamic (5)**              |
+
+   ![](../media/azn89.png)     
    
-1. Select **Review + create** and  **Create**. Wait for deployment to complete successfully.
+1. Select **Review + create**.
+
+   ![](../media/azn90.png)
+
+1. Select **Create**. Wait for deployment to complete successfully.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -184,38 +217,46 @@ In this task, you will configure load balancer settings for a backend address po
 
 The backend address pool contains the IP addresses of the virtual NICs connected to the load balancer.
 
-1. On the Azure portal, from top left corner of page click **Show portal menu** and select **All resources**, then select on **myIntLoadBalancer** from the resources list.
+1. On the Azure portal, from top left corner of page click **Show portal menu** and select **All resources**.
 
     ![](../media/unit4-image5.png)
 
-1. On **myIntLoadBalancer** blade, from the left navigation menu, under **Settings** section, select **Backend pools**, and then select **+ Add**.
+1. Then select on **myIntLoadBalancer** from the resources list.    
+
+    ![](../media/azn91.png)
+
+1. On **myIntLoadBalancer** blade, from the left navigation menu, under **Settings** section, select **Backend pools (1)**, and then select **+ Add (2)**.
+
+    ![](../media/azn92.png)
 
 1. On the **Add backend pool** page, enter the information from the table below.
 
    | **Setting**     | **Value**            |
    | --------------- | -------------------- |
-   | Name            | **myBackendPool**    |
+   | Name            | **myBackendPool (1)**    |
    | Virtual network | **IntLB-VNet**       |
 
-1. Under **IP configurations**, select **+ Add**.
+   - Under **IP configurations**, select **+ Add (3)**.
 
-    ![](../media/az7001.png)
+     ![](../media/azn93.png)
 
-1. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then select **Add**.
+1. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**) **(1)**, then select **Add (2)**.
 
-    ![](../media/az7002.png)
+    ![](../media/azn94.png)
 
-1. Select **Save**.
+1. Then select **Save**.
 
-   ![Picture 7](../media/add-vms-backendpool.png)
+   ![Picture 7](../media/azn95.png)
    
 ### Task 4.2: Create a health probe
 
 The load balancer monitors the status of your app with a health probe. The health probe adds or removes VMs from the load balancer based on their response to health checks. Here you will create a health probe to monitor the health of the VMs.
 
-1. From **myIntLoadBalancer | Backend pools** blade, under **Settings** section, select **Health probes**, then select **+ Add**.
+1. From **myIntLoadBalancer | Backend pools** blade, under **Settings** section, select **Health probes (1)**, then select **+ Add (2)**.
 
-1. On the **Add health probe** page, enter the information from the table below.
+    ![](../media/azn96.png)
+
+1. On the **Add health probe** page, enter the information from the table below and then **Save (6)**:
 
    | **Setting**         | **Value**         |
    | ------------------- | ----------------- |
@@ -225,21 +266,20 @@ The load balancer monitors the status of your app with a health probe. The healt
    | Path                | **/(4)**             |
    | Interval            | **15(5)**            |
 
-   ![Picture 7](../media/az70012.png)
-   
-1. Select **Save**.
- 
+   ![Picture 7](../media/azn97.png)
+  
+
 ### Task 4.3: Create a load balancer rule
 
 In this task, you will create a load balancer rule to manage traffic distribution to virtual machines. The rule specifies the frontend IP address, backend pool, protocol, port settings, and health probe,
 
 A load balancer rule is used to define how traffic is distributed to the VMs. You define the frontend IP configuration for the incoming traffic and the backend IP pool to receive the traffic. The source and destination port are defined in the rule. Here you will create a load balancer rule.
 
-1. From the **myIntLoadBalancer | Health probes** page of your load balancer, under **Settings** section, select **Load balancing rules**, then click on **+ Add**.
+1. From the **myIntLoadBalancer | Health probes** page of your load balancer, under **Settings** section, select **Load balancing rules (1)**, then click on **+ Add (2)**.
 
-   ![Picture 7](../media/az7004.png)
+   ![Picture 7](../media/azn98.png)
 
-1. On the **Add load balancing rule** page, enter the information from the table below.
+1. On the **Add load balancing rule** page, enter the information from the table below and then **Save(12)**:
 
    | **Setting**            | **Value**                |
    | ---------------------- | ------------------------ |
@@ -259,7 +299,6 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
 
    ![Picture 7](../media/az7006.png)
 
-1. Select **Save(12)**.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -274,8 +313,9 @@ In this task, you will create a test VM, and then test the load balancer.
 
 ### Task 5.1: Create test VM
 
-1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Virtual machines**, and then select **Virtual 
-   machines** under services.
+1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Virtual machines (1)**, and then select **Virtual machines (2)** under services.
+
+   ![Picture 7](../media/azn99.png)
 
 1. Select **+ Create** and choose **Azure virtual machine**. On the **Create a virtual machine** page, on the **Basics** tab, use the information in the table below to create the first VM.
 
@@ -286,31 +326,32 @@ In this task, you will create a test VM, and then test the load balancer.
     | Virtual machine name | **myTestVM(3)**                                 |
     | Region               |  **<inject key="Region" enableCopy="false"/> (4)**                              |
     | Availability options | **No infrastructure redundancy required(5)**    |
-    | Security type        | **Standard**                                    |
-    | Image                | **Windows Server 2019 Datacenter - x64 Gen 2(6)**   |
-    | Size                 | **Standard_D2s_v3 - 2 vcpu, 8 GiB memory(7)**   |
-    | Username             | **TestUser(8)**                                 |
-    | Password             | **Provide a secure password(9)**                |
-    | Confirm password     | **Provide a secure password(10)**                |
+    | Security type        | **Standard (6)**                                    |
+    | Image                | **Windows Server 2019 Datacenter - x64 Gen 2(7)**   |
+    | Size                 | **Standard_D2s_v3 - 2 vcpu, 8 GiB memory(8)**   |
+    | Username             | **TestUser(9)**                                 |
+    | Password             | `Pa55w.rd!!123` **(10)**                |
+    | Confirm password     | `Pa55w.rd!!123` **(11)**                |
+    | Select inbound port     | **RDP(3389)(12)**                |
 
-     ![Picture 7](../media/az7007.png)
+    ![Picture 7](../media/azn101.png)
 
-     ![Picture 7](../media/az7008.png)
+    ![Picture 7](../media/anz102.png)
 
-1. Select **Next : Disks(11)**, then select **Next : Networking**. 
+1. Select **Next : Disks**, then select **Next : Networking**. 
 
-1. On the **Networking** tab, use the information in the table below to configure networking settings.
+1. On the **Networking** tab, use the information in the table below to configure networking settings and then select **Review + create (7)**:
 
     | **Setting**                                                  | **Value**                     |
     | ------------------------------------------------------------ | ----------------------------- |
-    | Virtual network                                              | **IntLB-VNet**                |
-    | Subnet                                                       | **myBackendSubnet**           |
-    | Public IP                                                    | Change to **None**            |
-    | NIC network security group                                   | **Advanced**                  |
-    | Configure network security group                             | Select the existing **myNSG** |
-    | Load balancing options                                       | **None**                      |
+    | Virtual network                                              | **IntLB-VNet (1)**                |
+    | Subnet                                                       | **myBackendSubnet (2)**           |
+    | Public IP                                                    | Change to **None (3)**            |
+    | NIC network security group                                   | **Advanced (4)**                  |
+    | Configure network security group                             | Select the existing **myNSG (5)** |
+    | Load balancing options                                       | **None (6)**                      |
 
-1. Select **Review + create**.
+    ![Picture 7](../media/azn103.png)
 
 1. Select **Create**.
 
@@ -320,24 +361,34 @@ In this task, you will create a test VM, and then test the load balancer.
 
 In this task, you will connect to the myTestVM and test the internal load balancer by accessing its IIS web server. First, retrieve the Private IP address of your internal load balancer and use it to connect to the VM via Bastion. 
 
-1. On the Azure portal home page, from top left corner of page click **Show portal menu** and select **All resources**, then select on **myIntLoadBalancer** from the resources list.
+1. On the Azure portal, from top left corner of page click **Show portal menu** and select **All resources**.
+
+    ![](../media/unit4-image5.png)
+
+1. Then select on **myIntLoadBalancer** from the resources list.    
+
+    ![](../media/azn91.png)
 
 1. On the **Overview** page, make a note in notepad of the **Private IP address**, or copy it to the clipboard. You may need to select **See more** in order to see the **Private IP address** field.
 
-     ![Picture 7](../media/az7009.png)
+    ![Picture 7](../media/azn104.png)
 
 1. Select **Home**, then on the Azure portal home page, select **All resources**, then select the **myTestVM** virtual machine that you just created.
 
-1. On the **Overview** page, select **Connect**. Under Configured connection section, select **Connect via Bastion**.
+    ![Picture 7](../media/azn105.png)
 
-1. In the **Username** box, enter **TestUser** and in the **Password** box, enter the password you created during **myTestVM** virtual machine deployment in task: 5.1, then select **Connect**.
+1. On the **Overview** page, select **Connect (1)**. Under Configured connection section, select **Connect via Bastion (2)**.
 
-    ![Picture 7](../media/az70010.png)
+    ![Picture 7](../media/azn106.png)
+
+1. In the **Username** box, enter **TestUser (1)** and in the **Password** box, enter the password you created during **myTestVM** virtual machine deployment in task: 5.1 that is `Pa55w.rd!!123` **(2)**, then select **Connect (3)**.
+
+    ![Picture 7](../media/azn107.png)
   
-    **Note**: If popup blocker is preventing the new window, at top of the page select **Always allow pop-ups and redirects from hhtps://portal.azure.com** and select 
+     >**Note**: If popup blocker is preventing the new window, at top of the page select **Always allow pop-ups and redirects from hhtps://portal.azure.com** and select 
     **Done**, repeat step-5.
 
-    ![Picture 7](../media/az70011.png)
+      ![Picture 7](../media/az70011.png)
 
 1. The **myTestVM** window will open in another browser tab.
 
@@ -346,6 +397,8 @@ In this task, you will connect to the myTestVM and test the internal load balanc
 1. If you see **See text and images copied to the clipboard** then select **Allow** and minimize the server manager tab.
 
 1. Select the **Internet Explorer** icon in the task bar to open the web browser.
+
+    ![Picture 7](../media/azn108.png)
 
 1. Select **OK** on the **Set up Internet Explorer 11** dialog box.
 
@@ -361,7 +414,7 @@ In this task, you will connect to the myTestVM and test the internal load balanc
    
 1. If you select the refresh button in the browser a few times, you will see that the response comes randomly from the different VMs in the backend pool of the internal load balancer.
    
-    ![](../media/mod4-u4-11.png)
+    ![](../media/azn109.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully completed the task. 

@@ -88,15 +88,17 @@ This task requires two instances of a web application that run in different Azur
 
 In this task, you will configure Azure Front Door to direct user traffic to the two web applications you created earlier based on the lowest latency. Front Door is a global service that provides high availability and low latency for applications by routing traffic to the closest available endpoint.
 
-1. On any Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, Search for **Front Door and CDN profiles (1)**, and then select **Front Door and CDN profiles (2)**.
+1. On any Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, Search for **Front Door and CDN profiles (1)**, and then select **Front Doors (2)**.
 
-   ![Web App](../media/l5u6-5.png)
+   ![Web App](../media/azn110.png)
 
 1. On the **Front Door and CDN profiles** page, select **+ Create**.
 
-1. On the Compare offerings page, select **Quick create**. Then select **Continue to create a Front Door**.
+   ![Web App](../media/azn111.png)
 
-    ![Web App](../media/l5u6-6.png)
+1. On the Compare offerings page, select **Quick create (1)**. Then select **Continue to create a Front Door (2)**.
+
+    ![Web App](../media/azn112.png)
 
 1. On the Basics tab, enter or select the following information.
 
@@ -106,9 +108,9 @@ In this task, you will configure Azure Front Door to direct user traffic to the 
       | Resource group          | Select **ContosoResourceGroup-<inject key="DeploymentID" enableCopy="false"/> (2)**                  |
       | Resource group location | Accept default setting (3)                      |
       | Name                    | **FrontDoor<inject key="DeploymentID" enableCopy="false"/> (4)**   |
-      | Tier                    | Standard (5)  |
-      | Endpoint Name           | FDendpoint (6)  |
-      | Origin Type             | App Services (7) | 
+      | Tier                    | **Standard (5)**  |
+      | Endpoint Name           | **FDendpoint (6)**  |
+      | Origin Type             | **App Services (7)** | 
       | Origin host name        | **WebAppContoso-1-<inject key="DeploymentID" enableCopy="false"/> (8)** |
       |||
 
@@ -149,8 +151,9 @@ In this task, you will configure Azure Front Door to direct user traffic to the 
 
 In this task, you will verify that Azure Front Door is working as expected by testing the global failover capabilities. After you create the Front Door, it will take a few minutes for the configuration to propagate across all regions. Once that's done, you'll test the Front Door's ability to direct traffic to the available web app instance.
 
-1. Navigate back to **Front Door and CDN profiles** page, on the Front Door resource in the Overview blade, locate the endpoint hostname that is created for your endpoint. This should be fdendpoint followed by a hyphen and a random string. For example, **fdendpoint-fxa8c8hddhhgcrb9.z01.azurefd.net**. **Copy** this FQDN.
-      ![Web App](../media/l5u6-11.png)
+1. Navigate back to **Front Door and CDN profiles** page, on the Front Door resource in the **Overview (1)** blade, under **Properties (1)** tab locate the endpoint hostname that is created for your endpoint. This should be fdendpoint followed by a hyphen and a random string. For example, **fdendpoint-fxa8c8hddhhgcrb9.z01.azurefd.net**. **Copy** this FQDN. Copy the endpoint **(3)**.
+
+      ![Web App](../media/azn114.png)
 
 1. In a new browser tab, navigate to the Front Door endpoint FQDN. The default App Service page will be displayed.
 
@@ -160,9 +163,13 @@ In this task, you will verify that Azure Front Door is working as expected by te
 
 1. Switch to the Azure portal, search for and select **App services**.
 
-1. Select one of your web apps, then select **Stop**, and then select **Yes** to verify.
+1. Select one of your web apps **(1)**, then select **Stop (2)**. 
 
-      ![Web App](../media/l5u6-13.png)
+      ![Web App](../media/azn115.png)
+
+1. Select **Yes** to verify.
+
+      ![Web App](../media/azn116.png)
 
 1. Switch back to your browser and select Refresh. You should see the same information page.
 
@@ -173,6 +180,7 @@ In this task, you will verify that Azure Front Door is working as expected by te
 1. Switch back to your browser and select Refresh. This time, you should see an error message.
 
       ![Web App](../media/l5u6-14.png)
+      ![Web App](../media/azn117.png)      
 
 Congratulations! You have configured and tested an Azure Front Door.
 

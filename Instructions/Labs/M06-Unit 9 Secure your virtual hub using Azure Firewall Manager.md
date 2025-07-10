@@ -84,7 +84,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
     ![All services](../media/AZ-700-allservices.png)
 
-1. In the search box, type **firewall manager** and select **Firewal** when it appears.
+1. In the search box, type **firewall manager** and select **Firewalls** when it appears.
 
      ![virtual network](../media/lab02-az700-ima38.png)   
 
@@ -189,6 +189,8 @@ In this task you will connect the hub and spoke virtual networks. This is common
    
 1.  Please make sure you have selected your resource group **fw-manager-rg-<inject key="DeploymentID" enableCopy="false"/>** and then select **Region** **<inject key="Region" enableCopy="false"/>** and enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/>** for the  **File share** , then click on **Create**.
 
+     ![virtual hub](../media/lab02-az700-ima45.png)
+     
 1. On the toolbar of the Cloud Shell pane, select the Select **Manage files** icon, in the drop-down menu, select **Upload** and upload the following files **FirewallManager.json** and **FirewallManager.parameters.json** into the Cloud Shell home directory one by one from the source folder **C:\AllFiles\AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions-prod\Allfiles\Exercises\M06**.
 
     ![](../media/pwershell2.png)
@@ -221,9 +223,9 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 In this task you will first create your firewall policy, then secure your hub. The firewall policy will define collections of rules to direct traffic on one or more Secured virtual hubs.
 
-1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Firewall**, and then select **Firewall** under services.
+1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Firewalls**, and then select **Firewalls** under services.
 
-   >**Note**: If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall** when it appears.
+   >**Note**: If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewalls** when it appears.
 
 1. On **Network security** page, from the left-hand navigation pane, under **Firewall Manager**, select **Azure Firewall Policies**.
 
@@ -335,9 +337,9 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 In this task you will associate the firewall policy with the virtual hub.
 
-1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Firewall**, and then select **Firewall** under services.
+1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Firewalls**, and then select **Firewalls** under services.
 
-   **Note**: If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall** when it appears.
+   **Note**: If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewalls** when it appears.
 
 1. On the **Network security** and expand **Secure your resources** then choose **Virtual Hubs** the select **Hub-01**.
 
@@ -380,8 +382,7 @@ In this task you will ensure that network traffic gets routed through your firew
 1. Once configuration has completed, ensure that under **INTERNET TRAFFIC** and **PRIVATE TRAFFIC**, it says **Secured by Azure Firewall** for both hub-spoke connections. Click on Refresh the check the status.
 
     ![virtual hub](../media/lab02-az700-ima52.png)
-
-      
+   
 ### Task 8: Test the application rule
 
 In this part of the exercise, you will connect a remote desktop to the firewall public IP address, which is NATed to Srv-Workload-01. You will then use a web browser to test the application rule and connect a remote desktop to Srv-Workload-02 to test the network rule.

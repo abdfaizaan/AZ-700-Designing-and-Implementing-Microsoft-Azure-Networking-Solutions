@@ -359,9 +359,9 @@ In this task you will associate the firewall policy with the virtual hub.
 
 In this task you will ensure that network traffic gets routed through your firewall.
 
-1. On **Firewall Manager** page, from left-hand navigation pane select **Virtual hubs**.
+1. On the **Network security** and expand **Secure your resources** then choose **Virtual Hubs** the select **Hub-01**.
 
-1. Select **Hub-01**.
+    ![virtual hub](../media/lab02-az700-ima51.png)
 
 1. From left-hand navigation pane, under **Settings**, select **Security configuration**.
 
@@ -371,6 +371,8 @@ In this task you will ensure that network traffic gets routed through your firew
 
 1. Select **Save**. 
 
+    ![virtual hub](../media/lab02-az700-ima50.png)
+   
     >**Note:** On **Secure internet traffic** pop-up, select **OK**.
 
 1. This will take a few minutes to complete.

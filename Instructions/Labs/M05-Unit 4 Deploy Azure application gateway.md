@@ -236,6 +236,10 @@ In this task, you will add two virtual machines to the backend pool of your Appl
 
     **Note**: Wait for the deployment to complete before proceeding to the next step.
 
+1. Check to ensure the backend servers are healthy. Select **Monitoring** and then **Backend Health**. Both targets should be healthy. 
+
+   ![Azure Portal check backend health.](../media/lab02-az700-ima34.png)
+
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.

@@ -47,15 +47,15 @@ In this task, you will create the two spoke virtual networks each containing a s
 
 1. In **IPv4 address space**, replace the existing IPv4 address space with this **10.0.0.0/16**.
 
-    ![virtual network](../media/AZ-700-virtualnet.png)
+    ![virtual network](../media/lab02-az700-ima35.png)   
 
     >**Note:** Delete any other address spaces listed here, such as 10.1.0.0/16.
 
-1. Under Subnets name, select the word **default**. In the **Edit subnet** dialog box, change the name to **Workload-01-SN**. Change the **Starting address** to 
-   **10.0.1.0**. Select Subnet size : **/24(256 addresses)**.
+1. Under Subnets name, click on **Edit (1)** icon. In the **Edit subnet** dialog box, change the name to **Workload-01-SN (2)**. Change the **Starting address** to 
+   **10.0.1.0 (3)**. Select Subnet size : **/24(256 addresses) (4)**. Then click on  **Save**.
 
-1. Select **Save**.
-
+     ![virtual network](../media/lab02-az700-ima36.png)
+    
 1. Select **Review + create**.
 
 1. Select **Create**.
@@ -84,13 +84,13 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
     ![All services](../media/AZ-700-allservices.png)
 
-1. In the search box, type **firewall manager** and select **Firewall Manager** when it appears.
+1. In the search box, type **firewall manager** and select **Firewal** when it appears.
 
-1. On the **Firewall Manager** page, click **Virtual Hubs** on left pane in **Deployments** section.
+     ![virtual network](../media/lab02-az700-ima38.png)   
 
-1. On the **Virtual Hubs (1)** page, select **+ Create new secured virtual hub (2)**.
+1. On **Network security** page, expand **Secure your resources (1)** and choose **Virtual Hubs (2)** then click on  **+ Create new secured virtual hub (3)**.
 
-    ![virtual hub](../media/AZ-700-virtualhubs.png)
+     ![virtual hub](../media/lab02-az700-ima39.png)
 
 1. For **Resource group**, select **fw-manager-rg-<inject key="DeploymentID" enableCopy="false"/> (1)**.
 
@@ -106,7 +106,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 1. Select **Next : Azure Firewall > (7)**.
     
-    ![Create new secured virtual hub - Basics tab](../media/AZ-700-firewall.png)
+    ![Create new secured virtual hub - Basics tab](../media/lab02-az700-ima40.png)
 
 1. On **Azure Firewall** tab enter **2** for **Specify number of the Public IP addresses**.
 
@@ -120,12 +120,14 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 1. When the deployment completes, from the Azure portal home page, select **All services**.
 
-1. In the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
+1. In the search box, enter **firewall manager** and select **Firewall** when it appears.
 
-1. On the **Firewall Manager** page, select **Virtual hubs** under Deployments.
+1. On **Network security** page, expand **Secure your resources** and choose **Virtual Hubs**.
 
 1. Select **Hub-01**.
 
+     ![virtual hub](../media/lab02-az700-ima41.png)
+   
 1. Select **Public IP configuration** under **Azure Firewall**, from the left-hand navigation pane.
 
 1. Note down the public IP address (e.g., **51.143.226.18**), which you will use later.
@@ -146,6 +148,8 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 2. Select the **fw-manager-rg-<inject key="DeploymentID" enableCopy="false"/>** resource group, then select the **Vwan-01** virtual WAN under **Resources** section.
 
+      ![virtual hub](../media/lab02-az700-ima42.png)
+
 3. From the left-hand navigation pane, under **Connectivity**, select **Virtual network connections**.
 
 4. Select **+ Add connection**.
@@ -159,6 +163,8 @@ In this task you will connect the hub and spoke virtual networks. This is common
 8. For **Virtual network**, select **Spoke-01**.
 
 9. Select **Create**.
+
+   ![virtual hub](../media/lab02-az700-ima43.png)
    
 10. Repeat steps 4 to 9 above to create another similar connection but using the **Connection name** of **hub-spoke-02** to connect the **Virtual network** of 
     **Spoke-02**
@@ -215,14 +221,15 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 In this task you will first create your firewall policy, then secure your hub. The firewall policy will define collections of rules to direct traffic on one or more Secured virtual hubs.
 
-1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Firewall Manager**, and then select **Firewall 
-   Manager** under services.
+1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Firewall**, and then select **Firewall** under services.
 
-   >**Note**: If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
+   >**Note**: If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall** when it appears.
 
-1. On **Firewall Manager** page, from the left-hand navigation pane, under security, select **Azure Firewall Policies**.
+1. On **Network security** page, from the left-hand navigation pane, under **Firewall Manager**, select **Azure Firewall Policies**.
 
-1. Select **+ Create Azure Firewall Policy**.
+1. Select **+ Create**.
+
+    ![virtual hub](../media/lab02-az700-ima46.png)
 
 1. On **Resource group**, select **fw-manager-rg-<inject key="DeploymentID" enableCopy="false"/>**.
 
@@ -328,30 +335,33 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 In this task you will associate the firewall policy with the virtual hub.
 
-1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Firewall Manager**, and then select **Firewall 
-   Manager** under services.
+1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Firewall**, and then select **Firewall** under services.
 
-   **Note**: If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
+   **Note**: If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall** when it appears.
 
-1. On **Firewall Manager**, under **Security**, select **Azure Firewall Policies (1)**.
+1. On the **Network security** and expand **Secure your resources** then choose **Virtual Hubs** the select **Hub-01**.
 
-1. Select the checkbox for **Policy-01 (2)** and  Select **Manage associations&gt;Associate hubs (3)**.
+    ![virtual hub](../media/lab02-az700-ima51.png)
 
-   ![](../media/lab6-2.png)
+1. In the Settings blade, select **Security providers**  then click on **Add Policy**.
 
-1. Select the checkbox for **Hub-01**.
+    ![virtual hub](../media/lab02-az700-ima47.png)
 
-1. Select **Add**.
+1. Select **Policy-01** and then **Save**.
 
-1. When the policy has been attached, select **Refresh**. The association should be displayed.
+    ![virtual hub](../media/lab02-az700-ima48.png)
 
- ### Task 7: Route traffic to your hub
+1. When the policy has been association, select **Refresh**. The association should be displayed.
+
+     ![virtual hub](../media/lab02-az700-ima49.png)
+      
+### Task 7: Route traffic to your hub
 
 In this task you will ensure that network traffic gets routed through your firewall.
 
-1. On **Firewall Manager** page, from left-hand navigation pane select **Virtual hubs**.
+1. On the **Network security** and expand **Secure your resources** then choose **Virtual Hubs** the select **Hub-01**.
 
-1. Select **Hub-01**.
+    ![virtual hub](../media/lab02-az700-ima51.png)
 
 1. From left-hand navigation pane, under **Settings**, select **Security configuration**.
 
@@ -361,6 +371,8 @@ In this task you will ensure that network traffic gets routed through your firew
 
 1. Select **Save**. 
 
+    ![virtual hub](../media/lab02-az700-ima50.png)
+   
     >**Note:** On **Secure internet traffic** pop-up, select **OK**.
 
 1. This will take a few minutes to complete.

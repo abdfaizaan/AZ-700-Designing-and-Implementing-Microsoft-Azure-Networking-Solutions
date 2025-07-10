@@ -221,14 +221,15 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 In this task you will first create your firewall policy, then secure your hub. The firewall policy will define collections of rules to direct traffic on one or more Secured virtual hubs.
 
-1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Firewall Manager**, and then select **Firewall 
-   Manager** under services.
+1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Firewall**, and then select **Firewall** under services.
 
-   >**Note**: If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
+   >**Note**: If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall** when it appears.
 
-1. On **Firewall Manager** page, from the left-hand navigation pane, under security, select **Azure Firewall Policies**.
+1. On **Network security** page, from the left-hand navigation pane, under **Firewall Manager**, select **Azure Firewall Policies**.
 
-1. Select **+ Create Azure Firewall Policy**.
+1. Select **+ Create**.
+
+    ![virtual hub](../media/lab02-az700-ima46.png)
 
 1. On **Resource group**, select **fw-manager-rg-<inject key="DeploymentID" enableCopy="false"/>**.
 
@@ -334,24 +335,27 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 In this task you will associate the firewall policy with the virtual hub.
 
-1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Firewall Manager**, and then select **Firewall 
-   Manager** under services.
+1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Firewall**, and then select **Firewall** under services.
 
-   **Note**: If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
+   **Note**: If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall** when it appears.
 
-1. On **Firewall Manager**, under **Security**, select **Azure Firewall Policies (1)**.
+1. On the **Network security** and expand **Secure your resources** then choose **Virtual Hubs** the select **Hub-01**.
 
-1. Select the checkbox for **Policy-01 (2)** and  Select **Manage associations&gt;Associate hubs (3)**.
+    ![virtual hub](../media/lab02-az700-ima51.png)
 
-   ![](../media/lab6-2.png)
+1. In the Settings blade, select **Security providers**  then click on **Add Policy**.
 
-1. Select the checkbox for **Hub-01**.
+    ![virtual hub](../media/lab02-az700-ima47.png)
 
-1. Select **Add**.
+1. Select **Policy-01** and then **Save**.
 
-1. When the policy has been attached, select **Refresh**. The association should be displayed.
+    ![virtual hub](../media/lab02-az700-ima48.png)
 
- ### Task 7: Route traffic to your hub
+1. When the policy has been association, select **Refresh**. The association should be displayed.
+
+     ![virtual hub](../media/lab02-az700-ima49.png)
+      
+### Task 7: Route traffic to your hub
 
 In this task you will ensure that network traffic gets routed through your firewall.
 

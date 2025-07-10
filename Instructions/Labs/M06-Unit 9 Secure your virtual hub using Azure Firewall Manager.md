@@ -377,8 +377,11 @@ In this task you will ensure that network traffic gets routed through your firew
 
 1. This will take a few minutes to complete.
 
-1. Once configuration has completed, ensure that under **INTERNET TRAFFIC** and **PRIVATE TRAFFIC**, it says **Secured by Azure Firewall** for both hub-spoke connections.
+1. Once configuration has completed, ensure that under **INTERNET TRAFFIC** and **PRIVATE TRAFFIC**, it says **Secured by Azure Firewall** for both hub-spoke connections. Click on Refresh the check the status.
 
+    ![virtual hub](../media/lab02-az700-ima52.png)
+
+      
 ### Task 8: Test the application rule
 
 In this part of the exercise, you will connect a remote desktop to the firewall public IP address, which is NATed to Srv-Workload-01. You will then use a web browser to test the application rule and connect a remote desktop to Srv-Workload-02 to test the network rule.

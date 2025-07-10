@@ -124,10 +124,10 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 1. On **Network security** page, expand **Secure your resources** and choose **Virtual Hubs**.
 
-     ![virtual hub](../media/lab02-az700-ima39.png)
-
 1. Select **Hub-01**.
 
+     ![virtual hub](../media/lab02-az700-ima41.png)
+   
 1. Select **Public IP configuration** under **Azure Firewall**, from the left-hand navigation pane.
 
 1. Note down the public IP address (e.g., **51.143.226.18**), which you will use later.
@@ -148,6 +148,8 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 2. Select the **fw-manager-rg-<inject key="DeploymentID" enableCopy="false"/>** resource group, then select the **Vwan-01** virtual WAN under **Resources** section.
 
+      ![virtual hub](../media/lab02-az700-ima42.png)
+
 3. From the left-hand navigation pane, under **Connectivity**, select **Virtual network connections**.
 
 4. Select **+ Add connection**.
@@ -161,6 +163,8 @@ In this task you will connect the hub and spoke virtual networks. This is common
 8. For **Virtual network**, select **Spoke-01**.
 
 9. Select **Create**.
+
+   ![virtual hub](../media/lab02-az700-ima43.png)
    
 10. Repeat steps 4 to 9 above to create another similar connection but using the **Connection name** of **hub-spoke-02** to connect the **Virtual network** of 
     **Spoke-02**

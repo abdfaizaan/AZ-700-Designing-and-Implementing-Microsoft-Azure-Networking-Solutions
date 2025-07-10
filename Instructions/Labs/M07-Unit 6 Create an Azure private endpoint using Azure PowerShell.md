@@ -27,7 +27,27 @@ In this task, you'll create a Private Endpoint for an Azure Web App and deploy a
 
 - An Azure Web App with a PremiumV2-tier or higher app service plan deployed in your Azure subscription.
 
-1. Find and open **parameters.json** from File explorer in **C:\AllFiles\AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions-prod\Allfiles\Exercises\M07** in Visual Studio, find `"value": "GEN-UNIQUE"`, replace it with a unique web app name **webapp<inject key="DeploymentID" enableCopy="false"/>** and save the file.
+1. Open the **Visual studio** from the desktop.
+
+   ![](../media/azv1.png)
+
+1. Select **File (1)** and then **Open file (2)**.
+
+   ![](../media/azv-2.png)
+
+1. Navigate to `C:\AllFiles\AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions-prod\Allfiles\Exercises\M07` **(1)** then select **parameters.json (2)** and the **Open (3)**.
+
+   ![](../media/azv3.png)
+
+1. Select **Open**.
+
+   ![](../media/azv4.png)
+
+1. Find `"value": "GEN-UNIQUE"`, replace it with a unique web app name **webapp<inject key="DeploymentID" enableCopy="false"/>** and save the file.
+
+   ![](../media/azv5.png)
+
+1. Use **Ctrl+S** to save the file.   
 
 1. On the Azure portal, select the **Cloud shell** (**[>_]**)  button at the top of the page to the right of the search box. This opens a cloud shell pane at the bottom of the portal.
 
@@ -45,11 +65,23 @@ In this task, you'll create a Private Endpoint for an Azure Web App and deploy a
 
      ![](../media/pwershell4.png)
 
-1. Please make sure you have selected your resource group **CreatePrivateEndpointQS-rg-<inject key="DeploymentID" enableCopy="false"/>** and then select **Region** **<inject key="Region" enableCopy="false"/>** and enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/>** for the  **File share** , then click on **Create**.
+1. On the **Create a Storage account** page, provide the following details and then **Create (6)**:
 
-1. On the toolbar of the Cloud Shell pane, select the Select **Manage files** icon, in the drop-down menu, select **Upload** and upload the following files **template.json** and **parameters.json** from **C:\AllFiles\AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions-prod\Allfiles\Exercises\M07** into the Cloud Shell home directory one by one.
+   - Subscription: Leave the default one **(1)**
+   - Resource group: Select **CreatePrivateEndpointQS-rg-<inject key="DeploymentID" enableCopy="false"/> (2)**
+   - Region: Select **Region** **<inject key="Region" enableCopy="false"/> (3)**
+   - Storage account name: Enter **blob<inject key="DeploymentID" enableCopy="false"/> (4)**
+   - File share: Enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/> (5)**
+
+     ![](../media/azv6.png)   
+
+1. On the toolbar of the Cloud Shell pane, select the Select **Manage files** icon, in the drop-down menu, select **Upload**.
 
    ![](../media/pwershell2.png)
+
+1. Navigate to `C:\AllFiles\AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions-prod\Allfiles\Exercises\M07` **(1)** then select the following files **template.json** and **parameters.json** **(2)** and then **Open (3)**.
+
+   ![](../media/azv7.png)
    
 1. Deploy the following ARM templates to create the PremiumV2-tier Azure Web App needed for this exercise:
 
@@ -59,7 +91,9 @@ In this task, you'll create a Private Endpoint for an Azure Web App and deploy a
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile template.json -TemplateParameterFile parameters.json
    ```
 
-   >**Note**: If you receive an error (for example while looking into the Deployment status in the Portal) like "Website with given name GEN-UNIQUE already exists." please make sure to go to the step 1 mentioned above regarding editing the template.
+    ![](../media/azv8.png)   
+
+    >**Note**: If you receive an error (for example while looking into the Deployment status in the Portal) like "Website with given name GEN-UNIQUE already exists." please make sure to go to the step 1 mentioned above regarding editing the template.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -141,6 +175,8 @@ Create a virtual network and bastion host with:
    
    New-AzBastion @parameters3
    ```
+
+1. If the last command is still running, please click on **New session** from top in the terminal and proceed to the next task.  
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -233,18 +269,17 @@ Create the virtual machine with the following commands:
    
    ```
 
-  >**Note**: You will be prompted to provide UserName enter **TestUser** and Admin password enter **Pa55w.rd!!**.
+   ![](../media/azv9.png)     
 
-  >**Note**: If you get a prompt related to NIC enter **Y**
+   >**Note**: You will be prompted to provide UserName enter **TestUser** and Admin password enter **Pa55w.rd!!**.
+
+   >**Note**: If you get a prompt related to NIC enter **Y**
   
-  >**Note**: Azure provides an ephemeral IP for Azure Virtual Machines which aren't assigned a public IP address, or are in the backend pool of an internal Basic 
-  Azure Load Balancer. The ephemeral IP mechanism provides an outbound IP address that isn't configurable.  
+   >**Note**: Azure provides an ephemeral IP for Azure Virtual Machines which aren't assigned a public IP address, or are in the backend pool of an internal Basic Azure Load Balancer. The ephemeral IP mechanism provides an outbound IP address that isn't configurable.  
 
-   >**Note**: The ephemeral IP is disabled when a public IP address is assigned to the virtual machine or the virtual machine is placed in the backend pool of a 
-  Standard Load Balancer with or without outbound rules. If a Azure Virtual Network NAT gateway resource is assigned to the subnet of the virtual machine, the 
-  ephemeral IP is disabled.
+   >**Note**: The ephemeral IP is disabled when a public IP address is assigned to the virtual machine or the virtual machine is placed in the backend pool of a Standard Load Balancer with or without outbound rules. If a Azure Virtual Network NAT gateway resource is assigned to the subnet of the virtual machine, the ephemeral IP is disabled.
 
-  >**Note**: For more information on outbound connections in Azure, see Using Source Network Address Translation (SNAT) for outbound connections.
+   >**Note**: For more information on outbound connections in Azure, see Using Source Network Address Translation (SNAT) for outbound connections.
 
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
@@ -311,6 +346,8 @@ In this section, you'll create the Private Endpoint and connection using:
    
    New-AzPrivateEndpoint @parameters2 
    ```
+
+    ![](../media/azv11.png)     
 
 ## Task 5: Configure the private DNS zone
 
@@ -388,6 +425,8 @@ In this section you'll create and configure the private DNS zone using:
    New-AzPrivateDnsZoneGroup @parameters4 
    ```
 
+    ![](../media/azv10.png)      
+
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
@@ -399,27 +438,45 @@ In this section you'll create and configure the private DNS zone using:
 
 In this task, you will use the virtual machine you created in the previous step to connect to the web app across the Private Endpoint.
 
-1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Resource groups**, and then select **Resource 
-   groups** under services.
+1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Resource groups (1)**, and then select **Resource groups (2)** under services.
+
+   ![](../media/azv12.png)
 
 1. Select **CreatePrivateEndpointQS-rg-<inject key="DeploymentID" enableCopy="false"/>**.
 
 1. Select **myVM**.
 
-1. On the overview page for **myVM**, select **Connect**.
+   ![](../media/azv13.png)
 
-1. From the dropdown select **Connect via Bastion** button.
+1. On the overview page for **myVM**, select **Connect (1)**. From the dropdown select **Connect via Bastion (2)** button.
 
-1. Enter the username **TestUser** and password **Pa55w.rd!!** that you entered during the virtual machine creation. 
+   ![](../media/azv14.png)
 
-1. If the popup blocker prevents the new window, select the allow popup blocker and click on Done and Connect again.
+1. Enter the username **TestUser (1)** and password **Pa55w.rd!! (2)** that you entered during the virtual machine creation and then **Connect (3)**.
+
+   ![](../media/azv15.png)
+
+1. If you encounter any error like the below, please follow the below step.
+
+   ![](../media/azv16.png)
+
+1. If the popup blocker prevents the new window, click on the extension **(1)**, select the allow popup blocker **(2)** and click on **Done (3)**.
 
    ![](../media/bastionaz7001.png)
 
-1. Within **myVM** open Windows PowerShell on the server after you connect.
+1. Select **Connect** again.   
 
-1. Enter nslookup &lt;your- webapp-name&gt;.azurewebsites.net. Replace &lt;your-webapp-name&gt; with the name of the web app you created in the previous steps. You'll receive a message similar to what is displayed 
-   below:
+1. Within **myVM**, right click on **Start (1)** and then open **Windows PowerShell (Admin) (2)** on the server after you connect.
+
+   ![](../media/azv17.png)
+
+1. Enter the below command, make sure to replace &lt;your-webapp-name&gt; with **webapp<inject key="DeploymentID" enableCopy="false"/>** the name of the web app you created in the previous steps.
+
+      ```
+      nslookup <your- webapp-name>.azurewebsites.net 
+      ```
+
+1. You'll receive a message similar to what is displayed below:
 
       ```
        Server: UnKnown
@@ -435,7 +492,7 @@ In this task, you will use the virtual machine you created in the previous step 
        Aliases: mywebapp8675.azurewebsites.net 
       ```  
 
-      ![](../media/L7U7-1.png)
+      ![](../media/azv18.png)
 
 1. A private IP address of **10.0.0.5** is returned for the web app name. This address is in the subnet of the virtual network you created previously.
 

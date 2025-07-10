@@ -73,9 +73,9 @@ In this task, you'll create an Application Gateway in Azure, which is a fully ma
     | Name                             | **BackendPool (2)** |
     | Add backend pool without targets | **Yes (3)**     |
     
-1. On the **Add a backend pool** window, select **Add** to save the backend pool configuration and return to the **Backends** tab.
+1. On the **Add a backend pool** window, select **Add (4)** to save the backend pool configuration and return to the **Backends** tab.
 
-      ![Azure Portal search for application gateway](../media/lab02-az700-ima30.png.png)
+      ![Azure Portal search for application gateway](../media/lab02-az700-ima30.png)
 
 1. On the **Backends** tab, select **Next: Configuration>**.
 
@@ -143,10 +143,9 @@ In this task, you'll create an Application Gateway in Azure, which is a fully ma
     | **Setting**           | **Value**   |
     | --------------------- | ----------- |
     | Name                  | **BackendSubnet (3)** |
-    | Starting address      | **10.0.1.0/24  (4)**|
+    | Starting address      | **10.0.1.0 (4)**|
     | Size |   **/24 (5)**  |              
      
-
     ![Azure Portal search for application gateway](../media/lab02-az700-ima31.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:

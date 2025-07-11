@@ -121,10 +121,9 @@ In this task, you will create the workload virtual machine and place it in the W
 
       ![](../media/pwershell2.png)
 
-1. pload the following files 
-   **firewall.json** and **firewall.parameters.json** into the Cloud Shell home directory one by one from the source folder **C:\AllFiles\AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions-prod\Allfiles\Exercises\M06**.
+1. Navigate to `C:\AllFiles\AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions-prod\Allfiles\Exercises\M06` **(1)**, then upload the following files **firewall.json** and **firewall.parameters.json** files **(2)** and then **Open (3)**.
 
-      ![](../media/pwershell2.png)
+      ![](../media/azz7.png)
 
 1. Deploy the following ARM templates to create the VM needed for this exercise:
 
@@ -134,9 +133,13 @@ In this task, you will create the workload virtual machine and place it in the W
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile firewall.json -TemplateParameterFile firewall.parameters.json
    ```
 
-    >**Note**: You will be prompted to provide an Admin password, enter **Pa55w.rd!!**.
+    ![](../media/azz9.png)   
 
-1. When the deployment is complete, go to the Azure portal home page, then search and select **Virtual Machines**.
+     >**Note**: You will be prompted to provide an Admin password, enter **Pa55w.rd!!**.
+
+1. When the deployment is complete, go to the Azure portal home page, then search **Virtual Machines (1)** and select **Virtual Machines (2)**.
+
+     ![](../media/azz8.png)
 
 1. Verify that the virtual machine has been created.
 
@@ -144,22 +147,22 @@ In this task, you will create the workload virtual machine and place it in the W
 
      ![](../media/unit74.png)
 
-1. On the **Overview** page of **Srv-Work**, within the left navigation pane, under the **Networking** section, select **Network settings** and make a note of the **Private IP address** for this VM (e.g., **10.0.2.4**) you may need this in next coming tasks.
+1. On the **Overview** page of **Srv-Work**, within the left navigation pane, under the **Networking** section, select **Network settings (1)** and make a note of the **Private IP address (2)** for this VM (e.g., **10.0.2.4**) you may need this in next coming tasks.
 
-     ![](../media/unit75.png)
+     ![](../media/azz10.png)
  
 ## Task 3: Deploy the firewall and firewall policy
 
 In this task, you will deploy the firewall into the virtual network with a firewall policy configured.
 
-1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Firewalls (1)**, and then select **Firewalls (1)** under 
+1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Firewalls (1)**, and then select **Firewalls (2)** under 
    services.
 
-    ![](../media/l6u7-3.png)
+    ![](../media/azz11.png)
   
 1. On the **Firewall** page, select **+ Create**.
 
-1. On the **Basics** tab, create a firewall using the information in the table below and navigate to the **Review + create (11)** tab.
+1. On the **Basics** tab, create a firewall using the information in the table below and navigate to the **Review + create (12)** tab.
 
     | **Setting**              | **Value**                                                    |
     | --------------------     | ------------------------------------------------------------ |
@@ -173,12 +176,16 @@ In this task, you will deploy the firewall into the virtual network with a firew
     | Choose a virtual network | **Use existing (8)**                                             |
     | Virtual network          | **Test-FW-VN** (Please ignore the error it will disappear once you disable the Firewall Mangagement NIC) **(9)**                                               |
     | Public IP address        | Select **Add new**<br /> Name: **fw-pip (10)**                    |
-    | **Enable Firewall Management NIC**              | **Unselected** (Once you disable, please add the Public Ip again that is mentioned in the above step)                                                   |
+    | **Enable Firewall Management NIC**              | **Unselected (11)** (Once you disable, please add the Public Ip again that is mentioned in the above step)                                                   |
     |||
  
-    ![](../media/l6u7-4.png)
+    ![](../media/azz12.png)
+
+1. Click on **Review+create**.    
 
 1. Select **Create** and wait for the firewall deployment to complete.
+
+    ![](../media/azz13.png)
 
 1. When deployment of the firewall is completed, select **Go to resource**.
 

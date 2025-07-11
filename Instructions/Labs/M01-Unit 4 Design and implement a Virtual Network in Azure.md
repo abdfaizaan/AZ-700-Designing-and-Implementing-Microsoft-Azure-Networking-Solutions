@@ -45,7 +45,7 @@ In this task, you'll be setting up a virtual network (VNet) called CoreServicesV
 
 1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Virtual Networks (1)**, and then select **Virtual Networks (2)** under services.
    
-   ![](../media/VN.png)
+   ![](../media/azv20.png)
 
 1. Select **+ Create** on the Virtual networks page. 
    

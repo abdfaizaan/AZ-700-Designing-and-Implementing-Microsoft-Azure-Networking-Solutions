@@ -31,7 +31,7 @@ In this task, you will create a virtual network in Azure and configure two subne
 1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Virtual network(1)**, and then select **Virtual 
    network(2)** under services.
 
-    ![](../media/VN.png)
+    ![](../media/azv20.png)
 
 1. Select **+ Create**.
 

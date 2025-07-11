@@ -189,13 +189,15 @@ In this task, you will deploy the firewall into the virtual network with a firew
 
 1. When deployment of the firewall is completed, select **Go to resource**.
 
-1. On the **Overview** page of **Test-FW01**, on the right of the page, make a note of the **Firewall private IP** for this firewall (e.g., **10.0.1.4**) you may need this in coming tasks.
+1. On the **Overview (1)** page of **Test-FW01**, on the right of the page, make a note of the **Firewall private IP (2)** for this firewall (e.g., **10.0.1.4**) you may need this in coming tasks.
 
-1. In the menu on the left, under **Settings**, select **Public IP configuration**.
+    ![](../media/azz14.png)
 
-1. Make a note of the address under **IP Address** for the **fw-pip** public IP configuration (e.g., **20.90.136.51**) you may need this in coming tasks.
+1. In the menu on the left, under **Settings**, select **Public IP configuration (1)**.
 
-      ![](../media/l6u7-5.png)
+     - Make a note of the address under **IP Address (2)** for the **fw-pip** public IP configuration (e.g., **20.90.136.51**) you may need this in coming tasks.
+
+       ![](../media/azz16.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
@@ -211,7 +213,7 @@ In this task, on the Workload-SN subnet, you will configure the outbound default
 1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Route tables (1)**, and then select **Route tables (2)** 
    under services.
 
-     ![](../media/l6u7-6.png)
+     ![](../media/azz17.png)
    
 1. On the **Route table** page, select **+ Create**.
 
@@ -233,21 +235,31 @@ In this task, on the Workload-SN subnet, you will configure the outbound default
 
 1. After deployment completes, select **Go to resource**.
 
-1. On the **Firewall-route** page, from the left navigation menu, under **Settings**, select **Subnets** and then select **+ Associate**, specify the following and **OK (3)**.
+1. Select **Firewall-route** route table.
 
-     ![](../media/unit77.png)
+     ![](../media/azz18.png)
+
+1. On the **Firewall-route** page, from the left navigation menu, under **Settings**, select **Subnets (1)** and then select **+ Associate (2)**.
+
+     ![](../media/azz19.png)
+
+1. Specify the following and **OK (3)**.     
  
      | **Setting**              | **Value**                |
      | ------------------------ | ------------------------ |
      | Virtual Network          | select **Test-FW-VN (1)**    |
      | Subnet                   | **Workload-SN (2)**          |
-  
-     **Note**:  Make sure that you select only the Workload-SN subnet for this route, otherwise your firewall won't work correctly.
-  
-      ![](../media/l6u7-7.png)
-
-1. From the left navigation menu, under **Settings**, select **Routes** and then select **+ Add (6)**.
  
+     ![](../media/azz20.png)
+
+      >**Note**:  Make sure that you select only the Workload-SN subnet for this route, otherwise your firewall won't work correctly.     
+
+1. From the left navigation menu, under **Settings**, select **Routes** and then select **+ Add (2)**.
+
+     ![](../media/azz21.png) 
+
+1. Specify the following details and the **Add (6)**:
+
      | **Setting**                              | **Value**                |
      | --------------------------------------   | ------------------------ |
      | **Route name**                           | **fw-dg (1)**                |
@@ -256,7 +268,7 @@ In this task, on the Workload-SN subnet, you will configure the outbound default
      | **Next hop type**                        | **Virtual appliance (4)**    |
      | **Next hop address**                     | Enter the private IP address for the firewall that you noted previously **(5)** (e.g., **10.0.1.4**) |
 
-     ![](../media/l6u7-8.png)
+     ![](../media/azz22.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
@@ -275,13 +287,13 @@ In this task, you will add an application rule that allows outbound access to ww
 
 1. In the list of resources, select your firewall policy, **fw-test-pol**.
 
-1. From the left navigation menu, under **Rules** section, select **Application Rules**.
+     ![](../media/azz23.png)
 
-1. Select **+ Add a rule collection**.
+1. From the left navigation menu, under **Rules** section, select **Application Rules (1)** and then select **+ Add a rule collection (2)**.
 
-     ![](../media/az700-1.png)
+     ![](../media/azz24.png)
 
-1. On the **Add a rule collection** page, create a new application rule using the information in the table below, and select **Add (7)**.
+1. On the **Add a rule collection** page, create a new application rule using the information in the table below, and select **Add (12)**.
 
     | **Setting**            | **Value**                                 |
     | ---------------------- | ----------------------------------------- |
@@ -291,14 +303,14 @@ In this task, you will add an application rule that allows outbound access to ww
     | Rule collection action | **Allow (4)**                                 |
     | Rule collection group  | **DefaultApplicationRuleCollectionGroup (5)** |
     | **Rules Section**      |                                           |
-    | Name                   | **Allow-Google**                          |
-    | Source type            | **IP Address**                            |
-    | Source                 | **10.0.3.0/24**                           |
-    | Protocol               | **http,https**                            |
-    | Destination type       | **FQDN**                                  |
-    | Destination            | **www.google.com (6)**                    |
+    | Name                   | **Allow-Google (6)**                          |
+    | Source type            | **IP Address (7)**                            |
+    | Source                 | **10.0.3.0/24 (8)**                           |
+    | Protocol               | **http,https (9)**                            |
+    | Destination type       | **FQDN (10)**                                  |
+    | Destination            | **www.google.com (11)**                    |
 
-    ![Add an application rule collection](../media/az700-2.png)
+    ![Add an application rule collection](../media/azz25.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
@@ -311,13 +323,11 @@ In this task, you will add an application rule that allows outbound access to ww
 
 In this task, you will add a network rule that allows outbound access to two IP addresses at port 53 (DNS).
 
-1. On the **fw-test-pol** page, from the left navigation menu, under **Rules** section, select **Network Rules**.
+1. On the **fw-test-pol** page, from the left navigation menu, under **Rules** section, select **Network Rules (1)** and then select **+ Add a rule collection (2)**.
 
-1. Select **+ Add a rule collection**.
+     ![](../media/azz27.png)
 
-     ![](../media/unit82.png)
-
-1. On the **Add a rule collection** page, create a new network rule using the information in the table below, and select **Add (7)**.
+1. On the **Add a rule collection** page, create a new network rule using the information in the table below, and select **Add (13)**.
 
     | **Setting**            | **Value**                                                    |
     | ---------------------- | ------------------------------------------------------------ |
@@ -327,15 +337,15 @@ In this task, you will add a network rule that allows outbound access to two IP 
     | Rule collection action | **Allow (4)**                                                    |
     | Rule collection group  | **DefaultNetworkRuleCollectionGroup (5)**                        |
     | **Rules Section**      |                                                              |
-    | Name                   | **Allow-DNS**                                                |
-    | Source type            | **IP Address**                                               |
-    | Source                 | **10.0.2.0/24**                                              |
-    | Protocol               | **UDP**                                                      |
-    | Destination Ports      | **53**                                                       |
-    | Destination Type       | **IP Address**                                               |
-    | Destination            | **209.244.0.3, 209.244.0.4 (6)** <br />These are public DNS servers operated by Century Link. |
+    | Name                   | **Allow-DNS (6)**                                                |
+    | Source type            | **IP Address (7)**                                               |
+    | Source                 | **10.0.2.0/24 (8)**                                              |
+    | Protocol               | **UDP (9)**                                                      |
+    | Destination Ports      | **53 (10)**                                                       |
+    | Destination Type       | **IP Address (11)**                                               |
+    | Destination            | **209.244.0.3, 209.244.0.4 (12)** <br />These are public DNS servers operated by Century Link. |
  
-    ​![Add a network rule collection](../media/l6u7-11.png)
+    ​![Add a network rule collection](../media/azz26.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
@@ -348,9 +358,9 @@ In this task, you will add a network rule that allows outbound access to two IP 
 
 In this task, you will add a DNAT rule that allows you to connect a remote desktop to the Srv-Work virtual machine through the firewall.
 
-1. On the **fw-test-pol** page, from the left navigation menu, under **Rules** section, select **DNAT Rules**.
+1. On the **fw-test-pol** page, from the left navigation menu, under **Rules** section, select **DNAT Rules (1)** and select **+ Add a rule collection (2)**.
 
-1. Select **+ Add a rule collection**.
+     ![](../media/azz28.png)
 
 1. On the **Add a rule collection** page, create a new DNAT rule using the information in the table below.
 
@@ -389,25 +399,27 @@ In this task, you will configure the Srv-Work server's primary and secondary DNS
 1. On Azure Portal page, in **Search resources, services and docs (G+/)** box at the top of the portal, enter **Resource groups (1)**, and then select **Resource 
    groups (2)** under services.
 
-     ![](../media/unit80.png)
+     ![](../media/azz29.png)
 
 1. In the list of resource groups, select your resource group, **Test-FW-RG-<inject key="DeploymentID" enableCopy="false"/>**.
 
 1. In the list of resources in this resource group, select the **Network interface** for the **Srv-Work** virtual machine (e.g., **srv-work-nic**).
 
-      ![](../media/unit81.png)
+     ![](../media/azz30.png)
 
-1. From the left navigation menu, under **Settings**, select **DNS servers**.
+1. From the left navigation menu, under **Settings**, select **DNS servers (1)**.
 
-1. Under **DNS servers**, select **Custom**.
+     - Under **DNS servers**, select **Custom (2)**
 
-1. Enter **209.244.0.3** in the **Add DNS server** text box, and **209.244.0.4** in the next text box.
+     - Enter **209.244.0.3** in the **Add DNS server** text box, and **209.244.0.4** in the next text box **(3)**
 
-1. Select **Save**.
+     - Select **Save (4)**.
 
-     ![Change DNS servers on NIC](..//media/L6U7-1.png)
+       ![](../media/azz31.png)
 
-1. Restart the **Srv-Work** virtual machine.
+1. Navigate back to the **Srv-Work** virtual machine. Restart the **Srv-Work** virtual machine.
+
+     ![](../media/azz32.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
@@ -420,15 +432,23 @@ In this task, you will configure the Srv-Work server's primary and secondary DNS
 
 In this task, you will test the firewall to verify that the rules are configured correctly and working as expected. This configuration will enable you to connect a remote desktop connection to the Srv-Work virtual machine through the firewall, via the firewall's public IP address.
 
-1. Within Labvm from start menu, open **Remote Desktop Connection**.
+1. Within Labvm from start menu, search dor **RDP (1)** and then open **Remote Desktop Connection (2)**.
 
-1. On the **Computer** box, enter the firewall's public IP address followed by **:3389** (e.g., **20.90.136.51:3389**) and select **Connect**.
+     ![](../media/azz33.png)
 
-     ![Add a network rule collection](../media/l6u7-12.png)
- 
-1. On the **Enter your credentials** dialog box, log into the **Srv-Work** server virtual machine, on the **Username** box, enter **TestUser** and Password **Pa55w.rd!!**.
+1. On the **Computer** box, enter the firewall's public IP address followed by **:3389** (e.g., **20.90.136.51:3389**) **(1)** and select **Connect (2)**.
 
-1. Select **OK**.
+     ![Add a network rule collection](../media/azz34.png)
+
+1. Select **More choices**.
+
+1. Select **Use a different account**.
+
+1. On the **Enter your credentials** dialog box, log into the **Srv-Work** server virtual machine, 
+
+     - On the **Username** box, enter **.\TestUser**
+     - Enter Password as `Pa55w.rd!!`
+     - Select **OK**.
 
 1. Select **Yes** on the certificate message.
 

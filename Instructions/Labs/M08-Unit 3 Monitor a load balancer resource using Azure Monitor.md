@@ -121,7 +121,7 @@ In this task, you will create an internal Standard SKU load balancer. The reason
       | SKU                   | **Standard**             |
       | Type                  | **Internal**             |
 
-   ![virtual network](../media/lab02-az700-ima54.png)
+      ![virtual network](../media/lab02-az700-ima54.png)
     
 1. Select **Next : Frontend IP configurations**.
 

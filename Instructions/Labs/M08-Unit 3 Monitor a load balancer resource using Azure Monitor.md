@@ -105,8 +105,10 @@ In this task, you will create an internal Standard SKU load balancer. The reason
 
    ![](../media/lab8-image1.png)
 
-1.  Select **+ Create** on the **Load balancing and content delivery | Load balancers** page.
+1. Select **+ Create** from the drop down select **Standard Load balancer** on the **Load balancing and content delivery | Load balancers** page.
 
+   ![virtual network](../media/lab02-az700-ima53.png)
+      
 1.  On the **Basics** tab, use the information in the table below to create the load balancer.
     
 
@@ -119,6 +121,8 @@ In this task, you will create an internal Standard SKU load balancer. The reason
       | SKU                   | **Standard**             |
       | Type                  | **Internal**             |
 
+   ![virtual network](../media/lab02-az700-ima54.png)
+    
 1. Select **Next : Frontend IP configurations**.
 
    | **Setting**           | **Value**                |
@@ -131,6 +135,8 @@ In this task, you will create an internal Standard SKU load balancer. The reason
    | IP address assignment | **Dynamic**              |
 
 1. Select **Save**.
+
+   ![virtual network](../media/lab02-az700-ima55.png)
 
 1. Select **Review + create**.
    

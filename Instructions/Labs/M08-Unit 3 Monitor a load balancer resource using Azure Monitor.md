@@ -105,7 +105,7 @@ In this task, you will create an internal Standard SKU load balancer. The reason
 
    ![](../media/lab8-image1.png)
 
-1.  Select **+ Create** on the **Load balancing | Load Balancer** page.
+1.  Select **+ Create** on the **Load balancing and content delivery | Load balancers** page.
 
 1.  On the **Basics** tab, use the information in the table below to create the load balancer.
     

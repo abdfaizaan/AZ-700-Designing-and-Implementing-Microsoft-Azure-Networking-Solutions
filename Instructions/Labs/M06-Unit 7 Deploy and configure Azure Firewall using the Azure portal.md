@@ -35,21 +35,22 @@ In this task, you will create a virtual network in Azure and configure two subne
 
 1. Select **+ Create**.
 
-1. On the Create virtual network of **Basic** tab specify the following information to create Virtual Network.
+1. On the Create virtual network of **Basic** tab specify the following information to create Virtual Network and the select **IP addresses (5)**:
 
      |  **Setting**     | **Value**            |
      | ---------------- | ------------------   |
-     | Resource group   |  **Test-FW-RG-<inject key="DeploymentID" enableCopy="false"/> (1)** |
-     | Name             |  **Test-FW-VN (2)**       |
-     | Region           |  **<inject key="Region" enableCopy="false"/> (3)**  |
+     | Subscription   |  Leave the default one **(1)** |     
+     | Resource group   |  **Test-FW-RG-<inject key="DeploymentID" enableCopy="false"/> (2)** |
+     | Name             |  **Test-FW-VN (3)**       |
+     | Region           |  **<inject key="Region" enableCopy="false"/> (4)**  |
 
-    ![](../media/unit72.png)
+     ![](../media/azz1.png)
 
-1. Navigate to the **IP Addresses** tab and enter IPv4 address space **10.0.0.0/16** if not already there by default. 
+1. Navigate to the **IP Addresses** tab and enter IPv4 address space **10.0.0.0/16** **(1)** if not already there by default. 
 
-1. Under **Subnet name**, select the word **default(1)**.
+     - Under **Subnet name**, select the word **default(2)**.
 
-     ![](../media/unit73.png)
+       ![](../media/azz2.png)
 
 1. In the **Edit subnet** pane, specify the following and then click on **Save (6)**.
 
@@ -61,7 +62,7 @@ In this task, you will create a virtual network in Azure and configure two subne
      | Starting address | **10.0.1.0 (4)** |
      | Size      | **/26 (5)** |
  
-     ![](../media/m6-u7-t1-s6.png)
+     ![](../media/azz3.png)
 
 1. Select **+ Add a subnet**, to create another subnet, which will host the workload server that you will create shortly.
     
@@ -75,7 +76,7 @@ In this task, you will create a virtual network in Azure and configure two subne
      | Starting address | **10.0.3.0 (4)** |
      | Size      | **/24 (5)** |
  
-    ![](../media/m6-u7-t1-s8.png)
+    ![](../media/azz4.png)
    
 1. Select **Review + create** and  **Create**.
 
@@ -106,9 +107,21 @@ In this task, you will create the workload virtual machine and place it in the W
 
       ![](../media/pwershell4.png)
    
-1. Please make sure you have selected your resource group **Test-FW-RG-<inject key="DeploymentID" enableCopy="false"/>** and then select **Region** **<inject key="Region" enableCopy="false"/>** and enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/>** for the  **File share** , then click on **Create**.
+1. On the **Create a Storage account** page, provide the following details and then **Create (6)**: 
 
-1. On the toolbar of the Cloud Shell pane, select the Select **Manage files (1)** icon, in the drop-down menu, select **Upload (2)** and upload the following files 
+     - Subscription: Leave the default one **(1)**
+     - Please make sure you have select your resource group **Test-FW-RG-<inject key="DeploymentID" enableCopy="false"/> (2)**
+     - Select **Region** as **<inject key="Region" enableCopy="false"/> (3)**
+     - Enter **blob<inject key="DeploymentID" enableCopy="false"/> (4)** for the **Storage account name**
+     - Enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/> (5)** for the  **File share** 
+
+       ![](../media/azz6.png)     
+
+1. On the toolbar of the Cloud Shell pane, select the Select **Manage files (1)** icon, in the drop-down menu, select **Upload (2)**.
+
+      ![](../media/pwershell2.png)
+
+1. pload the following files 
    **firewall.json** and **firewall.parameters.json** into the Cloud Shell home directory one by one from the source folder **C:\AllFiles\AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions-prod\Allfiles\Exercises\M06**.
 
       ![](../media/pwershell2.png)

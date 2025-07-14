@@ -236,7 +236,7 @@ The backend address pool contains the IP addresses of the virtual NICs connected
    | Name            | **myBackendPool (1)**    |
    | Virtual network | **IntLB-VNet**       |
 
-   - Under **IP configurations**, select **+ Add (3)**.
+   - Under **IP configurations**, select **+ Add (2)**.
 
      ![](../media/azn93.png)
 

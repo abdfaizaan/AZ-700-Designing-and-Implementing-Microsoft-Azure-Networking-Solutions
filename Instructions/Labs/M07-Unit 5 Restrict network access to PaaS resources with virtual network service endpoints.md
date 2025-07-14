@@ -352,7 +352,7 @@ In this task, you'll create two virtual machines (VMs) to test network access to
 
    ![](../media/pwershell1.png)
 
-1. On **Getting started** window choose **Mount storage account (1)** then under **Storage account subscription (2)** select your available subscription from the dropdown and click on **Apply (1)**.
+1. On **Getting started** window choose **Mount storage account (1)** then under **Storage account subscription (2)** select your available subscription from the dropdown and click on **Apply (3)**.
    
      ![](../media/pwershell3.png)
    
@@ -371,7 +371,7 @@ In this task, you'll create two virtual machines (VMs) to test network access to
    
    - Enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/> (5)** for the  **File share** 
 
-     ![](../media/azv44.png)   
+     ![](../media/azv-44.png)   
 
 1. On the toolbar of the Cloud Shell pane, select the Select **Manage files (1)** icon, in the drop-down menu, select **Upload (2)**.
 

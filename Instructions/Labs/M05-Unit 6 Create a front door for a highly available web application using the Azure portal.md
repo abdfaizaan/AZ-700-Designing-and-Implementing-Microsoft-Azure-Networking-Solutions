@@ -45,7 +45,7 @@ This task requires two instances of a web application that run in different Azur
    | Windows Plan     | Select **Create new** and enter **myAppServicePlanCentralUS (8)** in the text box |
    | Princing Plan    | Select **Standard S1 100 total ACU, 1.75 GB memory (9)**        |
 
-   ![Web App](../media/mod6y6.png)
+   ![Web App](../media/azv54.png)
 
 1. Review the Summary, and then select **Create**.
 
@@ -71,7 +71,7 @@ This task requires two instances of a web application that run in different Azur
    | Pricing Plan     | Select **Standard S1 100 total ACU, 1.75 GB memory (9)**        |
    |||
 
-   ![Web App](../media/mod6y7.png)
+   ![Web App](../media/azv54.png)
 
 1. Review the Summary, and then select **Create**.
 

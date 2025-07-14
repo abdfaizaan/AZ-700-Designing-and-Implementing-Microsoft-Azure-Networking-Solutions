@@ -62,7 +62,7 @@ In this task, you will create a test VM on the Manufacturing VNet to test if you
 
      ![](../media/pwershell2.png)
    
-1. Navigate to `C:\AllFiles\AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions-prod\Allfiles\Exercises\M01` **(1)**, upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** files **(2)** and then **Open (2)**.
+1. Navigate to `C:\AllFiles\AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions-prod\Allfiles\Exercises\M01` **(1)**, upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** files **(2)** and then **Open (3)**.
 
      ![](../media/azn13.png)
 

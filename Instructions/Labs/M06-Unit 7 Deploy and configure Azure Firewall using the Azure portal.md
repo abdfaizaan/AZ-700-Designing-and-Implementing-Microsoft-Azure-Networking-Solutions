@@ -162,7 +162,7 @@ In this task, you will deploy the firewall into the virtual network with a firew
   
 1. On the **Firewall** page, select **+ Create**.
 
-1. On the **Basics** tab, create a firewall using the information in the table below and navigate to the **Review + create (12)** tab.
+1. On the **Basics** tab, create a firewall using the information in the table below and navigate to the **Next:Tags> (12)** tab.
 
     | **Setting**              | **Value**                                                    |
     | --------------------     | ------------------------------------------------------------ |

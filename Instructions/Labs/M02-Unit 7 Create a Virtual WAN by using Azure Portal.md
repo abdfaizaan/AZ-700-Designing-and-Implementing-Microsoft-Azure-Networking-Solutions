@@ -1,4 +1,4 @@
-# Module 02-Unit 7 Create a Virtual WAN by using Azure Portal
+# Lab 2b: Create a Virtual WAN by using Azure Portal
 
 ## Lab Overview
 

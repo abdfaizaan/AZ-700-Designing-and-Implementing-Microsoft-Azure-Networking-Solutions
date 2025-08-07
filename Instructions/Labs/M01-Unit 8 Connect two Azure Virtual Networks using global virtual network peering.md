@@ -1,4 +1,4 @@
-#  Module 01-Unit 8 Connect two Azure Virtual Networks using global virtual network peering
+#  Lab 1c: Connect two Azure Virtual Networks using global virtual network peering
 
 ## Lab Overview
 

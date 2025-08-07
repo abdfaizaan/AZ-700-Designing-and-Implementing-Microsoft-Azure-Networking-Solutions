@@ -1,4 +1,4 @@
-# Module 04-Unit 6 Create a Traffic Manager profile using the Azure portal
+# Lab 4b: Create a Traffic Manager profile using the Azure portal
 
 ## Lab Overview
 

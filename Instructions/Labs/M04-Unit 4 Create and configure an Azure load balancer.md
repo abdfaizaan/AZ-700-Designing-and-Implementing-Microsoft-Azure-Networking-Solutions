@@ -1,4 +1,4 @@
-# Module 04-Unit 4 Create and configure an Azure load balancer
+# Lab 4a: Create and configure an Azure load balancer
 
 ## Lab Overview
 

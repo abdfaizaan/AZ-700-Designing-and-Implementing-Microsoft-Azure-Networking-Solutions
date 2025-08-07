@@ -1,4 +1,4 @@
-# Module 01-Unit 4 Design and implement a Virtual Network in Azure
+# Lab 1a: Design and implement a Virtual Network in Azure
 
 ## Lab Overview
 

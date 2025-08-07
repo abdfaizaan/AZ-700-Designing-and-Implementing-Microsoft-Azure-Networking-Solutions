@@ -1,4 +1,4 @@
-# Module 07-Unit 6 Create an Azure private endpoint using Azure PowerShell
+# Lab 7b: Create an Azure private endpoint using Azure PowerShell
 
 ## Lab Overview
 

@@ -1,4 +1,4 @@
-# Module 05: Unit 4 - Deploy Azure Application Gateway
+# Lab 5a: Deploy Azure Application Gateway
 
 ## Lab Overview
 

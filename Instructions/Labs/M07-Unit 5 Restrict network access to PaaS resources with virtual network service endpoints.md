@@ -1,4 +1,4 @@
-# Module 07-Unit 5 Restrict network access to PaaS resources with virtual network service endpoints
+# Lab 7a: Restrict network access to PaaS resources with virtual network service endpoints
 
 ## Lab Overview 
 In this lab, you will learn how to restrict network access to Azure PaaS resources using virtual network service endpoints. Service endpoints allow you to secure access to Azure services like Azure Storage, making sure that traffic to these services stays within your private network and does not go over the public internet. You will configure network security groups (NSGs) to control inbound and outbound traffic, and you’ll test connectivity by deploying virtual machines (VMs) and verifying access to the resources.

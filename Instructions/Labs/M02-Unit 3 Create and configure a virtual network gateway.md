@@ -1,4 +1,4 @@
-# Module 02-Unit 3 Create and configure a virtual network gateway
+# Lab 2a: Create and configure a virtual network gateway
 
 ## Lab Overview
 In this lab, you will configure a Virtual Network Gateway to establish connectivity between Contoso Core Services VNet and Manufacturing VNet. This is essential for enabling cross-network communication through a secure and reliable connection.

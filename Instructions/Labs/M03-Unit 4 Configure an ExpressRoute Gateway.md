@@ -1,4 +1,4 @@
-# Module 03-Unit 4 Configure an ExpressRoute Gateway
+# Lab 3a: Configure an ExpressRoute Gateway
 
 ## Lab Overview
 

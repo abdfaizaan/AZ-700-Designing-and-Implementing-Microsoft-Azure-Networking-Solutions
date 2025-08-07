@@ -1,4 +1,4 @@
-# Module 06-Unit 7 Deploy and configure Azure Firewall using the Azure portal
+# Lab 6b: Deploy and configure Azure Firewall using the Azure portal
 
 ## Lab Overview
 

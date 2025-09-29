@@ -63,6 +63,8 @@ In this task, you will create two instances of a web application deployed in the
 
     >**Note**: We are currently encountering an issue while deploying the web app in East US. If you face the same issue, kindly change the region to another, then deploy the web app and proceed with the next step.
     
+    >**Note**: **If you encounter a quota issue while deploying a Standard SKU-based Web App, try switching to a different region.**
+    
 1. Repeat steps `1-6` above to create a second web app. Use the same settings as before except for the information in the table below. 
 
    | **Setting**    | **Value**                                                    |

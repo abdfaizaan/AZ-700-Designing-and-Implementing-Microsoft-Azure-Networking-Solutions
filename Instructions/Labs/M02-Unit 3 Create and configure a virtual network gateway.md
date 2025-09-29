@@ -97,7 +97,7 @@ In this task, you'll create CoreServicesVM, you will create the CoreServicesVM v
       New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile CoreServicesVMazuredeploy.json -TemplateParameterFile CoreServicesVMazuredeploy.parameters.json
       ``` 
 
-      >**Note**: You will be prompted to provide an Admin password, enter **Pa55w.rd!!**.
+      >**Note**: You will be prompted to provide an Admin password, enter **Pa55w.rd!!**
    
 1. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
 
@@ -134,7 +134,7 @@ In this task, you'll create ManufacturingVM, you will create the ManufacturingVM
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile ManufacturingVMazuredeploy.json -TemplateParameterFile ManufacturingVMazuredeploy.parameters.json
    ```
 
-   >**Note**: You will be prompted to provide an Admin password, enter **Pa55w.rd!!**.
+   >**Note**: You will be prompted to provide an Admin password, enter **Pa55w.rd!!**
 
 1. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
 

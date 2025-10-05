@@ -311,14 +311,18 @@ In this task, you will configure the storage account to restrict network access 
 
 1. On **contosostorage<inject key="DeploymentID" enableCopy="false"/>** storage account blade.
 
-1. From the left navigation pane, under **Security + networking** section, select **Networking (1)**.
+1. From the left navigation pane, under **Security + networking** section, select **Networking**.
 
-   - Select **Enabled from selected virtual networks and IP addresses (2)**
+   - Select **Enabled from all networks**
 
-   - Select **+ Add existing virtual network (3)**
+   - On the **Public network access** page, under **Public network access scope** select **Enable from selected networks**.
 
-     ![](../media/azv40.png)   
+   - Then select + Add a virtual network drop down then choose Add existing virtual network
 
+     ![](../media/kernel-image76.png)
+
+     ![](../media/kernel-image77.png)
+       
 1. Under **Add networks**, select the following values and select **Add (4)**. 
    
    | **Setting**      | **Value**                    |

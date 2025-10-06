@@ -206,11 +206,11 @@ In this task you will connect the hub and spoke virtual networks. This is common
   
 1. Once the deployment has finished, navigate to the Azure portal home page, and proceed to select **Virtual Machines**.
 
-1. Select **Srv-workload-01** VM. On the **Overview** page of **Srv-workload-01**, in the left-hand pane, select **Network Settings (1)** under the **Networking** section, and note down the **Private IP (2)** (e.g., **10.0.1.4**), after this close it.
+1. Select **Srv-workload-01** VM. On the **Overview** page of **Srv-workload-01**, in the left-hand pane, select **Network Settings (1)** under the **Networking** section, and note down the **Private IP address (2)** (e.g., **10.0.1.4**), after this close it.
 
     ![](../media/e1t4p10.png)
 
-1. Now, select **Srv-workload-02** VM. On the **Overview** page of **Srv-workload-02**, in the left-hand pane, select **Networking** under the **Settings** section, and note down the **Private IP** (e.g., **10.1.1.4**).
+1. Now, select **Srv-workload-02** VM. On the **Overview** page of **Srv-workload-02**, in the left-hand pane, select **Networking** under the **Settings** section, and note down the **Private IP address** (e.g., **10.1.1.4**).
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 

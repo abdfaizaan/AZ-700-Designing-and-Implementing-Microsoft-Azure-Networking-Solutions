@@ -82,7 +82,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 1. From the Azure portal home page, from top left corner of page click **Show portal menu**, select **All services**.
 
-    ![All services](../media/AZ-700-allservices.png)
+    ![All services](../media/e1t2p1.png)
 
 1. In the search box, type **firewall manager** and select **Firewalls** when it appears.
 
@@ -173,25 +173,25 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 1. On the Azure portal select the **Cloud shell** (**[>_]**)  button at the top of the page to the right of the search box. This opens a cloud shell pane at the bottom of the portal.
 
-   ![](../media/unit6-image1.png)
+   ![](../media/e1t4p1.png)
 
 1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). If so, select **PowerShell**.
 
     ![](../media/pwershell1.png)
 
-1. On **Getting started** window choose **Mount storage account** then under **Storage account subscription** select your available subscription from the dropdown and click on **Apply**.
+1. On **Getting started** window choose **Mount storage account (1)** then under **Storage account subscription (2)** select your available subscription from the dropdown and click on **Apply (3)**.
    
      ![](../media/pwershell3.png)
    
-1. Within the Mount storage account pane, select **I want to create a storage account** and click **Next**.
+1. Within the Mount storage account pane, select **I want to create a storage account (1)** and click **Next (2)**.
 
      ![](../media/pwershell4.png)
    
-1.  Please make sure you have selected your resource group **fw-manager-rg-<inject key="DeploymentID" enableCopy="false"/>** and then select **Region** **<inject key="Region" enableCopy="false"/>** and enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/>** for the  **File share** , then click on **Create**.
+1.  Please make sure you have selected your resource group **fw-manager-rg-<inject key="DeploymentID" enableCopy="false"/> (1)** and then select **Region** **<inject key="Region" enableCopy="false"/> (2)** and enter **blob<inject key="DeploymentID" enableCopy="false"/> (3)** for the **Storage account name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/> (4)** for the  **File share** , then click on **Create (5)**.
 
      ![virtual hub](../media/lab02-az700-ima45.png)
      
-1. On the toolbar of the Cloud Shell pane, select the Select **Manage files** icon, in the drop-down menu, select **Upload** and upload the following files **FirewallManager.json** and **FirewallManager.parameters.json** into the Cloud Shell home directory one by one from the source folder **C:\AllFiles\AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions-prod\Allfiles\Exercises\M06**.
+1. On the toolbar of the Cloud Shell pane, select the Select **Manage files (1)** icon, in the drop-down menu, select **Upload (2)** and upload the following files **FirewallManager.json** and **FirewallManager.parameters.json** into the Cloud Shell home directory one by one from the source folder **C:\AllFiles\AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions-prod\Allfiles\Exercises\M06**.
 
     ![](../media/pwershell2.png)
 
@@ -206,11 +206,11 @@ In this task you will connect the hub and spoke virtual networks. This is common
   
 1. Once the deployment has finished, navigate to the Azure portal home page, and proceed to select **Virtual Machines**.
 
-1. Select **Srv-workload-01** VM. On the **Overview** page of **Srv-workload-01**, in the left-hand pane, select **Network Settings** under the **Networking** section, and note down the **NIC Private IP** (e.g., **10.0.1.4**), after this close it.
+1. Select **Srv-workload-01** VM. On the **Overview** page of **Srv-workload-01**, in the left-hand pane, select **Network Settings (1)** under the **Networking** section, and note down the **Private IP (2)** (e.g., **10.0.1.4**), after this close it.
 
-    ![](../media/AZ-700-VM-01.png)
+    ![](../media/e1t4p10.png)
 
-1. Now, select **Srv-workload-02** VM. On the **Overview** page of **Srv-workload-02**, in the left-hand pane, select **Networking** under the **Settings** section, and note down the **NIC Private IP** (e.g., **10.1.1.4**).
+1. Now, select **Srv-workload-02** VM. On the **Overview** page of **Srv-workload-02**, in the left-hand pane, select **Networking** under the **Settings** section, and note down the **Private IP** (e.g., **10.1.1.4**).
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -227,9 +227,9 @@ In this task you will first create your firewall policy, then secure your hub. T
 
    >**Note**: If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewalls** when it appears.
 
-1. On **Network security** page, from the left-hand navigation pane, under **Firewall Manager**, select **Azure Firewall Policies**.
+1. On **Network security** page, from the left-hand navigation pane, under **Firewall Manager (1)**, select **Azure Firewall Policies (2)**.
 
-1. Select **+ Create**.
+1. Select **+ Create (3)**.
 
     ![virtual hub](../media/lab02-az700-ima46.png)
 
@@ -249,29 +249,31 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 1. On the **Rules** tab, select **+ Add a rule collection**.
 
-1. On the **Add a rule collection** page, in **Name**, enter **App-RC-01**.
+1. On the **Add a rule collection** page, in **Name (1)**, enter **App-RC-01**.
 
-1. For **Rule collection type**, select **Application**.
+1. For **Rule collection type (2)**, select **Application**.
 
-1. For **Priority**, enter **100**.
+1. For **Priority (3)**, enter **100**.
 
-1. Ensure **Rule collection action** is **Allow**.
+1. Ensure **Rule collection action (4)** is **Allow**.
 
-1. Under **Rules**, in **Name** enter **Allow-msft**.
+1. Enter the following details **(5)**:
 
-1. For the **Source type**, select **IP Address**.
+    - Under **Rules**, in **Name** enter **Allow-msft**.
 
-1. For **Source**, enter *.
+    - For the **Source type**, select **IP Address**.
 
-1. For **Protocol**, enter **http,https**.
+    - For **Source**, enter *.
 
-1. Ensure **Destination Type** is **FQDN**.
+    - For **Protocol**, enter **http,https**.
 
-1. For **Destination**, enter *.microsoft.com
+    - Ensure **Destination Type** is **FQDN**.
 
-    ![](../media/AZ-700-rules.png)
+    - For **Destination**, enter *.microsoft.com
 
-1. Select **Add**.
+        ![](../media/e1t5p22.png)
+
+1. Select **Add (6)**.
 
 1. For adding a DNAT rule, you can connect a remote desktop to the Srv-workload-01 VM. On **Create an Azure Firewall Policy** page, select **+ Add a rule collection**.
 
@@ -353,7 +355,7 @@ In this task you will associate the firewall policy with the virtual hub.
 
     ![virtual hub](../media/lab02-az700-ima48.png)
 
-1. When the policy has been association, select **Refresh**. The association should be displayed.
+1. When the policy has been association, select **Refresh (1)**. The association should be displayed **(2)**.
 
      ![virtual hub](../media/lab02-az700-ima49.png)
       
@@ -365,13 +367,13 @@ In this task you will ensure that network traffic gets routed through your firew
 
     ![virtual hub](../media/lab02-az700-ima51.png)
 
-1. From left-hand navigation pane, under **Settings**, select **Security configuration**.
+1. From left-hand navigation pane, under **Settings**, select **Security configuration (1)**.
 
-1. On **Internet traffic**, select **Azure Firewall**.
+1. On **Internet traffic**, select **Azure Firewall (2)**.
 
-1. On **Private traffic**, select **Send via Azure Firewall**.
+1. On **Private traffic**, select **Send via Azure Firewall (3)**.
 
-1. Select **Save**. 
+1. Select **Save (4)**. 
 
     ![virtual hub](../media/lab02-az700-ima50.png)
    
@@ -379,7 +381,7 @@ In this task you will ensure that network traffic gets routed through your firew
 
 1. This will take a few minutes to complete.
 
-1. Once configuration has completed, ensure that under **INTERNET TRAFFIC** and **PRIVATE TRAFFIC**, it says **Secured by Azure Firewall** for both hub-spoke connections. Click on Refresh the check the status.
+1. Once configuration has completed, ensure that under **INTERNET TRAFFIC** and **PRIVATE TRAFFIC**, it says **Secured by Azure Firewall** for both hub-spoke connections. Click on Refresh to check the status.
 
     ![virtual hub](../media/lab02-az700-ima52.png)
    
@@ -423,7 +425,7 @@ In this task you will test the application rule to confirm that it works as expe
 
 1. You should be blocked by the firewall.
 
-    ![RDP session browser blocked on google.com](../media/google-home-page-fail.png)
+    ![RDP session browser blocked on google.com](../media/e1t8p16.png)
 
 1. So, you have verified that you can connect to the one allowed FQDN but are blocked from all others.
 

@@ -6,7 +6,7 @@ Welcome to your AZ-700: Designing and Implementing Microsoft Azure Networking So
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
  
-![Access Your VM and Lab Guide](../media/up1.png)
+![Access Your VM and Lab Guide](../media/guidetab.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -16,13 +16,13 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-![Explore Lab Resources](../media/up2.png)
+![Explore Lab Resources](../media/envtab.png)
 
 ## Lab Guide Zoom In/Zoom Out
  
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-![](../media/zoomin.png)
+![](../media/zoomintab.png)
  
 ## Utilizing the Split Window Feature
  
@@ -34,9 +34,9 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 Feel free to **Start**, **Stop**, or **Restart** your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-![Manage Your Virtual Machine](../media/up4.png)
+![Manage Your Virtual Machine](../media/restab.png)
 
-## **Lab Duration Extension**
+## Lab Duration Extension
 
 1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
 

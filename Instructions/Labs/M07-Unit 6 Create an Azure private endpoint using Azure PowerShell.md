@@ -65,7 +65,7 @@ In this task, you'll create a Private Endpoint for an Azure Web App and deploy a
 
      ![](../media/pwershell4.png)
 
-1. On the **Create a Storage account** page, provide the following details and then **Create (6)**:
+1. On the **Create a Storage account** page, provide the following details and then click **Create (6)**:
 
    - Subscription: Leave the default one **(1)**
    - Resource group: Select **CreatePrivateEndpointQS-rg-<inject key="DeploymentID" enableCopy="false"/> (2)**

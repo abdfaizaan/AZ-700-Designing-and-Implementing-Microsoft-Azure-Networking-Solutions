@@ -6,7 +6,7 @@
             "value": "GEN-UNIQUE"
         },
         "location": {
-            "value": "westus"
+            "value": "australiaeast"
         },
         "sku": {
             "value": "PremiumV2"

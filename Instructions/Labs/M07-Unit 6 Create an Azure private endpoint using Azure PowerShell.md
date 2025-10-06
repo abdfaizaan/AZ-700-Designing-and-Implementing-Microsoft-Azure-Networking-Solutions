@@ -29,7 +29,7 @@ In this task, you'll create a Private Endpoint for an Azure Web App and deploy a
 
 1. Open the **Visual studio** from the desktop.
 
-   ![](../media/azv1.png)
+   ![](../media/e7bt1p1.png)
 
 1. Select **File (1)** and then **Open file (2)**.
 
@@ -45,7 +45,7 @@ In this task, you'll create a Private Endpoint for an Azure Web App and deploy a
 
 1. Find `"value": "GEN-UNIQUE"`, replace it with a unique web app name **webapp<inject key="DeploymentID" enableCopy="false"/>** and save the file.
 
-   ![](../media/azv5.png)
+   ![](../media/e7bt1p5.png)
 
 1. Use **Ctrl+S** to save the file.   
 
@@ -91,7 +91,7 @@ In this task, you'll create a Private Endpoint for an Azure Web App and deploy a
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile template.json -TemplateParameterFile parameters.json
    ```
 
-    ![](../media/azv8.png)   
+    ![](../media/e7bt1p14.png)   
 
     >**Note**: If you receive an error (for example while looking into the Deployment status in the Portal) like "Website with given name GEN-UNIQUE already exists." please make sure to go to the step 1 mentioned above regarding editing the template.
 
@@ -175,6 +175,8 @@ Create a virtual network and bastion host with:
    
    New-AzBastion @parameters3
    ```
+
+   ![](../media/e7bt2p1.png)
 
 1. If the last command is still running, please click on **New session** from top in the terminal and proceed to the next task.  
 
@@ -347,7 +349,7 @@ In this section, you'll create the Private Endpoint and connection using:
    New-AzPrivateEndpoint @parameters2 
    ```
 
-    ![](../media/azv11.png)     
+    ![](../media/e7bt4p1.png)     
 
 ## Task 5: Configure the private DNS zone
 
@@ -425,7 +427,7 @@ In this section you'll create and configure the private DNS zone using:
    New-AzPrivateDnsZoneGroup @parameters4 
    ```
 
-    ![](../media/azv10.png)      
+    ![](../media/e7bt5p1.png)      
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
